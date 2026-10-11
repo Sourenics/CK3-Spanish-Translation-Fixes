@@ -5,13 +5,17 @@
 A Crusader Kings III mod that fixes broken and mistranslated texts in the official Spanish localization, so you can play in Spanish without code, brackets or nonsense showing up in events and tooltips.
 
 - **Game version:** 1.20.x
-- **Mod version:** 1.0.0
+- **Mod version:** 0.9.0 (beta)
 - **Author:** [Sourenics](https://github.com/Sourenics)
 - **Steam Workshop:** coming soon
 
+## Beta
+
+This is a **public beta**. Every fix has been checked against the game files and the mod has been loaded in a test game, but the fixed texts have not all been seen in game yet. If you find a text that looks wrong, broken or untranslated, with or without this mod, please [report it](#reporting-a-wrong-text): every report helps reach a stable 1.0.0.
+
 ## What it fixes
 
-Version 1.0.0 replaces **399 strings**. Every one of them is listed, with the part that changed, in [FIXED_STRINGS.md](FIXED_STRINGS.md).
+Version 0.9.0 replaces **399 strings**. Every one of them is listed, with the part that changed, in [FIXED_STRINGS.md](FIXED_STRINGS.md).
 
 ### Broken strings (331)
 
@@ -62,7 +66,7 @@ Subscribe on the Steam Workshop page and enable the mod in the Paradox launcher.
    - **Windows:** `Documents/Paradox Interactive/Crusader Kings III/mod/`
    - **Linux:** `~/.local/share/Paradox Interactive/Crusader Kings III/mod/`
    - **macOS:** `~/Documents/Paradox Interactive/Crusader Kings III/mod/`
-3. Enable **Spanish Translation Fixes** in the Paradox launcher.
+3. Enable **Spanish Translation Fixes (Beta)** in the Paradox launcher.
 
 ## Compatibility
 

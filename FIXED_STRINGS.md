@@ -1,4 +1,4 @@
-# Fixed strings (1.0.0)
+# Fixed strings (0.9.0)
 
 Every Spanish string this mod replaces, with the part that changed. 399 strings in total.
 

@@ -1,5 +1,5 @@
 ﻿l_spanish:
- # Spanish Translation Fixes 1.0.0 - corrected copies of vanilla keys. Grouped by the vanilla file they come from.
+ # Spanish Translation Fixes 0.9.0 - corrected copies of vanilla keys. Grouped by the vanilla file they come from.
 
  # activities/coronation_activity_l_spanish.yml
  coronation_events.0301.b.tooltip:0 "[second_candidate.GetFirstNameNoTooltip] será [second_candidate.Custom('ES_ElLa')] nuev[second_candidate.Custom('ES_OA')] oficiante de la ceremonia"
