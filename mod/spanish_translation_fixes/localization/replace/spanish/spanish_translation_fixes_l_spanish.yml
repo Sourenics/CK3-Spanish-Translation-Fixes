@@ -1,0 +1,528 @@
+﻿l_spanish:
+ # Spanish Translation Fixes 1.0.0 - corrected copies of vanilla keys. Grouped by the vanilla file they come from.
+
+ # activities/coronation_activity_l_spanish.yml
+ coronation_events.0301.b.tooltip:0 "[second_candidate.GetFirstNameNoTooltip] será [second_candidate.Custom('ES_ElLa')] nuev[second_candidate.Custom('ES_OA')] oficiante de la ceremonia"
+
+ # activities/coronation_events_1_l_spanish.yml
+ coronation_events.1000.tyrant.desc:0 "Un[bard.Custom('ES_XA')] juglar, con la cara encendida en actitud de desafío, da un paso adelante y comienza una balada:\n\n«¡Contemplad [ROOT.Char.GetName], el Puño de Hierro!».\n\nCada estrofa está sazonada con alabanzas mordaces que resuenan por toda la sala. Aprieto los dientes mientras la melodía burlona va en aumento y describe mi reinado como nada más que una tiranía mezquina."
+
+ # activities/tournament_activity_oltner_l_spanish.yml
+ tournament_events.9004.desc:0 "«¡Vamos, #EMP [falconer_1.Custom('GetBirdName')|U]#!, más rápido!». Oigo la voz de un[falconer_1.Custom('ES_XA')] [falconer_1.GetWomanMan] que resuena por todo el recinto. Levanto la vista y veo una cosa minúscula que surca el cielo como un pequeño rayo negro. Pronto desciende en picado hacia una línea de meta.\n\n«¡Bah, debéis de haber hecho trampa! Vuestro pájaro no puede volar tan rápido, miradlo, ¡es [falconer_1.Custom('GetBirdInsult')]!», grita el enfadado perdedor, mientras [falconer_1.Custom('ES_ElLa')] ganador[falconer_1.Custom('ES_XA')] parece encantad[falconer_1.Custom('ES_OA')]."
+
+ # ai_personality_l_spanish.yml
+ rationality_explanation:0 "Este personaje es #Bold algo racional#! y es más probable que evite la [tyranny|lE], emplee [councillor_tasks|lE] para defenderse y eluda una [offensive_war_opinion|lE]. En general, es más probable que haga lo que sea objetivamente mejor para la situación en la que está, como asesinar a un [liege|lE] [tyrannical|lE], intercambiar [hostages|lE] para evitar una guerra o reducir gastos si incurre en [debt|lE]."
+
+ # artifacts/artifacts_l_spanish.yml
+ artifact_joyeuse_description:0 "La espada de Carlomagno, forjada para contener la lanza de Longinos. La Joyosa es un símbolo tanto de valor caballeresco como del legado real del imperio carolingio."
+
+ # board_game_events_l_spanish.yml
+ board_games.0001.desc.opponent_winning.trait.content:0 "«Qué partida más encantadora», gorjea mi contrincante. «No podríamos pedir nada mejor, ¿verdad? Aparte de vuestra suerte, claro»."
+
+ # buildings_l_spanish.yml
+ building_hagios_demetrios_desc:0 "La iglesia de san Demetrio es el santuario más importante de la ciudad.\nErigida por primera vez cuando la fe de Cristo aún era joven, incorpora los baños romanos donde el santo, junto con otros primeros creyentes, fue encarcelado, martirizado y enterrado."
+ building_murex_farm_04_desc:0 "Un patio al aire libre acelera el proceso de oxidación del tinte, lo que reduce el tiempo de producción del tinte púrpura y garantiza un proceso de trabajo más eficiente."
+
+ # contracts/laamp_base_learning_contract_events_l_spanish.yml
+ laamp_base_learning_contract_events.4001.d.flavor.unwind:0 "Por qué hacer más cuando puedo hacer menos."
+
+ # contracts/task_contracts_l_spanish.yml
+ ep3_contract_event.0093.desc_taxes:0 "«Los diezmos son altos, ¡pero los pagamos! ¡Las cargas que abonamos por nuestros productos apenas nos dejan migajas! Soportamos estos pagos, pero [task_contract_councillor_liege.Custom('ES_ElLa')] [task_contract_councillor_liege.GetTitledFirstName|l] nos exige más aún, ¡mientras los recaudadores de impuestos son cada vez más ricos! ¡A #EMP ellos#! es a los que deberíais inquirir!»."
+ ep3_contract_event.0095.a_2:0 "Solo los dirigiré en la guerra."
+
+ # core_l_spanish.yml
+ PIETY_WITH_BALANCE_TOOLTIP:0 "#T [piety|E]: $VALUE|V0$#!\n$BALANCE|V=1$/mes\n\n#T [piety_level|E]: #!$LEVEL$"
+
+ # council_tasks_l_spanish.yml
+ COUNCILLOR_IS_YOUR_FRIEND:0 "[councillor.GetCouncilTitle] [councillor.GetShortUIName] es amig[councillor.Custom('ES_OA')] tuy[councillor.Custom('ES_OA')]"
+
+ # custom_localization/greeting_custom_loc_l_spanish.yml
+ greeting_family_liked_plain:0 "Mi querid[second.Custom('ES_OA')] [ROOT.Char.Custom2('RelationToMeShort', second)],"
+ greeting_foreign_ruler_negative:0 "[second.Custom('ES_AlAla')|U] [second.Custom2('InsultAdjective', ROOT.Char)] [second.GetTitledFirstNameNoTooltip|l],"
+
+ # decisions_l_spanish.yml
+ introduce_a_new_fashion_at_court_decision_desc:0 "¡Ninguna corte puede afirmar ser más elegante que la nuestra! La corte es un campo de batalla de moda y ya es momento de que lance mi propia ofensiva para imponer una nueva moda entre la nobleza…"
+ bwow_fundementalist_tooltip:0 "Tu fe se volverá más fundamentalista y belicosa"
+ form_brunei_kingdom_decision_effects_de_jure_tt_b:0 "Si se posee, [berau_county.GetNameNoTier] formará parte [de_jure|El] de [barune_duchy.GetName]"
+
+ # dlc/ach/dlc_ach_coronation_prelude_events_l_spanish.yml
+ prelude_events.0170.a.success:0 "El público queda impresionado"
+
+ # dlc/ach/dlc_ach_yearly_events_l_spanish.yml
+ ach_yearly_events.1003.desc:0 "El conflicto de mi señor[liege.Custom('ES_XA')] con [foe.GetPrimaryTitle.GetNameNoTier] se alarga. Al ejercer de [Concept( 'marshal', GetPlayer.GetCouncillorPosition( 'councillor_marshal' ).GetPositionName )|l], planeo la logística, recluto a [liege.Custom('GetLocalCommonerTermPlural')] para el servicio, acallo el descontento local…, pero los jinetes traen noticias preocupantes.\n\nEn [battle_province.GetName], los [liege.Custom('KnightCulturePluralNoTooltip')|l] de [liege.GetPrimaryTitle.GetNameNoTier] han fracasado. Se rompió la línea de combate de [commander.GetName] y nuestro ejército se lanzó a una huida desesperada. ¡Con nuestros [liege.Custom('GetFighterTermPlural')] en fuga, la hueste de [foe.GetName] avanza hacia [liege.GetPrimaryTitle.GetTierAsNameNoTooltip]!\n\nMis consejeros me incitan a hacer honor a mi puesto, a tomar con mano de hierro las riendas de este desastre."
+
+ # dlc/bp1/dlc_bp1_yearly_events_l_spanish.yml
+ bp1_yearly.5708.start:0 "Paseo por un bullicioso callejón con mi amig[heathen_friend.Custom('ES_OA')] [heathen_friend.GetFirstName], cuando desaparece de repente. Me vuelvo y [heathen_friend.GetHerHim] veo enfrascad[heathen_friend.Custom('ES_OA')] en una discusión con un comerciante cuyas mercancías parecen consistir principalmente en curiosas baratijas. [heathen_friend.GetFirstNameNoTooltip|U], una vez completada su transacción, vuelve a acercarse a mí, acariciando su nueva compra sin prestar atención.\n\n"
+
+ # dlc/bp2/dlc_bp2_yearly_2_l_spanish.yml
+ bp2_yearly.2015.desc:0 "«¿Es que nunca me libraré de tal [bully.Custom2('InsultNoun', ROOT.Char)]?!», me lamento, con la cabeza gacha tras sufrir una nueva humillación pública por parte de [Select_CString( bully.IsFemale, 'la abusona', 'el abusón' )] de [bully.GetFirstName].\n\nMientras lágrimas cálidas corren por mi rostro, me sorprendo al sentir un toque suave en el hombro. Es mi amig[ROOT.Char.Custom('ES_OAOpp')], [ROOT.Var('imaginary_friend_name').Char.GetFirstNameNoTooltip]. Siempre está ahí cuando [ROOT.Char.Custom('ES_LoLaOpp')] necesito.\n\n«Ya es hora de que te plantes ante es[bully.Custom('ES_EA')] horrible [bully.GetFirstNameNoTooltip]. Te sugiero empezar un rumor sobre lo que le gusta hacer con su [bully.Custom('child_favorite_toy')] cuando está a solas en sus aposentos…»."
+ bp2_yearly.2022.desc.next_target:0 "«Pero no nos demoremos, aún hay más diversión por delante, [Select_CString( ROOT.Char.IsFemale, 'amiga querida', 'amigo querido' )]. [new_murder_target.GetFirstName] está #EMP list[new_murder_target.Custom('ES_OA')] para la matanza…#!»."
+
+ # dlc/bp2/dlc_bp2_yearly_5_l_spanish.yml
+ bp2_yearly.5053.b.success:0 "Te creen"
+ bp2_yearly.5053.b.failure:0 "No te creen"
+
+ # dlc/ep1/dlc_ep1_flavor_events_l_spanish.yml
+ ep1_flavor.2040.desc.gold:0 "«Esta pieza sin par podría perteneceros, a un precio especial, por supuesto, gran [ROOT.Char.GetTitleAsNameNoTooltip|l]…».\n\n¡Un cuento, probablemente!"
+
+ # dlc/ep1/dlc_ep1_game_concepts_l_spanish.yml
+ game_concept_aptitude_desc:0 "La $game_concept_aptitude$ de un [character|lE] indica lo eficiente que es en distintos papeles de la [court|lE]. Estos incluyen [court_positions|lE], [diarchs|lE] y [tax_collectors|lE]\n\nLa $game_concept_aptitude$ se mide en cinco niveles, que van de Horrible a Excelente. El nivel de aptitud del personaje decidirá las bonificaciones que recibirá el [liege|lE] por darle empleo en su [court|lE].\n\nPor ejemplo, un personaje que sea [GetTrait('lifestyle_physician').GetName( GetNullCharacter )|l] estará mejor equipado para servir como $court_physician_court_position$, como es lógico."
+
+ # dlc/ep2/dlc_ep2_locale_events_l_spanish.yml
+ ep2_locale_events.2510.b:0 "No hay nada más útil que un gambesón."
+ ep2_locale_events.3002.desc:0 "¿Qué es ese ruido? ¿Risas…? ¿Gemidos? #EMP Suena#! como si viniera de esa tienda.\n\nLa curiosidad me puede. Aparto la solapa de la tienda para encontrar… un espectáculo de lo más llamativo.\n\n[lech1.Custom('ES_ElLa')] [lech1.GetTitledFirstName|l], pillad[lech1.Custom('ES_OA')] totalmente #EMP in fraganti#!, entra en pánico y empuja a su acompañante lejos de [lech1.Custom('ES_ElElla')]. En la sudorosa penumbra de la tienda, yacen [lech2.Custom('ES_ElLa')] [lech2.GetTitledFirstName|l] y [lech3.Custom('ES_ElLa')] [lech3.GetTitledFirstName|l] también, desenredándose apresuradamente de los cuerpos desnudos y corpulentos de sus amantes."
+
+ # dlc/ep2/tournament/dlc_ep2_contest_events_l_spanish.yml
+ contest_events.1540.desc:0 "Recojo una flecha con confianza, ocupando mi lugar ante la diana y sintiendo el ambiente. La multitud calla mientras perfecciono mi postura y enfoque.\n\nEl primer tiro falla por un pelo, incrustándose en la tierra del campo. El segundo silba a kilómetros por encima de la diana. El tercero cae a pocos metros de mí, disparado por una mala suelta.\n\n"
+ contest_events.1541.desc:0 "[contestant.Custom('ES_ElLa')|U] [contestant.GetTitledFirstName|l] recoge una flecha con confianza, ocupando su lugar ante la diana y sintiendo el ambiente. La multitud calla mientras perfecciona su postura y enfoque.\n\nEl primer tiro falla por un pelo, incrustándose en la tierra del campo. El segundo silba a kilómetros por encima de la diana. El tercero cae a pocos metros de [contestant.GetSheHe], disparado por una mala suelta.\n\n"
+
+ # dlc/ep2/tournament/dlc_ep2_tournament_l_spanish.yml
+ tournament_champion_qualify_desc:0 "Tu campe[contest_champion.Custom('ES_OnOna')], [contest_champion.Custom('ES_ElLa')] [contest_champion.GetTitledFirstName|l], se unió a la competición de [activity.GetCurrentPhase.GetPhase.GetName|l] de [host.GetShortUIName]"
+ tournament_champion_qualify_multi_desc:0 "Tu campe[contest_champion.Custom('ES_OnOna')], [contest_champion.Custom('ES_ElLa')] [contest_champion.GetTitledFirstName|l], y [qualification_liege.MakeScope.Var('qualified_knights_count').GetValue|0V] de tus $knight_culture_player_plural_no_tooltip_lowercase$ se unieron a la competición de [activity.GetCurrentPhase.GetPhase.GetName|l] de [host.GetShortUIName]"
+ tournament_champion_qualify_fail_desc:0 "Tu campe[contest_champion.Custom('ES_OnOna')], [contest_champion.Custom('ES_ElLa')] [contest_champion.GetTitledFirstName|l], no se clasificó para la competición de [activity.GetCurrentPhase.GetPhase.GetName|l] de [host.GetShortUIName]"
+
+ # dlc/ep2/wedding/ep2_wedding_events_l_spanish.yml
+ ep2_wedding.9015.tt:0 "[ROOT.Char.GetUIName|U] [ROOT.Char.LocalPlayerString( 'has', 'ha' )] recibido un reembolso por la [GetActivityType('activity_wedding').GetName|l] cancelada de [THIS.Var('gwedding_gold_recoup_value').GetValue|V0] [gold_i]"
+
+ # dlc/ep3/dlc_ep3_camp_party_l_spanish.yml
+ ep3_camp_party.2000.compassionate:0 "ayudar a los necesitados #EMP es#! la recompensa en sí misma"
+
+ # dlc/ep3/dlc_ep3_decisions_l_spanish.yml
+ refound_pandidakterion_decision_desc:0 "El emperador [GetScriptedCharacterByHistoryID( '70533' ).GetFirstName] fundó el [Glossary( 'Pandidakterion', 'PANDIDAKTERION_GLOSS' )] el año 425 d.C., uno de los mayores centros de conocimiento del mundo. Muchos siglos han pasado desde entonces y los tiempos han cambiado. Si queremos que el Pandidakterion siga estando a la vanguardia del conocimiento, hay que renovar y reorganizar esta institución."
+
+ # dlc/ep3/ep3_governor_yearly_3_l_spanish.yml
+ ep3_governor_yearly.3001.b:0 "Mejor prosperar yo un poco que un[governor.Custom('ES_XA')] [governor.GetTitleAsNameNoTooltip|l] imbécil."
+
+ # dlc/ep3/ep3_laamp_decision_events_l_spanish.yml
+ ep3_laamp_decision_event.1040.desc_outro_return_01:0 "\n\nEn un rincón sombreado de la plaza, un charlatán intenta convencer a un[ROOT.Char.Custom('ES_XA')] noble de las propiedades curativas de la arena roja.\n\nObservo indiferente su discusión mientras pienso en cuál será mi próximo movimiento."
+
+ # dlc/ep3/ep3_modifiers_l_spanish.yml
+ ep3_sent_help_to_east_modifier:0 "Ejército enviado en ayuda"
+
+ # dlc/ep3/ep3_schemes_l_spanish.yml
+ depose_desc_general:0 "En una conjura de derrocamiento, conspiras para destronar al emperador y sustituirlo por un candidato más adecuado: #EMP tú.#!"
+ subsume_province_recipient_scheming_against_you_tt:0 "[recipient.GetShortUIName] ya intenta subsumir tu [governorship|lE]"
+ coronation_spouse_despised_modifier:0 "Promesa de coronación de [Select_CString( owner.IsLocalPlayer, 'tu persona', owner.GetShortUIName)] de librarse de [Select_CString(target.IsLocalPlayer,'ti', target.GetShortUIName)]: $VALUE|+=0$"
+
+ # dlc/fp1/dlc_fp1_yearly_events_oltner_l_spanish.yml
+ fp1_yearly.2400.desc:0 "La naturaleza me llama. Ha llovido mucho desde mi última cacería. Fuera, en [ROOT.Char.Custom('TerrainType')] de [hunting_province.GetName], hay [ROOT.Char.Custom('GetAnimalPlural')] de carácter [ROOT.Char.Custom('GetAnimalAdjective')]. ¡Un ejemplar quedaría de lujo en la cena de esta noche!\n\nPero me falta algo. ¿Mis lanzas de caza están viejas y romas? ¿O necesito un acompañante?\n\nDebo asegurarme de prepararme bien."
+
+ # dlc/fp2/dlc_fp2_events_amalgamated_l_spanish.yml
+ fp2_yearly.1006.desc:0 "Me paro ante un puesto de la carretera donde venden comidas sencillas. Su comerciante, [cheese_trader.GetName], me sirve distintos productos antes de agacharse bajo el mostrador y sacar una caja de madera tallada.\n\n«Para vos, mi señor[ROOT.Char.Custom('ES_XA')], este es el mejor queso de todo el señorío», me pone el taco en la mano, se inclina hacia mí y susurra en tono conspiratorio. «Lo hicieron unos vikingos queseros aquí, en Iberia».\n\nPese al extraño comentario, el queso está increíblemente bueno."
+ fp2_yearly.1008.desc:0 "Ha llegado el momento. En lo profundo de la despensa descansa el queso más increíble del mundo conocido, curándose lentamente, potenciando su sabor.\n\n Y ahora, lo consumiré."
+ fp2_yearly.8004.c:0 "Las bibliotecas son un verdadero fastidio…"
+
+ # dlc/fp3/dlc_fp3_decision_events_l_spanish.yml
+ fp3_decision.0009.desc:0 "[founder.GetFirstName] se ha propuesto reclamar la responsabilidad del [founder.GetFaith.ReligiousHeadName] para los [founder.GetFaith.GetAdherentNamePlural] y se ve que muchos de sus partidarios apoyan este audaz movimiento. Dicen que posee el #italic weyalat#!, la guía mística de [ROOT.Char.GetFaith.HighGodNameAlternate] que le permite dirigir a los fieles. Aunque puede que yo no esté en posición de desafiar directamente esta reivindicación, como una de las figuras principales del [founder.GetFaith.GetNameNoTooltip|l], mi posición importará. ¿Debo aceptar[founder.GetHerHim] como nuev[founder.Custom('ES_OA')] líder de los fieles u oponerme discretamente a [founder.GetSheHe]?"
+
+ # dlc/fp3/dlc_fp3_decisions_l_spanish.yml
+ fp3_sunder_the_caliphate_same_faith_vassal_hook_tt:0 "[sunderer.GetShortUIName|U] [Select_CString( sunderer.IsLocalPlayer, 'conseguirás', 'conseguirá' )] un [weak_hook|lE] #weak ($favor_hook$)#! sobre ellos"
+ struggle_persia_ending_rekindle_iran_decision_region_control_tt:0 "Controlas al menos un #Z [SCOPE.ScriptValue('fp3_persia_owned_for_rekindle_persia_percent_value')|0] %#! del #L #high [GetTitleByKey('e_persia').GetNameNoTier]#!#! (ahora: #Z [SCOPE.ScriptValue('fp3_iranian_current_owned_persia_value')|0] %#!)"
+
+ # dlc/mpo/mpo_interactions_l_spanish.yml
+ DEMAND_OBEDIENCE_INTERACTION_HERD_ACCEPTANCE:0 "[recipient.GetSheHe|U] tiene una [herd|lE] mayor que la tuya: $VALUE|=+0$"
+ DEMAND_OBEDIENCE_INTERACTION_MILITARY_MIGHT_ACCEPTANCE:0 "[recipient.GetSheHe|U] tiene un [army|lE] más fuerte que tú: $VALUE|=+0$"
+
+ # dlc/pam/pam_character_interactions_l_spanish.yml
+ pam_interactions_events.0097.a:0 "[target.GetNameNoTierNoTooltip] me pertenece y debo responder por ello."
+ filial_piety_request_child_gold_notification:0 "[actor.GetShortUIName] te pide, como [ROOT.Char.Custom('GetDaughterSon')] suy[ROOT.Char.Custom('ES_OA')], apoyo financiero."
+
+ # dlc/pam/pam_christian_situation_events_l_spanish.yml
+ pam_the_christian_church.0057.desc.eastern:0 "Seguimos cantando plegarias mientras los escritorios occidentales crujen bajo tratados pesados. La armonía es bien recibida, pero sus disputas académicas no deberían entrar en nuestras cancillerías."
+
+ # dlc/pam/pam_clergy_events_l_spanish.yml
+ pam_clergy_events.0010.desc.intro:0 "Como [cardinalate.GetHolder.GetTitleAsNameNoTooltip|l], soy una extensión de la voluntad [actor.Custom('ES_DelDela')] sant[actor.Custom('ES_OA')] [actor.GetMotherFather].\n\n"
+ pam_clergy_events.0060.desc.hof_outro:0 "Reyes y emperadores no son más que niños a la sombra de la voluntad de su sant[new_prelate.Custom('ES_OA')] [new_prelate.GetMotherFather]. Un ejército de [new_prelate.GetFaith.BishopMalePlural] ahora está a las órdenes de un[new_prelate.Custom('ES_XA')] [new_prelate.GetDynasty.GetNameNoTooltip]."
+
+ # dlc/pam/pam_decisions_l_spanish.yml
+ pam_mended_great_schism_military_dynasty_modifier_desc:0 "Esta dinastía ha reunido las antiguas sedes bajo un único estandarte y ha sanado la ruptura en el mundo cristiano por la fuerza de las armas."
+
+ # dlc/pam/pam_generic_events_l_spanish.yml
+ pam_generic_events.0004.desc:0 "El recinto de [ROOT.Char.GetFaith.HouseOfWorship] está completamente vacío. Una neblina se alza en espiral entre las columnas y las velas parpadean en torno al recuerdo de mi [ROOT.Char.Custom2( 'RelationToMeShort', deceased )], [deceased.GetFirstName], que [deceased.GetDeathReasonHideKiller].\n\nMi [ROOT.Char.Custom2( 'RelationToMeShort', comforter )], [comforter.GetFirstName], se sienta tan cerca que su manga roza la mía. «El duelo es un camino», dice con dulzura. «Recorredlo y tal vez encontréis [ROOT.Char.GetFaith.PositiveAfterLife] al final»."
+
+ # dlc/pam/pam_secular_faith_events_l_spanish.yml
+ pam_secular_faith_events.0024.a:0 "¡Y es así como [ROOT.Char.GetFaith.HighGodName] recibe a [Select_CString(rival_character.IsFemale, 'otra servidora', 'otro servidor' )] «dispuest[rival_character.Custom('ES_OA')]»!"
+
+ # dlc/pam/pam_theocratic_ruler_events_l_spanish.yml
+ pam_theocratic_ruler_events.0002.desc:0 "Se me informa de que [foreign_ruler.Custom('ES_ElLa')] [foreign_ruler.GetTitledFirstName|l], vecin[foreign_ruler.Custom('ES_OA')] y seguidor[foreign_ruler.Custom('ES_XA')] de las antiguas tradiciones del [foreign_ruler.GetFaith.GetName|l], ha entrado en mis tierras.\n\nEl pequeño séquito tiene otro destino, pero su ruta [foreign_ruler.GetHerHim] trae tan cerca que se espera que [foreign_ruler.GetHerHim] reciba formalmente en mi corte. \n\n¿Cómo he de recibirle?"
+ pam_theocratic_ruler_events.0002.b.success:0 "Mi cortesía se los gana"
+
+ # dlc/pam/pam_triggers_l_spanish.yml
+ uses_doctrine_first:0 "El [Faith.GetName|l] sigue la [doctrine|El] [DoctrineType.GetDescriptiveName( Faith.Self )|l]"
+
+ # dlc/tgp/dlc_tgp_ceremonial_liege_events_l_spanish.yml
+ tgp_ceremonial_liege_events.0040.desc:0 "«Disculpad, [inquirer.Custom2('RelationToMeShort', ROOT.Char)] mí[inquirer.Custom('ES_OA')]», susurra [inquirer.GetName] en voz baja mientras se me acerca.\n\n«Llevo un tiempo reflexionando sobre esto y, perdonadme si es inapropiado», dice, «pero ¿por qué no os libráis de [opposing_power.GetFirstName]? ¡No parece digno de un[ROOT.Char.Custom('ES_XA')] [ROOT.Char.GetTitleAsNameNoTooltip|l] ser titiriter[ROOT.Char.Custom('ES_OA')] de un[opposing_power.Custom('ES_XA')] vulgar [opposing_power.GetTitleAsNameNoTooltip|l]!»."
+
+ # dlc/tgp/dlc_tgp_china_decisions_l_spanish.yml
+ noble_family_domicile_buildings_converted:0 "Los [buildings|lE] del [domicile|lE] de [Select_CString( former_noble_family_head.IsLocalPlayer, 'tu personaje', former_noble_family_head.GetShortUIName )] se cambian por [gold|lE] [gold_i]"
+
+ # dlc/tgp/dlc_tgp_governance_l_spanish.yml
+ tgp_governor_contract_event.0029.a:0 "Que se haga una proclamación publica que [seditious_storyteller.GetHerHim] condene por perturbar el orden público."
+
+ # dlc/tgp/dlc_tgp_situation_decision_events_l_spanish.yml
+ tgp_dynastic_cycle.0061.t:0 "[GetTitleByKey('h_china').GetHolder.Custom('ES_ElLa')|U] [GetTitleByKey('h_china').GetHolder.Custom('GetDaughterSon')] preferid[GetTitleByKey('h_china').GetHolder.Custom('ES_OA')] del Cielo"
+ tgp_dynastic_cycle.0062.desc.interloper:0 "Al tiempo que la fortuna otorgada a un[GetTitleByKey('h_china').GetHolder.Custom('ES_XA')] [GetTitleByKey('h_china').GetHolder.GetWomanMan] decae, la de otra persona aumenta y ni reyes ni emperadores son inmunes a los caprichos del destino.\n\n[GetTitleByKey('h_china').GetHolder.Custom('ES_ElLa')|U] [GetTitleByKey('h_china').GetHolder.GetTitledFirstName|l] ha reclamado el Mandato del Cielo y se espera que todos se postren a los pies [GetTitleByKey('h_china').GetHolder.Custom('ES_DelDela')] nuev[GetTitleByKey('h_china').GetHolder.Custom('ES_OA')] soberan[GetTitleByKey('h_china').GetHolder.Custom('ES_OA')]."
+
+ # dlc/tgp/dlc_tgp_situation_parameters_l_spanish.yml
+ SITUATION_DYNASTIC_CYCLE_FROM_UNSTABLE_ERA:0 "China entra en esta $game_concept_dynastic_cycle_era_short$ desde cualquier [dynastic_cycle_era_type_unstable|lE] si se desencadenan bastantes [situation_catalyst_catalysts|lE]."
+ is_any_movement_leader_tt_global:0 "[CHARACTER.GetShortUIName|U] [CHARACTER.LocalPlayerString( 'eres', 'es' )] [movement_leader|lE]"
+ is_any_movement_leader_tt_global_not:0 "[CHARACTER.GetShortUIName|U] #bold no#! [CHARACTER.LocalPlayerString( 'eres', 'es' )] [movement_leader|lE]"
+ make_movement_leader_effect_desc_first:0 "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'te conviertes', 'se convierte')] en [movement_leader|lE] del [SITUATION_PARTICIPANT_GROUP.GetName]"
+ make_movement_leader_effect_desc_third:0 "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'te conviertes', 'se convierte')] en [movement_leader|lE] del [SITUATION_PARTICIPANT_GROUP.GetName]"
+ make_movement_leader_effect_desc_global:0 "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'te conviertes', 'se convierte')] en [movement_leader|lE] del [SITUATION_PARTICIPANT_GROUP.GetName]"
+
+ # dlc/tgp/tgp_china_government_l_spanish.yml
+ celestial_government_desc:0 "\n$game_concept_celestial_government_desc$\n\n#F El sistema $celestial_government$ hace referencia al gobierno administrativo centralizado de China, supervisado por el Hijo del Cielo.#!"
+
+ # dlc/tgp/tgp_east_asia_decision_events_l_spanish.yml
+ tgp_east_asia_decision_events.0020.desc:0 "He visto las señales. Sé lo que es correcto. No hay realidad en la cual no pueda apoyar [overlord.Custom('ES_AlAla')] [overlord.GetTitledFirstName|l] y su gobierno benévolo sobre este plano de la existencia.\n\nNos adaptaremos y seguiremos a [Select_CString(overlord.IsFemale, 'nuestra divina pastora', 'nuestro divino pastor' )] hacia un futuro brillante.\n\n#EMP Salve, devaraja [overlord.GetFirstNameNoTooltip].#!"
+
+ # dlc/tgp/tgp_genpei_character_events_l_spanish.yml
+ tgp_genpei_character.1010.desc.intro:0 "¡[kiyomori_taira.GetFirstName]! Su deseo de poder es un río que discurre sin control y arrasa la tradición noble y la propiedad por igual. Ni hacerse llamar [kiyomori_taira.GetTitleAsName|l], señor[kiyomori_taira.Custom('ES_XA')] de todo Japón, sacia su ansia disoluta. Embriagad[kiyomori_taira.Custom('ES_OA')] con el dominio indiscutido de los [Glossary( 'Taira', 'TAIRA_GLOSS' )], ha visto apropiado deponer [old_emperor.Custom('ES_AlAla')] [Glossary( 'tennō', 'TENNO_GLOSS' )] [old_emperor.GetTitledFirstName|l] del [GetTitleByKey('k_chrysanthemum_throne').GetDefinitiveName|l] y poner en él a su niet[new_emperor.Custom('ES_OA')], [new_emperor.GetFirstName]."
+
+ # dlc/tgp/tgp_imperial_examination_emperor_events_l_spanish.yml
+ emperor_imperial_examination.200.desc:0 "«Vuestra estimada majestad», dice reverente mi [ROOT.Char.Custom2('RelationToMeShort', examination_character_2)], [examination_character_2.Custom('ES_ElLa')] [examination_character_2.GetTitledFirstName|l]. «Durante mis viajes por [concubine_origin.GetNameNoTier], conocí a una familia de buena posición, los [examination_character_1.GetHouse.GetName], y hablé con los ancianos de la comunidad [examination_character_1.GetCulture.GetName]».\n\n«Me solicitaron que eligiera a un[examination_character_1.Custom('ES_XA')] [examination_character_1.GetLadyLord] para que os sirviera en el palacio interior. Elegí a [examination_character_1.GetFirstName], un[examination_character_1.Custom('ES_XA')] [examination_character_1.GetWomanMan] de gracia inusual. Esperamos que os agrade, oh, [ROOT.Char.Custom('GetDaughterSon')|U] del Cielo»."
+ emperor_imperial_examination.300.desc:0 "«Gran [ROOT.Char.GetTitleAsNameNoTooltip|l], inmensa es vuestra docta gracia». Mi [ROOT.Char.Custom2('RelationToMeShort', examination_character_2)], [examination_character_2.Custom('ES_ElLa')] [examination_character_2.GetTitledFirstName|l], se postra ante mí. «Traigo una humilde ofrenda, un artefacto que exhibir en el palacio».\n\n«Este objeto, [newly_created_artifact.GetName], es una reliquia de la casa [examination_character_2.GetHouse.GetName]. No pedimos más que vuestra soberana majestad nos reconozca como servidores leales»."
+ emperor_imperial_examination.600.desc:0 "Cuando observaba a la multitud, un[examination_character_2.Custom('ES_OA')] de los examinandos, [examination_character_2.Custom('ES_ElLa')] [examination_character_2.GetTitledFirstName|l], está tan embobad[examination_character_2.Custom('ES_OA')] contando chistes que apenas se da cuenta de dónde va. Andando hacia atrás lentamente, se acerca a mí sin querer: «… ¡y así fue como su [examination_character_2.Custom('GetAdventureNameBand')|l] se quedó sin [examination_character_2.Custom('GetAdventureNameSuffix')|l]!».\n\nToso ligeramente.\n\nLa gente delante de [examination_character_2.Custom('ES_ElElla')] queda en silencio. [examination_character_2.GetFirstNameNoTooltip] se paraliza por el miedo."
+
+ # dlc/tgp/tgp_imperial_examination_events_l_spanish.yml
+ imperial_examination.4060.desc_learning:0 "Debato con mis iguales en la pensión cuando una voz nasal insoportable interrumpe mi argumento diciendo: «Esa es una idea básica ¡y una muy discutible, ya que estamos!».\n\nMe giro para mirar a quien lo ha dicho, un[promising_lowborn.Custom('ES_XA')] don nadie advenediz[promising_lowborn.Custom('ES_OA')] de [ROOT.Char.GetCurrentLocation.GetName]. Lleva una hora mofándose y poniendo los ojos en blanco con cada palabra que digo. \n\nCuanto menos respondo a los insultos, más se burlan de mí los otros eruditos."
+ imperial_examination.4060.a.success:0 "Dejas en ridículo [promising_lowborn.Custom('ES_AlAla')] advenediz[promising_lowborn.Custom('ES_OA')]"
+ imperial_examination.4070.a.failure:0 "Los planes de tu [parent.GetMotherFather] se han desvelado"
+
+ # dlc/tgp/tgp_mandala_scheme_events_l_spanish.yml
+ scheme_critical_moments.1215.a_discovered:0 "¡Maldit[owner.Custom('ES_OA')] [owner.Custom2('InsultNoun', ROOT.Char)]!"
+ scheme_potential_suzerain_might_join_war_tt:0 "\n@alert_icon! #alert_trial ¡[CHARACTER.GetShortUIName] [Select_CString( CHARACTER.IsLocalPlayer, 'puedes', 'puede' )] convertir[Select_CString( CHARACTER.IsLocalPlayer, 'te', 'se' )] en [Concept('suzerain',Select_CString(CHARACTER.IsFemale,'soberana', 'soberano'))|E] de [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'tu personaje', TARGET_CHARACTER.GetShortUIName)] y [Select_CString( CHARACTER.IsLocalPlayer, 'puedes', 'puede' )] unir[Select_CString( CHARACTER.IsLocalPlayer, 'te', 'se' )] a la guerra como defensor!#!"
+
+ # dlc/tgp/tgp_mandala_task_contracts_l_spanish.yml
+ mandala_realm_contract_0011_desc:0 "Un relámpago ha caído sobre un árbol sagrado y ha calcinado la arboleda que lo rodeaba en [TaskContract.GetLocation.GetNameNoTooltip]. Los campesinos están asustados y te piden que realices un rito de fertilidad bajo el árbol."
+
+ # dlc/tgp/tgp_movement_events_l_spanish.yml
+ friend_same_movement_reason:0 "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName] [Select_CString(Or(CHARACTER.IsLocalPlayer, TARGET_CHARACTER.IsLocalPlayer), 'acordasteis', 'acordaron')] tener en cuenta sus respectivos intereses como integrantes del mismo movimiento."
+ tgp_movement_events.0040.desc:0 "«Vuestro trabajo no ha pasado desapercibido, [ROOT.Char.GetTitledFirstNameNoTooltip|l]». Una voz tranquila dice mi nombre. [courtier.Custom('ES_ElLa')|U] [courtier.GetWomanMan] que se inclina ante mí lleva el sello [hegemon.Custom('ES_DelDela')] [hegemon.GetTitledFirstNameNoTooltip|l].\n\n«[hegemon.Custom('ES_ElLa')|U] [hegemon.GetTitledFirstName|l] agradece vuestro apoyo y desea recompensaros por ello. El [my_movement.GetName] será ensalzado en los pasillos de palacio, y vuestros nombres, recordados»."
+
+ # dlc/tgp/tgp_tribute_mission_events_l_spanish.yml
+ tribute_mission.1002.personality.cynical:0 "\n\nUn temblor en el rabillo del ojo, al tiempo que sus brazos adoptan una postura defensiva, indica que est[human_tribute.Custom('ES_EA')] [human_tribute.GetWomanMan] tiene una opinión muy particular del mundo."
+ tribute_mission.1005.t.bunga_mas:0 "$tribute_mission_header$ las flores de oro [tributary_scope.Custom('ES_DelDela')] [tributary_scope.GetTitledFirstNameNoTooltip|l]"
+
+ # effects_l_spanish.yml
+ THEY_GET_TITLE:0 "[CHARACTER.GetShortUIName|U] gana el [title|lE] de [TARGET_TITLE.GetDefinitiveName|V]"
+ gracious_host_impeccable_guest_perk_3_effect:0 "[adventurer_i] [modifiers|E] extra por el [camp_temperament|lE] #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! que ahora también escala por el número de [languages|lE] conocidos"
+
+ # event_localization/accolade_events_l_spanish.yml
+ accolade_find_successor_fail_notification_tooltip:0 "La búsqueda de un $knight_culture_player_no_tooltip_lowercase$ que pueda convertirse en [accolade_in_need.GetName] ha demostrado ser infructuosa."
+
+ # event_localization/activities/az_tour_events_l_spanish.yml
+ az_tour.1006.desc.b:0 "«Trabajamos duro en el campo, ¡pero todo el dinero se va en sedas y banquetes! Os sentáis bajo farolillos bebiendo [stop_host_scope.Custom('RegionalDrink')], pero ¿quién se preocupa por quienes tienen el cuenco vacío?».\n\n[stop_host_scope.GetSheHe|U] sonríe con lentitud e indulgencia. «Vuestros cuencos no me conciernen. ¡Guardias, apresad a est[angry_farmer.Custom('ES_EA')] [angry_farmer.Custom2('InsultNoun', ROOT.Char)]!». Gritos de asombro se elevan sobre la multitud cuando los guardias de [stop_host_scope.GetFirstName] arrestan [angry_farmer.Custom('ES_AlAla')] granjer[angry_farmer.Custom('ES_OA')] y se l[angry_farmer.Custom('ES_OA')] llevan; poco a poco, sus improperios desaparecen entre el sonido de la música."
+
+ # event_localization/activities/coronation_events_l_spanish.yml
+ ach_coronation.0013.desc_conversation.nice.5:0 "«¡Muerte a ese gusano [claimant.Custom('InsultAdjectiveGeneric')] pretendiente, [claimant.Custom('ES_ElLa')] [claimant.GetTitledFirstName|l]!», proclama un[peasant.Custom('ES_XA')] [peasant.Custom2('dummy_peasant_profession', peasant)|l] con un coro de vítores, «¡Viva [Select_CString( host.IsFemale, 'la legítima', 'el legítimo' )] [host.GetTitleAsNameNoTooltip]!»."
+
+ # event_localization/activities/feast_events_l_spanish.yml
+ feast.7110.desc.entourage:0 "La luz de las velas hace que la sangre parezca un tapiz de terciopelo, extendido por el suelo. Vuelvo a respirar cuando veo [Select_CString( my_knight.IsFemale, 'a la última', 'al último' )] de mi hueste de $knight_culture_player_plural_no_tooltip_lowercase$ limpiar su espada y asentir en silencio hacia mí.\n\nHago una señal a un[my_knight.Custom('ES_OA')] de mis [my_knight.GetWomenMen] para que cierre las puertas. Me despido de los invitados, «Es una verdadera lástima…»."
+ feast_events_flavor.0001.desc.bad:0 "«Mi apreciad[relation_target.Custom('ES_OA')] [guest.Custom2('RelationToMeShort', SCOPE.sC('relation_target'))] [relation_target.GetFirstName] me dice que sois un[ROOT.Char.Custom('ES_XA')] [ROOT.Char.GetWomanMan] de espíritu #EMP [ROOT.Char.Custom2('InsultAdjective', SCOPE.sC('relation_target'))]#!. Confío en que los rumores sean falsos y que todo haya sido un simple malentendido»."
+
+ # event_localization/activities/festival_events_l_spanish.yml
+ friend_invited_priestess_corresponding:0 "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'fuiste', 'fue')] invitad[CHARACTER.Custom('ES_OA')] a la corte de [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'tu personaje', TARGET_CHARACTER.GetShortUIName )] tras ver [Select_CString(CHARACTER.IsLocalPlayer, 'tu', 'su')] actuación impresionante en un festival."
+ festival.019.desc:0 "Mi administrador[play_planner.Custom('ES_XA')], [play_planner.GetFirstName], se inclina respetuosamente ante mí. «Ha de haber una obra de teatro, [ROOT.Char.Custom('FormOfAddressForLiege')]», dice. «Pero la elección de la historia es vuestro privilegio». ¿Será algo que entretenga al pueblo o que le recuerde cuál es su lugar?"
+ edified_a_child:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'impartiste', 'impartió' )] sabiduría a una mente joven."
+ ate_well:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'te atiborraste', 'se atiborró' )] de manjares sabrosos."
+ wished_for_prosperity:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'deseaste', 'deseó' )] prosperidad para todos."
+ wished_for_vigor:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'deseaste', 'deseó' )] vigor y fortaleza."
+ listened_to_chaplain:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'escuchaste', 'escuchó' )] una lección sobre lo divino."
+ talked_down_chaplain:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'terminaste', 'terminó' )] diplomáticamente con una diatriba."
+ delegated_ritual:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'presidiste', 'presidió' )] un rito con dignidad."
+ served_with_humility:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'cumpliste', 'cumplió' )] con [Select_CString( CHARACTER.IsLocalPlayer, 'tu', 'su' )] papel con humildad."
+ fought_for_fortune:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'participaste', 'participó' )] en una competición para ganar el favor de la fortuna."
+ observed_dance:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'admiraste', 'admiró' )] un baile con elegancia y gracia."
+ spied_on_wishes:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'conseguiste', 'consiguió' )] entender la oscuridad de los corazones ajenos."
+ demanded_compensation_for_mishap:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'sacaste', 'sacó' )] una compensación de un torpe descuidado."
+ forgave_mishap:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'perdonaste', 'perdonó' )] con gracia la torpeza de otro."
+ burned_puppets:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'demostraste', 'demostró' )] las consecuencias de burlarse de los superiores."
+ observed_crowd:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'conseguiste', 'consiguió' )] entender los corazones de [Select_CString( CHARACTER.IsLocalPlayer, 'tu', 'su' )] pueblo."
+ ejected_priestess:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'dudaste', 'dudó' )] de la autenticidad de una petición divina."
+ made_offering:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'hiciste', 'hizo' )] una ofrenda a los espíritus."
+ planned_play:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'organizaste', 'organizó' )] una obra en [Select_CString( CHARACTER.IsLocalPlayer, 'tu', 'su' )] beneficio."
+ competed_in_archery:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'osaste', 'osó' )] participar en una competición de tiro con arco."
+ gained_lucky_fan_fragment:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'obtuviste', 'obtuvo' )] un fragmento de buena fortuna."
+ banished_demons:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'desterraste', 'desterró' )] personalmente a unos «demonios» portadores de antorchas."
+ banned_brawling:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'prohibiste', 'prohibió' )] una competición de fuerza y reforzó [Select_CString( CHARACTER.IsLocalPlayer, 'tu', 'su' )] autoridad."
+ keen_eye_for_business:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'te aprovechaste', 'se aprovechó' )] de una oportunidad de lucro."
+ rewarded_brawlers:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'ofreciste', 'ofreció' )] una recompensa material a los más fuertes."
+ paraded_troops:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'organizaste', 'organizó' )] una demostración de fuerza."
+ studied_martial_motions:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'obtuviste', 'obtuvo' )] conocimiento marcial."
+ village_draft:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'reclutaste', 'reclutó' )] a los más fuertes para que le sirvieran."
+
+ # event_localization/activities/hunt_events_l_spanish.yml
+ hunt.1015.desc:0 "«¡¿[ROOT.Char.GetTitledFirstNameNoTooltip]?! ¡Argh! ¿Sois vos, [ROOT.Char.Custom('FormOfAddressForLiege')]?».\n\nLa mirada desencajada [murder_target.Custom('ES_DelDela')] [murder_target.GetTitledFirstName|l] va del arco en mi mano a la flecha alojada en su brazo.\n\n«¡¿En qué estabais pensando?!»."
+ hunt.1081.c.rival:0 "¡Maldit[murderer.Custom('ES_OA')] [murderer.Custom2('InsultNoun', ROOT.Char)]!"
+ hunt.4900.befriend:0 "\n\nLe tiendo la mano con calma. El animal se relaja, confundido, antes de detenerse vacilante justo fuera de alcance, olfateando mis dedos con desconfianza."
+ hunt.9001.spoils:0 "\n\nDejamos la parte de los despojos que corresponde a los ansiosos perros en la piel estirada, antes de partir hacia el campamento y nuestro hogar."
+ mpo_hunt.0050.a:0 "[Select_CString(hunter.IsFemale, 'Esta cazadora', 'Este cazador' )] pertenece a mis [ROOT.Char.GetDomicile.GetCulture.GetCollectiveNounNoTooltip]."
+
+ # event_localization/activities/petition_liege_events_l_spanish.yml
+ petition_liege.0601.desc.liege_imprisoned_me:0 "$petition_liege.0601_shared_intro$ ¡Acabé capturando [petition_liege.Custom('ES_AlAla')] [petition_liege.GetTitledFirstName|l]!"
+
+ # event_localization/activities/pilgrimage_events_l_spanish.yml
+ pilgrimage.3301.c:0 "Sí, pero va contra el rito que un[ROOT.Char.Custom('ES_XA')] [ROOT.Char.GetTitleAsNameNoTooltip] viaje austeramente."
+ pilgrimage.4002.desc:0 "Por fin estoy aquí, en cuerpo y alma, al final de mi gran peregrinación. ¿Y a quién debería encontrar aquí sino [2010_mystic.Custom('ES_AlAla')] [2010_mystic.GetTitledFirstName|l], buscador[2010_mystic.Custom('ES_XA')] del verdadero conocimiento de lo divino?\n\n«¡Mirad en torno a vos, [ROOT.Char.GetFirstNameNoTooltip]!», dice. «¿No es esta gloria como dije que sería?»."
+ pilgrimage.5401.desc:0 "He llegado al lugar más sagrado del mundo para los budistas, Bodh Gaya es el lugar donde [ROOT.Char.GetFaith.HighGodName] en persona consiguió la iluminación bajo el bodhi.\n\nDesde entonces, se levantó el decorado templo de MahSince en torno al árbol sagrado y peregrinos de todo el mundo acuden aquí para saber más de la historia [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] y conmemorar su vida."
+
+ # event_localization/activities/tour_events_dan_l_spanish.yml
+ tour_travel.3002.desc:0 "«Mi [widow_peasant.Custom2( 'RelationToMeShort', widow_father )], mi [widow_peasant.Custom2( 'RelationToMeShort', widow_husband )], mi [widow_peasant.Custom2( 'RelationToMeShort', widow_son )], todos murieron en #EMP vuestra guerra#!». Una campesina me grita al otro lado de la plaza del pueblo.\n\n«Cuando [battle_memory.GetSecondPerspectiveDescription], fue una victoria para vos, pero para mí fue el día en que murieron tres generaciones de mi familia».\n\nSu ira se había convertido en lágrimas y las palabras que pronunció a continuación apenas llegaron a mis oídos.\n\n«¡Vos no sois mi [ROOT.Char.GetTitleAsNameNoTooltip|l]!»."
+
+ # event_localization/court_events/01_court_events_ep3_l_spanish.yml
+ court.8197.desc:0 "Mi [position_holder.Custom('ComplimentAdjective')] [GetCourtPositionType('travel_leader_court_position').GetName()|l], [position_holder.Custom('ES_ElLa')] [position_holder.GetTitledFirstName|l], es [Select_CString(position_holder.IsFemale, 'una organizadora', 'un organizador' )] magistral: ¡desde que [position_holder.GetHerHim] contraté, hasta la estadía más breve es todo facilidad y velocidad!\n\nTrabaja día y noche, reponiendo suministros y poniendo al día los itinerarios por [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip]. Me descoloca un momento cuando me pregunta con toda seriedad: «Mi [ROOT.Char.GetTitleAsNameNoTooltip|l], ¿qué vale más, vuestro tiempo o vuestra salud?»."
+ court.8198.desc:0 "Mi [position_holder.Custom('ComplimentAdjective')] [GetCourtPositionType('antiquarian_court_position').GetName()|l], [position_holder.Custom('ES_ElLa')] [position_holder.GetTitledFirstName|l], cuida perfectamente de mis tesoros: los artículos se mantienen bien limpios y sin polvo, y siempre está list[position_holder.Custom('ES_OA')] para ofrecer alguna curiosidad a todo huésped inquisidor, o no.\n\nCon responsabilidad sobre todo el tesoro [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip], no es de extrañar que su tiempo sea comprensiblemente escaso, pero me pregunta, tras haber alabado su buena labor si «¿… hay más objetos que creáis que merecen atención particular, [ROOT.Char.Custom('FormOfAddressForLiege')]?»."
+
+ # event_localization/court_events/court_events_george_l_spanish.yml
+ court.7700.a:0 "¡Al ladrón! ¡Guardias, capturad a ese granuja!"
+
+ # event_localization/court_events/court_events_joe_l_spanish.yml
+ court.8010.e:0 "¡Fuera de mi vista, [underequipped.Custom2('InsultNoun', ROOT.Char)] descarad[underequipped.Custom('ES_OA')]!"
+ court.8170.desc.intro_religious:0 "Se me juzga duramente por mi hospitalidad hacia [criminal.GetFirstName], a quien todos evitan por su fe maligna."
+
+ # event_localization/court_events/court_position_events_daan_l_spanish.yml
+ court_position_management_event.0001.desc.one_candidate:0 "\n\nMis consejeros solo han encontrado un[candidate_1.Custom('ES_XA')] candidat[candidate_1.Custom('ES_OA')] que pueda ocupar el puesto: [candidate_1.GetFullName]."
+ court_position_management_event.0002.desc.one_candidate:0 "\n\nMi gente solo conoce un[candidate_1.Custom('ES_XA')] candidat[candidate_1.Custom('ES_OA')] de mi campamento que pueda ocupar el puesto: [candidate_1.GetFullName]."
+
+ # event_localization/decisions/decision_petition_liege_l_spanish.yml
+ petition_liege_decision_option_wedding:0 "Matrimonio real\n#low Casarse con alguien de una [ceremonial_house|lE]"
+
+ # event_localization/decisions/decision_pledge_loyalty_to_liege_l_spanish.yml
+ pledge_loyalty_to_liege.0601.desc.liege_dead_me:0 "$pledge_loyalty_to_liege.0601_shared_intro$ acabé matando [pledge_loyalty_to_liege_scope.Custom('ES_AlAla')] [pledge_loyalty_to_liege_scope.GetTitledFirstName|l]… \n\n"
+ pledge_loyalty_to_liege.0601.desc.liege_imprisoned_me:0 "$pledge_loyalty_to_liege.0601_shared_intro$ ¡acabé capturando [pledge_loyalty_to_liege_scope.Custom('ES_AlAla')] [pledge_loyalty_to_liege_scope.GetTitledFirstName|l]!"
+ pledge_loyalty_to_liege.0601.desc.liege_imprisoned:0 "$pledge_loyalty_to_liege.0601_shared_intro$ [pledge_loyalty_to_liege_scope.Custom('ES_ElLa')] [pledge_loyalty_to_liege_scope.GetTitledFirstName|l] resultó capturad[pledge_loyalty_to_liege_scope.Custom('ES_OA')] por [pledge_loyalty_to_liege_scope.GetImprisonedBy.Custom('ES_ElLa')] [pledge_loyalty_to_liege_scope.GetImprisonedBy.GetTitledFirstName|l]."
+
+ # event_localization/decisions/major_decisions_roman_restoration_l_spanish.yml
+ roman_restoration.0132.desc:0 "Los [catholic.GetAdherentNamePluralNoTooltip] en todas partes se despiertan sin pastor. El papado se ha disuelto, mi clero se ha dispersado y las reliquias más sagradas han sido expoliadas. Roma pertenece ahora al Anticristo, [scoped_destroyer.Custom('ES_ElLa')] [scoped_destroyer.GetTitledFirstName|l]."
+
+ # event_localization/diarchy_events_l_spanish.yml
+ diarchy.2241.b.tt.success:0 "Los haces más raudos que un río bravo"
+
+ # event_localization/government_events/tribal_events_l_spanish.yml
+ tribal.1204.desc_fast:0 "El público ruge de emoción al verme cruzar la línea de meta.\n\n"
+
+ # event_localization/hold_court_events/hold_court_events_bianca_l_spanish.yml
+ hold_court.3010.a:0 "¡[Select_CString( unconventional_preacher.IsFemale, 'Esta predicadora', 'Este predicador' )] debe unirse a mi corte!"
+ hold_court.3010.b:0 "¡Quitadme de la vista a [Select_CString( unconventional_preacher.IsFemale, 'esta predicadora', 'este predicador' )]!"
+
+ # event_localization/laamp_events_l_spanish.yml
+ ep3_laamp_flavour_ewan.0011.desc.chaste:0 "aquí presente es un[mockee.Custom('ES_XA')] apóstol de la castidad. ¡Y que me aspen si no es lógico, porque de otro modo, sería una desgracia para [mockee.GetSheHe] con esa cara que tiene!»."
+ ep3_laamps.6016.ending:0 "[powerful_vassal.GetFirstNameNoTooltip] vuelve a abrir la boca, pero la puerta abierta de golpe frena su intención en seco. Un mensajero, empapado y con ojos desorbitados, corta la reacción indignada de [powerful_vassal.GetFirstNameNoTooltip] presentando una carta.\n\nEspero a que [powerful_vassal.GetFirstNameNoTooltip] parta el sello y revise el pergamino.\n\nSu rostro empalidece poco a poco."
+ ep3_laamps.6021.desc:0 "Mi legítima instauración en el trono de Inglaterra ha demostrado ser suficiente para partir la cuerda deshilachada que mantenía unida a Inglaterra. Los levantamientos locales, promovidos y avivados por los derrotados y resentidos [Glossary( 'Æthelings', 'AETHELINGS_GLOSS' )] anglosajones, se extienden por todo el país como un reguero de pólvora.\n\nUna vez asegurada mi base de poder en el sur, ahora he de mirar al norte para pacificar a aquellos tan valientes y necios como para desafiarme. Allá donde caiga mi mirada, le seguirán la muerte y la destrucción, para evitar que mi puesto sea usurpado por lugareños maquinadores.\n\nHe de recorrer una fina línea entre el guante de seda y la mano dura. Una mano demasiado suave puede hacerme perder el reino, pero unos castigos demasiado brutales no me dejarán mucho reino que gobernar. Sin embargo, para los Æthelings…\n\nNo habrá clemencia para quienes no entregaron su lealtad."
+
+ # event_localization/lifestyle/commission_epic_events_l_spanish.yml
+ commission_epic.2002.desc:0 "[spymaster.Custom2('MyCharacterIntroduction', ROOT.Char)|U] parece ser la última persona que ha [ROOT.Char.Custom('CompositionTypeActionPast')] extractos de mi epopeya familiar.\n\n«Vuestr[grandparent.Custom('ES_OA')] tatarabuel[grandparent.Custom('ES_OA')] era una persona fascinante y llena de recursos», me dice. «Si se nos conociera por ser siquiera la mitad de taimados que [grandparent.Custom('ES_ElElla')], la gente se lo pensaría dos veces antes de actuar contra vos»."
+
+ # event_localization/lifestyle/guile/intrigue_scheming_events_l_spanish.yml
+ intrigue_scheming.1801.b:0 "No es nada más que una extorsión hueca."
+
+ # event_localization/lifestyle/guile/intrigue_temptation_events_l_spanish.yml
+ intrigue_temptation.3010.start.desc:0 "Por tercera noche seguida, me encuentro en la misma mesa, en la misma posada. Tiene una vista excelente de la barra y [bar_servant.Custom('ES_DelDela')] cautivador[bar_servant.Custom('ES_XA')] [bar_servant.Custom('bar_servant')] tras ella.\n\nMi ensoñación se ve interrumpida cuando [wingman.Custom2('MyCharacterIntroduction', ROOT.Char)] estampa su jarra sobre la mesa. «Llevas toda la noche mirando embobad[ROOT.Char.Custom('ES_OA')] a [bar_servant.GetFirstName]», susurra con una sonrisa pícara. «No te culpo, es tod[bar_servant.Custom('ES_OA')] un[bar_servant.Custom('ES_XA')]"
+
+ # event_localization/lifestyle/mystic_lifestyle_events_l_spanish.yml
+ mystic_lifestyle.1009.opening:0 "Estimad[SCOPE.sC('mystic').Custom('ES_OA')] [SCOPE.sC('mystic').Custom2('RelationToMeShort', ROOT.Char )]"
+
+ # event_localization/lifestyle/scholarship/learning_theology_events_l_spanish.yml
+ learning_theology.3054.b:0 "¡Es hora de que [ROOT.Char.Custom2('RelationToMeShort', family_actor)] brille!"
+ learning_theology.3055.desc.victory.hired_actor:0 "\n\nPara mi deleite, [lead_actor.GetSheHe] realiza una actuación no ya digna de mis escritos, ¡sino de [ROOT.Char.GetFaith.HighGodName] en persona! "
+
+ # event_localization/lifestyle/wanderer/journey_l_spanish.yml
+ journey_events.30.desc:0 "Me topo con [character_1.GetFirstName] y [character_2.GetFirstName] cuando hablan [Select_CString(And(character_1.IsFemale, character_2.IsFemale),'juntas muy animadas','juntos muy animados')]. «¿De verdad? ¿En [traveller_province.GetName], habéis dicho?». En cuanto se dan cuenta de mi presencia, [character_1.GetFirstName] se vuelve hacia mí y me pregunta: «Vos estuvisteis allí en uno de vuestros viajes, ¿no?».\n\n«Veréis, [character_2.GetFirstNameNoTooltip] me dice que vio [traveller_province.Custom('journey_events_30_custom_loc')] en [traveller_province.GetNameNoTooltip]. ¿Contemplasteis vos algo parecido?»."
+
+ # event_localization/marriage_effect_events_l_spanish.yml
+ marriage_effect.1001.a:0 "¡Ven aquí, [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spouse') )] mí[SCOPE.sC('spouse').Custom('ES_OA')]!"
+
+ # event_localization/prison_events/prison_events_l_spanish.yml
+ prison.1002.rats.desc:0 "Las ratas del cubo pueden parecer retraídas al principio, pero son capaces de roer alegremente el pecho de un[recipient.Custom('ES_OA')] [recipient.GetWomanMan] cuando se aplica algo de calor. Según le explico el concepto [recipient.Custom('ES_AlAla')] [recipient.GetTitledFirstName|l], su resolución se deshace ante mis ojos."
+
+ # event_localization/relation_events/lover_events_l_spanish.yml
+ lover.1001.desc:0 "Mi [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('snoopy_lover') )], [snoopy_lover.Custom('ES_ElLa')] [snoopy_lover.GetTitledFirstName|l], consigue oír muchas cosas en sus idas y venidas a mi [ROOT.Char.Custom('GetCourt')|l].\n\nHace poco se enteró de unas historias muy interesantes sobre lo que mi [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('secret_holder') )], [secret_holder.Custom('ES_ElLa')] [secret_holder.GetTitledFirstName|l], hace en las sombras…"
+ lover.1002.desc:0 "[ROOT.GetCharacter.Custom('LoverPetName_possessive')|U], [lover.Custom('ES_ElLa')] [lover.GetTitledFirstName|l], sabe mucho sobre cómo gestionar las muchas relaciones de mi [ROOT.Char.Custom('GetCourt')|l]. Me ha sugerido que aproveche su experiencia para mis acercamientos diplomáticos hacia [target.Custom('ES_ElLa')] [target.GetTitledFirstName|l]."
+
+ # event_localization/relation_events/spouse_events_l_spanish.yml
+ spouse.2011.desc:0 "¡Por más que intentaba arreglarlo, todo lo que decía sobre mi [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spouse'))] parecía un insulto en lugar de un halago! Cuando nos íbamos, [told_of_character.GetFirstName] solo negó con la cabeza mirando a [spouse.GetFirstName]."
+
+ # event_localization/religion_events/religious_decision_events_l_spanish.yml
+ religious_decision.0002.desc_alone:0 "\n\n«Espíritus, escuchadme. ¡Valorad mi ofrenda y ayudadme en mi súplica!», exclamo a la ahora penumbra de la hondonada.\n\nMientas sigo dando vueltas, me llega una repentina oleada de energía. El sudor me baña la frente y mis miembros se mueven frenéticamente, cada vez más deprisa. Me muevo, me muevo, me #EMP muevo#!, hasta que al final me desplomo sobre el suelo, jadeando."
+
+ # event_localization/schemes/intrigue_scheme_ongoing_events_l_spanish.yml
+ intrigue_scheme_ongoing.5006.a:0 "¡Qué inesperado! Y qué efecto más curioso."
+
+ # event_localization/travel_events/tgp_travel_events_l_spanish.yml
+ tgp_travel_events.0035.desc.outro:0 "\n\nUn[farmer_char.Custom('ES_XA')] granjer[farmer_char.Custom('ES_OA')] se encuentra a un lado del camino, se inclina sobre la rueda que se ha caído de su carromato. Nos ve a mi enviado y a mí y su expresión se convierte en la de un[farmer_char.Custom('ES_XA')] [farmer_char.GetMotherFather] sever[farmer_char.Custom('ES_OA')]. «Reclutasteis a mi hijo para luchar en vuestra guerra. No tendría que deslomarme así si estuviera aquí». \n\nAl mirar hacia los campos, me fijo en los pocos granjeros que hay. Deben de compartir un destino similar."
+ tgp_travel_events.0040.desc.outro:0 "\n\n«¡Mi [ROOT.Char.GetTitleAsNameNoTooltip|l]!», me grita el granjero. «Este buey es mío, ¡me lo robaron anoche del establo! ¡Debe de haber sido obra [parent.Custom('ES_DelDela')] inútil de su [parent.GetMotherFather], [Select_CString(parent.IsFemale, 'una borracha y una ladrona', 'un borracho y un ladrón' )] ¡y est[farmer_child.Custom('ES_EA')] [farmer_child.Custom('GirlBoy')] siempre oculta sus fechorías!». \n\nMiro [farmer_child.Custom('ES_AlAla')] [farmer_child.Custom('GirlBoy')], que empalidece y tiembla visiblemente."
+ tgp_travel_events.0041.f:0 "[farmer_child.Custom('ES_ElLa')|U] [farmer_child.GetTitledFirstName|l] debería quedarse como tutor[farmer_child.Custom('ES_XA')]."
+ tgp_travel_events.0041.g:0 "¡[farmer_child.Custom('ES_ElLa')|U] [farmer_child.GetTitledFirstName|l] seguirá a mi servicio!"
+ tgp_travel_events.0041.g.tt:0 "[farmer_child.Custom('ES_ElLa')|U] [farmer_child.GetTitledFirstName|l] seguirá a tu servicio como tu [THIS.Char.Custom2('RelationToMeShort', SCOPE.sC('farmer_child'))]."
+
+ # event_localization/travel_events/travel_danger_events_l_spanish.yml
+ travel_danger_events.1013.c:0 "No quiero arriesgarme a que se pierda más gente."
+
+ # event_localization/travel_events/travel_events_filippa_l_spanish.yml
+ travel_events.2010.desc:0 "\n\nDe repente, un chillido agudo atraviesa el aire. Acelero el paso solo para encontrar a "
+
+ # event_localization/travel_events/travel_events_l_spanish.yml
+ travel_events.4023.desc.intro:0 "Existen leyendas sobre un[prester_john_scope.Custom('ES_XA')] [prester_john_scope.GetPrimaryTitle.GetTierAsNameNoTooltip] de fe [ROOT.Char.GetFaith.GetReligion.GetAdjective] rodead[prester_john_scope.Custom('ES_OA')] de herejes e infieles. ¡Un día, semejante [prester_john_scope.GetTitleAsNameNoTooltip] legendari[prester_john_scope.Custom('ES_OA')] de [prester_john_scope.GetPrimaryTitle.GetTierAsNameNoTooltip] tomará las armas contra los malvados y los abatirá con furia santa!\n\n"
+
+ # event_localization/war_event/raid_events_l_spanish.yml
+ raiding.0004.desc.spared_plundered:0 "Mi vasall[sacked_county_owner.Custom('ES_OA')] [sacked_county_owner.GetName] me informa de que unos asaltantes han penetrado en [sacked_barony.GetNameNoTier], pero una fortificación clave protege la mayor parte de [sacked_county.GetNameNoTierNoTooltip]. [raider.GetName] ha de frenar el ataque de sus [raider.Custom('GetFighterTermPlural')], y sus saqueos disminuyen.\n\nAunque las tierras [sacked_county_owner.Custom('ES_DelDela')] [sacked_county_owner.GetTitledFirstNameNoTooltip|l] se han salvado en cierta medida, la mirada de [raider.GetPrimaryTitle.GetName] aún observa con avidez otros dominios…"
+
+ # event_localization/yearly_events/bp1_yearly_events_chad_l_spanish.yml
+ bp1_yearly.3004.desc:0 "Vuelvo a mi [ROOT.Char.Custom('FortifiedBuilding')] tras un largo y solitario paseo. Un año más, un año más viej[ROOT.Char.Custom('ES_OA')]…\n\nNací este día hace [ROOT.Char.GetAge] años. Cuando mayor me hago, más celebro las relaciones que he cultivado a lo largo de los años… "
+
+ # event_localization/yearly_events/yearly_events_3_l_spanish.yml
+ yearly.3001.b:0 "¡[vassal.GetSheHe|U] es culpable y [vassal.Custom('ES_LoLa')] acusaré públicamente!"
+
+ # event_localization/yearly_events/yearly_events_7_l_spanish.yml
+ yearly.7052.desc_unconvinced:0 "Me despierto, empapad[ROOT.Char.Custom('ES_OA')] en sudor. Esta ha sido, si no la peor, una de las más horribles pesadillas que puedo recordar.\n\nLa manos aún me tiemblan del estrés que me ha causado el sueño, mientras recuerdo sus contenidos. «Seguro que las cosas ya no pueden ir a peor», mascullo, mientras me doy la vuelta, en un patético intento de volverme a dormir."
+ yearly.7053.b_pouch.desc:0 "Sacas una bolsa de monedas de oro del agujero"
+
+ # game_concepts_l_spanish.yml
+ game_concept_extended_family_desc:0 "La familia extensa de un personaje incluye:\n$BULLET_WITH_TAB$Primos y primas\n$BULLET_WITH_TAB$Tíos\n$BULLET_WITH_TAB$Tías\n$BULLET_WITH_TAB$Sobrinos\n$BULLET_WITH_TAB$Sobrinas"
+ game_concept_co_monarchy_desc:0 "$game_concept_co_monarchies$ son un tipo de [diarchy|lE] que proporciona a los gobernantes de tipo [feudal|lE] un modo de elegir un [designated_heir|lE] hasta en [eras|lE] anteriores.\n\nEl coste que tiene es que se entra en una $game_concept_diarchy$ con el heredero, lo que le proporciona un acceso más fácil a muchos de los mismos poderes que un [entrenched_regent|lE].\n\n#WEAK Los $game_concept_co_monarchs$ solo están disponibles para [kings|lE] y [emperors|lE].#!"
+
+ # game_rules_l_spanish.yml
+ game_rule.1101.desc.outro.present:0 "Dejo de pensar mientras el mundo se convierte en un borrón de tajos y cuchilladas, los miembros de mi casa apretados con fuerza en torno a mí mientras aplastamos al ejército [loser.Custom('ES_DelDela')] [loser.GetTitledFirstName|l]. Bajo mi espada, el enemigo huye."
+ setting_coronation_laws_no_imperial_uncrowned_desc:0 "Los [kings|lE] no estarán [GetLaw('uncrowned').GetName|l] si ascienden al [title_tier|lE] de [emperor|lE]."
+
+ # great_projects/great_project_types_l_spanish.yml
+ holder_has_military_appointment_tt:0 "[THIS.Char.Custom('GetProvinceAdministrationConcept')] de [Select_CString( THIS.Char.IsLocalPlayer, 'tu personaje', THIS.Char.GetShortUIName )] #bold no#! es una [governorship|El] militar"
+
+ # great_projects/pam_great_project_types_l_spanish.yml
+ pam_great_projects_events.0003.desc:0 "«#EMP Brillante es aquello que se une brillantemente con lo brillante, y brillante será la noble obra que se impregne de la nueva luz»#!, expresa [religion_buddy.Custom('ES_ElLa')] [religion_buddy.GetTitledFirstName|l] al posar los ojos sobre el vidrio cortado que resplandece con el sol.\n\n[glazier.Custom('ES_ElLa')|U] vidrier[glazier.Custom('ES_OA')], [glazier.Custom('ES_ElLa')] [glazier.GetTitledFirstName|l], ha puesto fragmentos de [Glossary('vidrio de crisol','POT_METAL_GLOSS')] sobre mesas encaladas para que pudiéramos examinar mejor los posibles diseños.\n\nEntonces declaro: «Este ventanal se verá tanto desde la nave como desde la totalidad de [province.GetNameNoTooltip], debe representar…»."
+
+ # guest_descriptions_l_spanish.yml
+ guest_description.duchy_claim.desc:0 "unos [claims|lE] útiles sobre un [duchy|lE]"
+
+ # gui/dynasty_view_l_spanish.yml
+ UNLOCK_DYNASTY_PERK_TOOLTIP:0 "$DYNASTY_PERK_TOOLTIP$\n[DynastyView.CanSelectPerkDesc( DynastyPerk.Self )][DynastyPerk.GetCostString( GetPlayer )]\n\n#I Haz clic para desbloquear#!"
+
+ # gui/event_window_wigets_l_spanish.yml
+ event_window_widget_harrying_tooltip_widget:0 "El Tormento del Norte [harrying_widget_i] mide los valores de [harrying_resistance|lE] y [harrying_pacification|lE]. Estos tienen efectos sobre los dos principales grupos involucrados en la región: el gobernante normando de Inglaterra y cualquier vasallo anglosajón de nivel [duke|lE] que pueda haber.\n\nUna [harrying_resistance|lE] mayor representa la resistencia anglosajona a la ocupación normanda, y niveles altos pueden suponer menos [cultural_acceptance|lE] anglosajona/normanda, menos [county_control|lE], una mayor probabilidad de [claimant_factions|lE] o incluso una [civil_war|lE].\n\nUna [harrying_pacification|lE] más alta suponer mayor [cultural_acceptance|lE] anglosajona/normanda, mayor [county_control|lE] y menor probabilidad de [claimant_factions|lE]."
+
+ # gui/great_holy_war_view_l_spanish.yml
+ pledge_defender:0 "Oponerse a la [great_holy_war.GetFaith.GHWName|l] por [great_holy_war.ghw_target_kingdom.GetName]"
+
+ # gui/specialinteractions_l_spanish.yml
+ expected_to_pay_tribute:0 "Se espera que [SCOPE.sC('tributary_loc').GetShortUIName] [Concept('travel',Select_CString(SCOPE.sC('tributary_loc').IsLocalPlayer,'viajes', 'viaje'))|E] a [SCOPE.sC('suzerain_loc').GetCapitalLocation.GetName] en una $tribute_mission_decision_china$ de modo habitual"
+
+ # gui/succession_election_window_l_spanish.yml
+ SUCCESSION_ELECTION_WINDOW_NOMINATE:0 "Nominar"
+
+ # house_relations_l_spanish.yml
+ house_relation_reason_festival_increase_desc:0 "A [char.GetShortUINameNotMe|U] y [target_char.GetShortUINameNotMe] se les vio disfrutando [Select_CString(And(char.IsFemale, target_char.IsFemale), 'juntas', 'juntos')] de un festival"
+
+ # important_actions_l_spanish.yml
+ action_hegemonic_tributary_has_low_subject_standing_suzerain_desc:0 "Un[recipient.Custom('ES_OA')] de tus [tributaries|lE], [recipient.GetPrimaryTitle.Custom('GetTierIcon')][recipient.GetUIName], ha descuidado mucho sus deberes y hace tiempo que no realiza contribuciones a tu persona.$action_hegemonic_tributary_has_low_subject_standing_suzerain_help_desc$"
+
+ # interactions/diarch_interactions_l_spanish.yml
+ appoint_co_emperor_interaction.tt.enter_co_emperorship_with_secondary_recipient:0 "Formas un [duumvirate|lE] con [secondary_recipient.Custom('ES_ElLa')] [secondary_recipient.GetTitledFirstName|l] como tu [Concept('co_emperor',Select_CString(secondary_recipient.IsFemale,'coemperatriz','coemperador'))|E]"
+
+ # interactions/puppet_actions_l_spanish.yml
+ IS_A_CHILD_REASON:0 "[recipient.GetShortUIName] es un[recipient.Custom('ES_XA')] niñ[recipient.Custom('ES_OA')]: $VALUE|=+0$"
+
+ # interactions_l_spanish.yml
+ TAKE_THE_VOWS_AMBITIOUS:0 "[GetTrait('ambitious').GetName( recipient.Self )]: $VALUE|=+0$"
+
+ # laamp_contract_schemes_l_spanish.yml
+ laamp_base_contract_schemes.6002.desc:0 "Tres… cuatro… y ahí va el quinto ejemplar de [ROOT.Char.MakeScope.Var('animal_type').GetFlagName] de esta mañana. Echo el cuerpo al carro, justo a tiempo para que [employer.Custom('ES_ElLa')] [employer.GetTitledFirstName|l] llegue con algún sirviente.\n\n«¡Qué trabajo más magnífico!», aplaude [employer.GetSheHe]. «Basta de ganado muerto, de niños perdidos. Tened, vuestro pago; y si el pueblo llano vuelve a quejarse, ya sé a quién volver a llamar»."
+ laamp_base_contract_schemes.0661.desc:0 "El problema en esta zona parece bastante sencillo: en un lado, los lugareños afirman que se les exige que envíen demasiad[dummy_soldier.Custom('ES_OA')]s [dummy_soldier.GetWomenMen] al servicio militar, mientras que la otra parte dice lo contrario.\n\nSacarles más detalles degenera inevitablemente en gritos y alzamiento de horquillas. Ambos bandos parecen más que dispuestos a matarse entre ellos en su disputa sobre quién debe contribuir más a la defensa colectiva."
+ laamp_base_contract_schemes.2311.desc.business.council_chamber:0 "Las dependencias de [char_current.GetFirstName] como [char_current.GetTitleAsNameNoTooltip|l] de la ciudad son sorprendentemente grandes. [char_current.GetFirstNameNoTooltip] me lleva a una sala que obviamente sirve para que hablen las personas más importantes del asentamiento y me sienta a la cabeza de la mesa."
+
+ # memories_filippa_l_spanish.yml
+ flawless_mandala_trials_memory:0 "demostró ser de forma impecable una sucesión divina digna [previous_mandala_ruler.Custom('ES_DelDela')] [previous_mandala_ruler.GetTitledFirstName|l]"
+
+ # memories_l_spanish.yml
+ best_friend_died_desc:0 "experimenté el dolor de perder a mi mejor amig[dead_relation.Custom('ES_OA')] [dead_relation.GetFullName], que [dead_relation.GetDeathReasonHideKiller]"
+ best_friend_died_desc_second_perspective:0 "experimentaste el dolor de perder a tu mejor amig[dead_relation.Custom('ES_OA')] [dead_relation.GetFullName], que [dead_relation.GetDeathReasonHideKiller]"
+ best_friend_died_desc_third_perspective:0 "[owner.GetName] experimentó el dolor de perder a su mejor amig[dead_relation.Custom('ES_OA')] [dead_relation.GetFullName], que [dead_relation.GetDeathReasonHideKiller]"
+ divorced_recipient_desc:0 "[spouse.Custom('ES_ElLa')] [spouse.GetTitledFirstName|l] se divorció de mí"
+ divorced_recipient_desc_second_perspective:0 "[spouse.Custom('ES_ElLa')] [spouse.GetTitledFirstName|l] se divorció de ti"
+ divorced_recipient_desc_third_perspective:0 "[spouse.Custom('ES_ElLa')] [spouse.GetTitledFirstName|l] se divorció de [owner.GetFirstName]"
+
+ # merit_l_spanish.yml
+ EXAMINATION_WOULD_TAKE:0 "\n\nEl [merit_level|El] máximo de [Select_CString( Character.IsLocalPlayer, 'tu personaje', Character.GetShortUIName )] está limitado al no haber aprobado este [examination|El]. [SelectLocalization(Character.IsLocalPlayer, 'EXAMINATION_WOULD_TAKE_ME', 'EXAMINATION_WOULD_TAKE_OTHER')]"
+
+ # messages_l_spanish.yml
+ msg_clerical_region_independence_title:0 "[LEFT_CHARACTER.Custom('ES_ElLa')|U] [LEFT_CHARACTER.GetTitleAsNameNoTooltip|l] se volvió independiente"
+
+ # modifiers/modifiers_l_spanish.yml
+ max_fabricate_hook_schemes_add:0 "Máximo de [schemes|El] de [GetScheme('fabricate_hook').GetTypeName|l]"
+
+ # opinions/religion_opinions_l_spanish.yml
+ rf_eastern_opinion:0 "Opinión $rf_eastern_adherent$"
+
+ # passive_rite_learning_l_spanish.yml
+ msg_passive_learned_rite_desc:0 "Tras una larga observación de tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l], has obtenido [agnostic_knowledge|El] de los [core_tenets|El] y [doctrines|El] del [rite|lE] del [passive_learn_source.GetRite.GetName|El]."
+ msg_hor_learned_tenet_cranial_trophies_desc:0 "Como cabeza del [rite|lE] del [passive_learn_hor.GetRite.GetName|El], has estudiado el [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective] y has registrado su oscuro propósito, obteniendo [agnostic_knowledge|El] de ello."
+
+ # passive_rite_learning_travel_l_spanish.yml
+ msg_passive_learned_tenet_abroad_desc:0 "Al observar [passive_learn_source.Custom('ES_AlAla')] [passive_learn_source.GetTitledFirstName|l] del [rite|El] del [passive_learn_source.GetRite.GetName|El] en [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] del [core_tenet|El] [passive_learn_tenet.GetBaseName]."
+ msg_passive_learned_doctrine_abroad_desc:0 "Al observar [passive_learn_source.Custom('ES_AlAla')] [passive_learn_source.GetTitledFirstName|l] del [rite|El] del [passive_learn_source.GetRite.GetName|El] en [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] de la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )]."
+
+ # relationship_reasons_l_spanish.yml
+ best_friend_helped_pen_memory:0 "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsLocalPlayer, 'encontrasteis', 'encontraron' )] una confianza mutua infinita cuando [TARGET_CHARACTER.GetShortUINameNoTooltip] [Select_CString(CHARACTER.IsLocalPlayer, 'te', '' )] ayudó a [Select_CString( CHARACTER.IsLocalPlayer, 'tu personaje', CHARACTER.GetShortUINameNoTooltip )] a escribir un volumen de recuerdos."
+ rival_insulted_dynasty_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.LocalPlayerString( 'insultaste', 'insultó' )] a la dinastía de [Select_CString( CHARACTER.IsLocalPlayer, 'tu personaje', CHARACTER.GetShortUINameNoTooltip )]."
+ rival_knocked_hat_corresponding:0 "[TARGET_CHARACTER.GetShortUIName] y [CHARACTER.GetShortUIName] [Select_CString(Or(CHARACTER.IsLocalPlayer, TARGET_CHARACTER.IsLocalPlayer), 'os hicisteis', 'se hicieron')] rivales cuando [TARGET_CHARACTER.GetShortUIName] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'tiraste', 'tiró' )] el gorro de la cabeza de [Select_CString( CHARACTER.IsLocalPlayer, 'tu personaje', CHARACTER.GetShortUIName)]."
+ friend_bonded_over_baijiu:0 "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName] [Select_CString(Or(CHARACTER.IsLocalPlayer, TARGET_CHARACTER.IsLocalPlayer), 'pasasteis', 'pasaron')] la noche de fiesta durante un examen."
+ lover_shared_baijiu:0 "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName|U] [Select_CString(Or(CHARACTER.IsLocalPlayer, TARGET_CHARACTER.IsLocalPlayer), 'compartisteis', 'compartieron')] un momento íntimo cuando había que preparar un examen."
+ lover_shared_baijiu_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] y [CHARACTER.GetShortUIName|U] [Select_CString(Or(CHARACTER.IsLocalPlayer, TARGET_CHARACTER.IsLocalPlayer), 'compartisteis', 'compartieron')] un momento íntimo cuando había que preparar un examen."
+ friend_historical:0 "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName|U] [Select_CString(Or(CHARACTER.IsLocalPlayer, TARGET_CHARACTER.IsLocalPlayer), 'mantenéis', 'mantienen')] una vieja amistad."
+ rival_foreign_threat:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'soltaste', 'soltó' )] insultos groseros y [Select_CString( CHARACTER.IsLocalPlayer, 'vilipendiaste', 'vilipendió' )] a los dignatarios al tiempo que [Select_CString( CHARACTER.IsLocalPlayer, 'agitabas', 'agitaba' )] a las masas contra las amenazas al señorío."
+ rival_foreign_threat_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'soltaste', 'soltó' )] insultos groseros y [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'vilipendiaste', 'vilipendió' )] a los dignatarios al tiempo que [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'agitabas', 'agitaba' )] a las masas contra las amenazas extranjeras."
+ rival_despised_mutual_coronation:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'despreciaste', 'despreció' )] [Select_CString( CHARACTER.IsLocalPlayer, 'tu', 'su' )] coronación mutua como gobernante y cónyuge."
+ rival_despised_mutual_coronation_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'despreciaste', 'despreció' )] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'tu', 'su' )] coronación mutua como gobernante y cónyuge."
+
+ # religion/rites_l_spanish.yml
+ d_wargodname_rite_adj:0 "[Faith.WarGodName|:english_rite_i_suffix]ita"
+ d_wargodname_rite_adherent:0 "[Faith.WarGodName|:english_rite_i_suffix]ita"
+ d_wargodname_rite_adherent_plural:0 "[Faith.WarGodName|:english_rite_i_suffix]itas"
+ d_wealthgodname_rite:0 "[Faith.WealthGodName|:english_rite_i_suffix]ismo"
+ d_wealthgodname_rite_adj:0 "[Faith.WealthGodName|:english_rite_i_suffix]ita"
+ d_wealthgodname_rite_adherent:0 "[Faith.WealthGodName|:english_rite_i_suffix]ita"
+ d_wealthgodname_rite_adherent_plural:0 "[Faith.WealthGodName|:english_rite_i_suffix]itas"
+ d_knowledgegodname_rite:0 "[Faith.KnowledgeGodName|:english_rite_i_suffix]ismo"
+ d_knowledgegodname_rite_adj:0 "[Faith.KnowledgeGodName|:english_rite_i_suffix]ita"
+ d_knowledgegodname_rite_adherent:0 "[Faith.KnowledgeGodName|:english_rite_i_suffix]ita"
+ d_knowledgegodname_rite_adherent_plural:0 "[Faith.KnowledgeGodName|:english_rite_i_suffix]itas"
+ d_trickstergodname_rite:0 "[Faith.TricksterGodName|:english_rite_i_suffix]ismo"
+ d_trickstergodname_rite_adj:0 "[Faith.TricksterGodName|:english_rite_i_suffix]ita"
+ d_trickstergodname_rite_adherent:0 "[Faith.TricksterGodName|:english_rite_i_suffix]ita"
+ d_trickstergodname_rite_adherent_plural:0 "[Faith.TricksterGodName|:english_rite_i_suffix]itas"
+ d_nightgodname_rite:0 "[Faith.NightGodName|:english_rite_i_suffix]ismo"
+ d_nightgodname_rite_adj:0 "[Faith.NightGodName|:english_rite_i_suffix]ita"
+ d_nightgodname_rite_adherent:0 "[Faith.NightGodName|:english_rite_i_suffix]ita"
+ d_nightgodname_rite_adherent_plural:0 "[Faith.NightGodName|:english_rite_i_suffix]itas"
+ d_householdgodname_rite:0 "[Faith.HouseholdGodName|:english_rite_i_suffix]ismo"
+ d_householdgodname_rite_adj:0 "[Faith.HouseholdGodName|:english_rite_i_suffix]ita"
+ d_householdgodname_rite_adherent:0 "[Faith.HouseholdGodName|:english_rite_i_suffix]ita"
+ d_householdgodname_rite_adherent_plural:0 "[Faith.HouseholdGodName|:english_rite_i_suffix]itas"
+ d_fertilitygodname_rite:0 "[Faith.FertilityGodName|:english_rite_i_suffix]ismo"
+ d_fertilitygodname_rite_adj:0 "[Faith.FertilityGodName|:english_rite_i_suffix]ita"
+ d_fertilitygodname_rite_adherent:0 "[Faith.FertilityGodName|:english_rite_i_suffix]ita"
+ d_fertilitygodname_rite_adherent_plural:0 "[Faith.FertilityGodName|:english_rite_i_suffix]itas"
+
+ # schemes_l_spanish.yml
+ scheme_apa_positive_0181_modifier_desc:0 "Hay que encontrar puntos en común y apoderarse de ellos."
+ scheme_odds.realm_size:0 "[realm_size|E] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)]"
+ scheme_odds.target_suzerain_has_greater_radiance:0 "[radiance|E] del [suzerain|lE] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)]"
+ SCHEME_TARGET_REALM_SIZE:0 "[realm_size|E] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)]: $VALUE|+=0$"
+ SUZERAIN_HAS_GREATER_RADIANCE:0 "El [suzerain|lE] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)] tiene un [radiance|lE] mayor: $VALUE|+=0$"
+
+ # single_combat_events_l_spanish.yml
+ single_combat.0031.desc.sc_attacker.feint_and_stab.fatality:0 "lo que me distrae lo suficiente como para que no note [sc_victor.Custom('SignatureWeaponAttemptedLight')] posterior, [sc_victor.Custom('SignatureWeaponKillTypeTorso2PresentParticiple')].\n\nMe tambaleo y luego caigo contra el/la [sc_defender.Custom('GroundType')], convulsionando, intentando gritar pero incapaz de emitir más de un susurro ronco. ¿Cómo se puede sobrevivir a tanto #EMP dolor#!?\n\nNo se puede."
+ single_combat.0041.desc.opponent_response.strict_guard:0 "Aparte de lo que sea [sc_loser.GetFirstNameNoTooltip], se le da condenadamente bien mantener la guardia. Es más por suerte que habilidad que logre finalmente"
+ single_combat.0041.desc.sc_attacker.expert_onslaught.injury:0 "Golpe a golpe, machaco a mi oponente hasta una sumisión sangrienta y conmocionada, clavándo[sc_loser.GetHerHim] en el suelo con toda la furia que [sc_victor.GetFaith.WarGodName] me puede dar.\n\nCuando todo lo que queda es un amasijo tembloroso en forma de [sc_loser.GetWomanMan] sangrante, me pregunto si he ido demasiado lejos. Entonces, [sc_loser.GetFirstNameNoTooltip] tose lo bastante fuerte como para perder el control de [sc_loser.Custom('signature_weapon')] y me permito un pequeño suspiro de alivio.\n\nDesaparecida la preocupación, pateo el arma de mi enemigo y pongo la mía contra su garganta. Hacen falta algunos intentos, pero [sc_loser.GetFirstNameNoTooltip] al final acierta a rendirse."
+
+ # situations/situation_list_window_l_spanish.yml
+ SITUATION_LIST_SITUATION_PHASE:0 "[situation_phase|E] actual: [Situation.GetTopCurrentPhase.GetName|l]"
+
+ # travel/battle_points_of_interest_l_spanish.yml
+ BattlePoIHistoricalDescLechfeld:0 "#emp Vencedor: [GetScriptedCharacterByHistoryID( '1282' ).GetTitledFirstName]\nDerrotado: [GetScriptedCharacterByHistoryID( '460' ).GetFirstName] [GetScriptedCharacterByHistoryID( '460' ).GetDynastyName]\nFecha: 10 de agosto de 955 d. C.#!\n#weak Una batalla brutal entre las fuerzas del rey sajón Otto y las fuerzas húngaras. Tras unas pérdidas abrumadoras para ambos bandos, los húngaros huyeron cuando estuvieron a punto de ser rodeados y vieron que el curso de la batalla se volvía en su contra.\n\nDespués de terminar la batalla, mucho de los comandantes húngaros fueron capturados y ejecutados, y se puso fin a la amenaza magiar contra Europa occidental.#!"
+ BattlePoIHistoricalDescHastings:0 "#emp Vencedor: [GetScriptedCharacterByHistoryID( '140' ).GetFirstName] [GetScriptedCharacterByHistoryID( '140' ).GetDynastyName]\nDerrotado: [GetScriptedCharacterByHistoryID( '122' ).GetFullName]\nFecha: 14 de octubre de 1066 d. C.#!\n#weak La batalla de Hastings fue una de las muchas batallas claves en el ascenso de Guillermo al trono de Inglaterra. Obligado a luchar cuesta arriba, al ejército normando le costaba abrirse paso y en un punto hasta llegó a retroceder, pero Guillermo consiguió reorganizar un contraataque contra las tropas inglesas.\n\nSuperado por las fuerzas enemigas, Harold murió junto con sus hermanos [GetScriptedCharacterByHistoryID( '132' ).GetFirstNameNoTooltip] y [GetScriptedCharacterByHistoryID( '130' ).GetFirstNameNoTooltip], lo que dejó el trono inglés vacante.#!"
+ BattlePoIHistoricalDescFeiRiver:0 "#emp Vencedor: Xie An - Jin\nDerrotado: Fu Jian - Antiguo estado Qin\nFecha: 383 d. C.#!\n#weak Esta batalla fue la culminación de una campaña extensa donde el antiguo estado Qin, tras haber unido a una serie de distintas tribus extranjeras, había tomado el control de una parte significativa de las tierras de Jin. Los ejércitos de Qin eran muy superiores en número a los de Jin, que presentaron batalla en el río Fei.\n\nEn el transcurso de la batalla, las fuerzas disciplinadas y bien entrenada de Jin pusieron en fuga a las tropas más numerosas, pero desorganizadas y desmotivadas del antiguo estado de Qin.\n\nLa derrota de las fuerzas Qin por unos Jin con solo unas pocas bajas cambió el equilibrio de poder y garantizó que el sur de China siguiera siendo independiente durante más de cien años.#!"
+
+ # travel/tourism_destinations_l_spanish.yml
+ building_vatapi_caves_01_destination_desc:0 "Construidas por la primera dinastía Chalukya, las [GetBuilding('vatapi_caves_01').GetName|l] se han excavado hasta convertirse en una impresionante formación de arenisca. En su interior se halla un mundo sumamente sagrado y silencioso. Una puerta triunfal conduce a los peregrinos hasta la cara monolítica de la montaña."
