@@ -1,0 +1,17 @@
+name: Suggestion
+description: Propose an improvement to the mod
+title: "[Suggestion] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: For example, a group of texts that should use different terminology.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it be useful?
