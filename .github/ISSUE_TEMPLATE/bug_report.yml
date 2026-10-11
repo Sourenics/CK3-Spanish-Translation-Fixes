@@ -1,0 +1,76 @@
+name: Translation error
+description: Report a wrong, broken or untranslated Spanish text
+title: "[Text] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting! One report per text is easiest to track. A screenshot is usually the fastest way for us to find the string.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Broken text (code, brackets or a key shown instead of words)
+        - Wrong gender or number agreement
+        - Mistranslation (the meaning is wrong)
+        - Typo or grammar mistake
+        - Text left in English
+        - A text changed by this mod is now wrong
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: text
+    attributes:
+      label: Text as it appears in the game
+      description: Copy the text, or the part of it that is wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested correction
+      description: Optional. How should it read?
+
+  - type: input
+    id: where
+    attributes:
+      label: Where does it appear?
+      description: Event title, decision, tooltip, window…
+      placeholder: "Event \"A Royal Hunt\", second option"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here.
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      description: Shown in the main menu.
+      placeholder: "1.20.0.4"
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other active mods (in load order)
+      description: Other mods can also change Spanish texts.
