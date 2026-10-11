@@ -5,7 +5,7 @@
 A Crusader Kings III mod that fixes broken and mistranslated texts in the official Spanish localization, so you can play in Spanish without code, brackets or nonsense showing up in events and tooltips.
 
 - **Game version:** 1.20.x
-- **Mod version:** 0.9.0 (beta)
+- **Mod version:** 0.9.1 (beta)
 - **Author:** [Sourenics](https://github.com/Sourenics)
 - **Steam Workshop:** [Spanish Translation Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3817707585)
 
@@ -15,9 +15,13 @@ This is a **public beta**. Every fix has been checked against the game files and
 
 ## What it fixes
 
-Version 0.9.0 replaces **399 strings**. Every one of them is listed, with the part that changed, in [FIXED_STRINGS.md](FIXED_STRINGS.md).
+Version 0.9.1 replaces **8,282 strings**. Every change is explained in [FIXED_STRINGS.md](FIXED_STRINGS.md).
 
-### Broken strings (331)
+### Names of untitled characters (7,948)
+
+The Spanish text writes a character's title and name in lowercase so that the title reads naturally mid-sentence ("la condesa Bertha"). When the character has no title, the name itself came out in lowercase, with the article kept: "la bertha", "de la bertha". The mod adds custom localization entries that lowercase the title only when there is one and drop the article otherwise, so untitled characters now read "Bertha", "de Bertha", "a Bertha".
+
+### Broken strings (332)
 
 Texts where the game shows raw code, an empty space or the wrong character, because the Spanish file contains a technical mistake:
 
@@ -27,6 +31,7 @@ Texts where the game shows raw code, an empty space or the wrong character, beca
 - **A formatter translated by mistake**: `english_rita_i_suffix` instead of `english_rite_i_suffix`, which broke 27 war-god rite names.
 - **Format codes and line breaks**, such as `#EMPyour guerra` or texts glued to the previous paragraph.
 - **Leftover English** inside Spanish sentences ("fundó el the Pandidakterion").
+- **"Mi mi hermana"**: the template that introduces characters in many events added a second "mi".
 - **Wrong keys and arguments** passed to functions: an item slot translated as `'casco'` instead of `'helmet'`, cooldowns read from another decision's timer, the wrong tenet in the evangelize tooltip, faith instead of rite for tenet names, the piety level of the wrong character, misspelled region and agent keys…
 - **Names shown as broken links.** In 94 strings, plain names (mostly rites, but also weapons, accolades and blocs) were formatted as links to game concepts, which they are not, so they appeared as a faded, broken link.
 
@@ -70,11 +75,11 @@ Subscribe on the Steam Workshop page and enable the mod in the Paradox launcher.
 
 ## Compatibility
 
-- Only changes localization: no game rules, events or scripts are modified.
+- Only changes localization: no game rules, events or scripts are modified. Besides the replaced strings, it adds its own custom localization entries (`common/customizable_localization/stf_titled_name_custom_loc.txt`); no vanilla file is overwritten.
 - Only affects players with the game in Spanish.
 - No DLC required. Strings from DLCs you do not own are simply never shown.
 - Can be added to or removed from an existing save.
-- Each string is replaced individually (`localization/replace/spanish/`), so it works alongside other mods. If another mod also replaces one of these 399 strings, the one loaded first wins.
+- Each string is replaced individually (`localization/replace/spanish/`), so it works alongside other mods. If another mod also replaces one of these strings, the one loaded first wins.
 - When a game update changes one of these strings, this mod keeps showing its own version until it is updated. If you notice an outdated text after a patch, please report it.
 
 ## Reporting a wrong text

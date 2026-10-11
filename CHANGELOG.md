@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.1 (beta)
+
+- **Names of untitled characters are no longer lowercase.** The Spanish text lowercased "title + name" so that titles read naturally ("la condesa Bertha"), which also lowercased the names of characters without a title and kept the article ("la bertha"). New custom localization entries lowercase the title only when there is one and drop the article otherwise ("Bertha", "de Bertha"). This affects 7,948 strings.
+- Fixed "Mi mi hermana…" in the template that introduces characters in many events.
+- The mod now replaces 8,282 strings in total.
+
 ## 0.9.0 (beta)
 
 - First public beta, for game version 1.20.x.

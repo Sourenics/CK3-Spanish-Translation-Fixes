@@ -1,0 +1,572 @@
+﻿# Spanish Translation Fixes - custom localization
+# The Spanish localization writes [Character.GetTitledFirstName|l] so that the title is lowercase ("la condesa Bertha").
+# When the character has no title, that lowercased the name itself ("bertha"), and the article was kept ("la bertha").
+# These entries lowercase the title only when the character shows one, and drop the article otherwise ("Bertha", "de Bertha").
+# "Has a title" follows the same rule the vanilla Spanish ES_only_el_GetTitledFirstName uses: own primary title, or a titled spouse.
+
+STF_GetTitledFirstName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_GetTitledFirstName_titled
+	}
+	text = {
+		localization_key = STF_GetTitledFirstName_untitled
+		fallback = yes
+	}
+}
+
+STF_GetTitledFirstNameNicknamed = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_GetTitledFirstNameNicknamed_titled
+	}
+	text = {
+		localization_key = STF_GetTitledFirstNameNicknamed_untitled
+		fallback = yes
+	}
+}
+
+STF_GetTitledFirstNameNicknamedNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_GetTitledFirstNameNicknamedNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_GetTitledFirstNameNicknamedNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_GetTitledFirstNameNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_GetTitledFirstNameNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_GetTitledFirstNameNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_GetTitledFirstNameNoTooltipRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_GetTitledFirstNameNoTooltipRegnal_titled
+	}
+	text = {
+		localization_key = STF_GetTitledFirstNameNoTooltipRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_GetTitledFirstNameRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_GetTitledFirstNameRegnal_titled
+	}
+	text = {
+		localization_key = STF_GetTitledFirstNameRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_Al_GetTitledFirstName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_Al_GetTitledFirstName_titled
+	}
+	text = {
+		localization_key = STF_Al_GetTitledFirstName_untitled
+		fallback = yes
+	}
+}
+
+STF_Al_GetTitledFirstNameNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_Al_GetTitledFirstNameNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_Al_GetTitledFirstNameNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_El_GetTitledFirstName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_El_GetTitledFirstName_titled
+	}
+	text = {
+		localization_key = STF_El_GetTitledFirstName_untitled
+		fallback = yes
+	}
+}
+
+STF_El_GetTitledFirstNameNicknamed = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_El_GetTitledFirstNameNicknamed_titled
+	}
+	text = {
+		localization_key = STF_El_GetTitledFirstNameNicknamed_untitled
+		fallback = yes
+	}
+}
+
+STF_El_GetTitledFirstNameNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_El_GetTitledFirstNameNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_El_GetTitledFirstNameNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_El_GetTitledFirstNameNoTooltipRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_El_GetTitledFirstNameNoTooltipRegnal_titled
+	}
+	text = {
+		localization_key = STF_El_GetTitledFirstNameNoTooltipRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_El_GetTitledFirstNameRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_El_GetTitledFirstNameRegnal_titled
+	}
+	text = {
+		localization_key = STF_El_GetTitledFirstNameRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_al_GetTitledFirstName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_al_GetTitledFirstName_titled
+	}
+	text = {
+		localization_key = STF_al_GetTitledFirstName_untitled
+		fallback = yes
+	}
+}
+
+STF_al_GetTitledFirstNameNicknamed = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_al_GetTitledFirstNameNicknamed_titled
+	}
+	text = {
+		localization_key = STF_al_GetTitledFirstNameNicknamed_untitled
+		fallback = yes
+	}
+}
+
+STF_al_GetTitledFirstNameNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_al_GetTitledFirstNameNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_al_GetTitledFirstNameNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_al_GetTitledFirstNameRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_al_GetTitledFirstNameRegnal_titled
+	}
+	text = {
+		localization_key = STF_al_GetTitledFirstNameRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_del_GetTitledFirstName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_del_GetTitledFirstName_titled
+	}
+	text = {
+		localization_key = STF_del_GetTitledFirstName_untitled
+		fallback = yes
+	}
+}
+
+STF_del_GetTitledFirstNameNicknamed = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_del_GetTitledFirstNameNicknamed_titled
+	}
+	text = {
+		localization_key = STF_del_GetTitledFirstNameNicknamed_untitled
+		fallback = yes
+	}
+}
+
+STF_del_GetTitledFirstNameNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_del_GetTitledFirstNameNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_del_GetTitledFirstNameNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_del_GetTitledFirstNameNoTooltipRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_del_GetTitledFirstNameNoTooltipRegnal_titled
+	}
+	text = {
+		localization_key = STF_del_GetTitledFirstNameNoTooltipRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_del_GetTitledFirstNameRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_del_GetTitledFirstNameRegnal_titled
+	}
+	text = {
+		localization_key = STF_del_GetTitledFirstNameRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_el_GetTitledFirstName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_el_GetTitledFirstName_titled
+	}
+	text = {
+		localization_key = STF_el_GetTitledFirstName_untitled
+		fallback = yes
+	}
+}
+
+STF_el_GetTitledFirstNameNicknamed = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_el_GetTitledFirstNameNicknamed_titled
+	}
+	text = {
+		localization_key = STF_el_GetTitledFirstNameNicknamed_untitled
+		fallback = yes
+	}
+}
+
+STF_el_GetTitledFirstNameNoTooltip = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_el_GetTitledFirstNameNoTooltip_titled
+	}
+	text = {
+		localization_key = STF_el_GetTitledFirstNameNoTooltip_untitled
+		fallback = yes
+	}
+}
+
+STF_el_GetTitledFirstNameNoTooltipRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_el_GetTitledFirstNameNoTooltipRegnal_titled
+	}
+	text = {
+		localization_key = STF_el_GetTitledFirstNameNoTooltipRegnal_untitled
+		fallback = yes
+	}
+}
+
+STF_el_GetTitledFirstNameRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				exists = primary_title
+				any_spouse = {
+					exists = primary_title
+					primary_title.tier >= tier_barony
+				}
+			}
+		}
+		localization_key = STF_el_GetTitledFirstNameRegnal_titled
+	}
+	text = {
+		localization_key = STF_el_GetTitledFirstNameRegnal_untitled
+		fallback = yes
+	}
+}

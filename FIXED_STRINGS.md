@@ -1,10 +1,10 @@
-# Fixed strings (0.9.0)
+# Fixed strings (0.9.1)
 
-Every Spanish string this mod replaces, with the part that changed. 399 strings in total.
+Every Spanish string this mod replaces, with the part that changed. 8282 strings in total.
 
 Keys are the vanilla localization keys. "Before" is the text shipped with the game; "After" is the text in this mod.
 
-## Broken strings (331)
+## Broken strings (8214)
 
 ### Misspelled data functions
 
@@ -177,6 +177,7 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `court.8170.desc.intro_religious` | `«[criminal.GetFirstName] the [criminal.Custom('GetCrime')\|U]»` | `[criminal.GetFirstName]` |
 | `guest_description.duchy_claim.desc` | `sobre un un [duchy` | `sobre un [duchy` |
 | `ep3_camp_party.2000.compassionate` | `#EMP es#! es la recompensa` | `#EMP es#! la recompensa` |
+| `MyCharacterIntroductionNoComma` | `mi [ROOT.Char.Custom2('MyCharacterIntroductionNoComma', SCOPE.sC('second'))]` | `[ROOT.Char.Custom2('MyCharacterIntroductionNoComma', SCOPE.sC('second'))]` |
 
 ### Wrong keys and arguments
 
@@ -227,6 +228,21 @@ The `E` format flag turns a word into a link to a game concept (the underlined t
 `CHARACTER_RITE_EQUAL_FIRST`, `CHARACTER_RITE_EQUAL_THIRD`, `FAITH_VIEW_FOLLOWING`, `LANDED_TITLE_RITE_EQUAL_GLOBAL`, `LANDED_TITLE_RITE_EQUAL_THIRD`, `NOT_CHARACTER_RITE_EQUAL_FIRST`, `NOT_CHARACTER_RITE_EQUAL_THIRD`, `NOT_LANDED_TITLE_RITE_EQUAL_GLOBAL`, `NOT_LANDED_TITLE_RITE_EQUAL_THIRD`, `NOT_PROVINCE_RITE_EQUAL_GLOBAL`, `NOT_PROVINCE_RITE_EQUAL_THIRD`, `NOT_RITE_THEY_HAS_DOCTRINE`, `PERSONAL_BELIEFS_VIEW_FOLLOWING`, `PROVINCE_RITE_EQUAL_GLOBAL`, `PROVINCE_RITE_EQUAL_THIRD`, `THEY_GAINED_GLORY_EFFECT`, `THEY_GAIN_GLORY_EFFECT`, `THEY_LOSE_GLORY_EFFECT`, `THEY_LOST_GLORY_EFFECT`, `THEY_RITE_HAS_DOCTRINE`, `ZEALOUS_PROSELYTIZER_REASON`, `activity_tour_host_desc`, `all_members_of_root_confederation_in_attendance`, `all_members_of_second_confederation_in_attendance`, `apa_passive_religious_learning_guest_tt`, `apa_passive_religious_learning_host_tt`, `apa_passive_religious_learning_pilgrimage_pool_tt`, `change_maa_regiment_size_third`, `change_maa_regiment_size_third_neg`, `change_maa_regiment_size_third_past`, `change_maa_regiment_size_third_past_neg`, `change_maa_troops_count_third`, `change_maa_troops_count_third_neg`, `domicile_building_parameter_domicile_building_is_university`, `estate_cathedral_teach_kids_tt`, `eunuch_will_be_given_a_position_tt`, `fervor_gain_pam_rite_consolidated`, `fervor_loss_pam_rite_diverged`, `landed_title_rite_not_equal`, `msg_holy_site_abandoned_by_character_desc`, `msg_holy_site_demoted_by_character_desc`, `msg_hor_learned_doctrine_concubines_desc`, `msg_hor_learned_doctrine_consanguinity_unrestricted_desc`, `msg_hor_learned_doctrine_desc`, `msg_hor_learned_doctrine_deviancy_virtuous_desc`, `msg_hor_learned_doctrine_funeral_mummification_desc`, `msg_hor_learned_doctrine_funeral_sky_burial_desc`, `msg_hor_learned_doctrine_kinslaying_accepted_desc`, `msg_hor_learned_doctrine_polygamy_desc`, `msg_hor_learned_doctrine_witchcraft_virtuous_desc`, `msg_hor_learned_tenet_adorcism_desc`, `msg_hor_learned_tenet_cranial_trophies_desc`, `msg_hor_learned_tenet_desc`, `msg_hor_learned_tenet_exaltation_of_pain_desc`, `msg_hor_learned_tenet_gruesome_festivals_desc`, `msg_hor_learned_tenet_hedonistic_desc`, `msg_hor_learned_tenet_human_sacrifice_desc`, `msg_hor_learned_tenet_ritual_cannibalism_desc`, `msg_hor_learned_tenet_sacrificial_ceremonies_desc`, `msg_hor_learned_tenet_takamin_desc`, `msg_hor_learned_tenet_warmonger_desc`, `msg_passive_learned_doctrine_concubines_desc`, `msg_passive_learned_doctrine_consanguinity_unrestricted_desc`, `msg_passive_learned_doctrine_desc`, `msg_passive_learned_doctrine_funeral_mummification_desc`, `msg_passive_learned_doctrine_funeral_sky_burial_desc`, `msg_passive_learned_doctrine_kinslaying_accepted_desc`, `msg_passive_learned_doctrine_pilgrimage_rite_desc`, `msg_passive_learned_doctrine_polygamy_desc`, `msg_passive_learned_doctrine_witchcraft_virtuous_desc`, `msg_passive_learned_rite_abroad_desc`, `msg_passive_learned_rite_desc`, `msg_passive_learned_tenet_adorcism_desc`, `msg_passive_learned_tenet_cranial_trophies_desc`, `msg_passive_learned_tenet_desc`, `msg_passive_learned_tenet_exaltation_of_pain_desc`, `msg_passive_learned_tenet_gruesome_festivals_desc`, `msg_passive_learned_tenet_hedonistic_desc`, `msg_passive_learned_tenet_human_sacrifice_desc`, `msg_passive_learned_tenet_pilgrimage_rite_desc`, `msg_passive_learned_tenet_ritual_cannibalism_desc`, `msg_passive_learned_tenet_sacrificial_ceremonies_desc`, `msg_passive_learned_tenet_takamin_desc`, `msg_passive_learned_tenet_warmonger_desc`, `not_rite_has_tenet_first`, `not_rite_has_tenet_third`, `pam_create_great_schism_effect_tt`, `pam_tenet_events.0004.a.tt.consolidated`, `pam_tenet_events.0004.a.tt.diverged`, `pam_tenet_events.0004.desc.backward_doctrine`, `pam_tenet_events.0004.desc.backward_tenet`, `pam_tenet_events.0004.desc.forward_doctrine`, `pam_tenet_events.0004.desc.forward_tenet`, `rite_has_tenet_first`, `rite_has_tenet_third`, `study_faith_nothing_left_to_learn_tt`
 
 </details>
+
+### Names of untitled characters in lowercase
+
+The Spanish text writes a character's title and name in lowercase, so that the title reads naturally mid-sentence: `[ROOT.Char.Custom('ES_ElLa')] [ROOT.Char.GetTitledFirstName|l]` gives "la condesa Bertha". When the character has no title, the name itself was lowercased and the article kept: "la bertha", "de la bertha". This affected **7948 strings**, too many to list here.
+
+The mod adds 27 custom localization entries (`common/customizable_localization/stf_titled_name_custom_loc.txt`) that lowercase the title only when the character has one, and drop the article otherwise:
+
+| Before | Titled character | Untitled character (before → now) |
+|---|---|---|
+| `[X.Custom('ES_ElLa')] [X.GetTitledFirstName\|l]` | la condesa Bertha | la bertha → Bertha |
+| `[X.Custom('ES_DelDela')] [X.GetTitledFirstName\|l]` | de la condesa Bertha | de la bertha → de Bertha |
+| `[X.Custom('ES_AlAla')] [X.GetTitledFirstName\|l]` | a la condesa Bertha | a la bertha → a Bertha |
+| `[X.GetTitledFirstName\|l]` | condesa Bertha | bertha → Bertha |
+
+A character counts as titled when they hold a primary title or are married to someone who holds one, the same rule the vanilla Spanish `ES_only_el_GetTitledFirstName` uses. The same applies to the `NoTooltip`, `Regnal` and `Nicknamed` variants.
 
 ## Spelling and grammar (68)
 
