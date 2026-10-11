@@ -7,7 +7,7 @@ A Crusader Kings III mod that fixes broken and mistranslated texts in the offici
 - **Game version:** 1.20.x
 - **Mod version:** 0.9.0 (beta)
 - **Author:** [Sourenics](https://github.com/Sourenics)
-- **Steam Workshop:** coming soon
+- **Steam Workshop:** [Spanish Translation Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3817707585)
 
 ## Beta
 
