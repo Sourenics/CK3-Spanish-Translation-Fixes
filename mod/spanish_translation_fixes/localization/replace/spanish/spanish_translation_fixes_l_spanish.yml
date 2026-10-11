@@ -3,6 +3,8 @@
 
  # activities/coronation_activity_l_spanish.yml
  coronation_events.0301.b.tooltip:0 "[second_candidate.GetFirstNameNoTooltip] será [second_candidate.Custom('ES_ElLa')] nuev[second_candidate.Custom('ES_OA')] oficiante de la ceremonia"
+ learning_oath_1_decision_desc_extra:0 "\n\n@alert_icon!#alert_trial Quedan [RemainingTime('learning_oath_1_timer')] para cumplir el [oath|lE]#![IsOngoingCoronationOath('learning_oath_1')]"
+ purge_pretenders_oath_decision_desc_extra:0 "\n\n@alert_icon!#alert_trial Quedan [RemainingTime('purge_pretenders_oath_timer')] para cumplir el [oath|lE]#![IsOngoingCoronationOath('purge_pretenders_oath')]"
 
  # activities/coronation_events_1_l_spanish.yml
  coronation_events.1000.tyrant.desc:0 "Un[bard.Custom('ES_XA')] juglar, con la cara encendida en actitud de desafío, da un paso adelante y comienza una balada:\n\n«¡Contemplad [ROOT.Char.GetName], el Puño de Hierro!».\n\nCada estrofa está sazonada con alabanzas mordaces que resuenan por toda la sala. Aprieto los dientes mientras la melodía burlona va en aumento y describe mi reinado como nada más que una tiranía mezquina."
@@ -14,6 +16,9 @@
  rationality_explanation:0 "Este personaje es #Bold algo racional#! y es más probable que evite la [tyranny|lE], emplee [councillor_tasks|lE] para defenderse y eluda una [offensive_war_opinion|lE]. En general, es más probable que haga lo que sea objetivamente mejor para la situación en la que está, como asesinar a un [liege|lE] [tyrannical|lE], intercambiar [hostages|lE] para evitar una guerra o reducir gastos si incurre en [debt|lE]."
 
  # artifacts/artifacts_l_spanish.yml
+ feature_brooch_adornment_runes:0 "enmarcado por un anillo de [Artifact.GetFeatureText( 'decoration_material_wire' )] estampado con runas"
+ brooch_adornment_gems:0 "engastado con trocitos de [ROOT.Char.Custom2_Flag('ArtifactGemType', SCOPE.GetFlagName('adornment_gem'))]"
+ artifact_necklace_description:0 "Un [SCOPE.Custom('ArtifactArticleWealth')|l], pero delicado collar de [SCOPE.Custom('ArtifactQuality')] factura. El collar está forjado en [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )] y presenta un hermoso colgante [newly_created_artifact.GetFeatureText( 'decoration_material_gem' )]."
  artifact_joyeuse_description:0 "La espada de Carlomagno, forjada para contener la lanza de Longinos. La Joyosa es un símbolo tanto de valor caballeresco como del legado real del imperio carolingio."
 
  # board_game_events_l_spanish.yml
@@ -36,13 +41,20 @@
  # council_tasks_l_spanish.yml
  COUNCILLOR_IS_YOUR_FRIEND:0 "[councillor.GetCouncilTitle] [councillor.GetShortUIName] es amig[councillor.Custom('ES_OA')] tuy[councillor.Custom('ES_OA')]"
 
+ # culture/cultural_innovations_l_spanish.yml
+ culture_parameter_block_printing_university_bonuses:0 "[SelectLocalization( HasDlcFeature( 'wards_and_wardens' ), 'culture_parameter_block_printing_scriptorium', 'blank_line' )]"
+
  # custom_localization/greeting_custom_loc_l_spanish.yml
  greeting_family_liked_plain:0 "Mi querid[second.Custom('ES_OA')] [ROOT.Char.Custom2('RelationToMeShort', second)],"
  greeting_foreign_ruler_negative:0 "[second.Custom('ES_AlAla')|U] [second.Custom2('InsultAdjective', ROOT.Char)] [second.GetTitledFirstNameNoTooltip|l],"
 
  # decisions_l_spanish.yml
+ commission_artifact_decision_option_crown:0 "Corona\n#low Tienes: [ROOT.Char.GetInventory.GetNumberOfArtifactsForSlotTypeString( 'helmet' )]#!"
  introduce_a_new_fashion_at_court_decision_desc:0 "¡Ninguna corte puede afirmar ser más elegante que la nuestra! La corte es un campo de batalla de moda y ya es momento de que lance mi propia ofensiva para imponer una nueva moda entre la nobleza…"
  bwow_fundementalist_tooltip:0 "Tu fe se volverá más fundamentalista y belicosa"
+ recruit_bookmaker_cooldown_tt:0 "Reclutar un [GetCourtPositionType('bookmaker_court_position').GetName()|l] está en cuenta atrás durante [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_bookmaker_cooldown' ))]"
+ recruit_court_gardener_cooldown_tt:0 "Reclutar un [GetCourtPositionType('court_gardener_court_position').GetName|l] está en cuenta atrás durante [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_court_gardener_cooldown' ))]"
+ recruit_foreign_emissary_cooldown_tt:0 "Reclutar un [GetCourtPositionType('foreign_emissary_court_position').GetName|l] está en cuenta atrás durante [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'foreign_emissary_engineer_cooldown' ))]"
  form_brunei_kingdom_decision_effects_de_jure_tt_b:0 "Si se posee, [berau_county.GetNameNoTier] formará parte [de_jure|El] de [barune_duchy.GetName]"
 
  # dlc/ach/dlc_ach_coronation_prelude_events_l_spanish.yml
@@ -65,12 +77,18 @@
  # dlc/ep1/dlc_ep1_flavor_events_l_spanish.yml
  ep1_flavor.2040.desc.gold:0 "«Esta pieza sin par podría perteneceros, a un precio especial, por supuesto, gran [ROOT.Char.GetTitleAsNameNoTooltip|l]…».\n\n¡Un cuento, probablemente!"
 
+ # dlc/ep1/dlc_ep1_fund_inspiration_events_l_spanish.yml
+ fund_inspiration.1051.desc.hide:0 "está la piel de [newly_created_artifact.GetFeatureText( 'animal_hide_type' )]. [inspiration_owner.GetFirstNameNoTooltip] me cuenta cómo abatió al feroz animal mientras yo admiro la piel de lo que debió de ser una bestia majestuosa."
+
  # dlc/ep1/dlc_ep1_game_concepts_l_spanish.yml
  game_concept_aptitude_desc:0 "La $game_concept_aptitude$ de un [character|lE] indica lo eficiente que es en distintos papeles de la [court|lE]. Estos incluyen [court_positions|lE], [diarchs|lE] y [tax_collectors|lE]\n\nLa $game_concept_aptitude$ se mide en cinco niveles, que van de Horrible a Excelente. El nivel de aptitud del personaje decidirá las bonificaciones que recibirá el [liege|lE] por darle empleo en su [court|lE].\n\nPor ejemplo, un personaje que sea [GetTrait('lifestyle_physician').GetName( GetNullCharacter )|l] estará mejor equipado para servir como $court_physician_court_position$, como es lógico."
 
  # dlc/ep2/dlc_ep2_locale_events_l_spanish.yml
  ep2_locale_events.2510.b:0 "No hay nada más útil que un gambesón."
  ep2_locale_events.3002.desc:0 "¿Qué es ese ruido? ¿Risas…? ¿Gemidos? #EMP Suena#! como si viniera de esa tienda.\n\nLa curiosidad me puede. Aparto la solapa de la tienda para encontrar… un espectáculo de lo más llamativo.\n\n[lech1.Custom('ES_ElLa')] [lech1.GetTitledFirstName|l], pillad[lech1.Custom('ES_OA')] totalmente #EMP in fraganti#!, entra en pánico y empuja a su acompañante lejos de [lech1.Custom('ES_ElElla')]. En la sudorosa penumbra de la tienda, yacen [lech2.Custom('ES_ElLa')] [lech2.GetTitledFirstName|l] y [lech3.Custom('ES_ElLa')] [lech3.GetTitledFirstName|l] también, desenredándose apresuradamente de los cuerpos desnudos y corpulentos de sus amantes."
+
+ # dlc/ep2/tour/dlc_ep2_tour_l_spanish.yml
+ activity_tour_host_desc:0 "$BULLET_WITH_TAB$[county_control|E] @control_icon!\n$BULLET_WITH_TAB$[county_opinion|E] @domain_icon!\n$BULLET_WITH_TAB$Ganancia de [legitimacy|lE] [legitimacy_i]\n$BULLET_WITH_TAB$Pérdida de [stress|El] [stress_loss_i]\n\nRecompensas de nivel de [tour_success|lE]:\n$BULLET_WITH_TAB$Nivel #V 1#!: [prestige|lE] [prestige_i|E]\n$BULLET_WITH_TAB$Nivel #V 2#!: [opinion|lE] de [vassal|lE] [GetVassalStance( 'parochial' ).GetName|l] [GetVassalStance( 'parochial' ).GetTextIcon]\n$BULLET_WITH_TAB$Nivel #V 3#!: [opinion|lE] de [vassal|lE] visitado\n$BULLET_WITH_TAB$Nivel #V 4#!: [GetModifier( 'itinerant_liege_modifier' ).GetNameWithTooltip|l] #weak ([character|lE])#!\n$BULLET_WITH_TAB$Nivel #V 5#!: [GetModifier( 'mega_itinerant_liege_modifier' ).GetNameWithTooltip|l] #weak ([character|lE])#!"
 
  # dlc/ep2/tournament/dlc_ep2_contest_events_l_spanish.yml
  contest_events.1540.desc:0 "Recojo una flecha con confianza, ocupando mi lugar ante la diana y sintiendo el ambiente. La multitud calla mientras perfecciono mi postura y enfoque.\n\nEl primer tiro falla por un pelo, incrustándose en la tierra del campo. El segundo silba a kilómetros por encima de la diana. El tercero cae a pocos metros de mí, disparado por una mala suelta.\n\n"
@@ -93,6 +111,9 @@
  # dlc/ep3/ep3_governor_yearly_3_l_spanish.yml
  ep3_governor_yearly.3001.b:0 "Mejor prosperar yo un poco que un[governor.Custom('ES_XA')] [governor.GetTitleAsNameNoTooltip|l] imbécil."
 
+ # dlc/ep3/ep3_interactions_l_spanish.yml
+ eunuch_will_be_given_a_position_tt:0 "[secondary_recipient.GetName] recibirá un [court_position|lE] si es capaz"
+
  # dlc/ep3/ep3_laamp_decision_events_l_spanish.yml
  ep3_laamp_decision_event.1040.desc_outro_return_01:0 "\n\nEn un rincón sombreado de la plaza, un charlatán intenta convencer a un[ROOT.Char.Custom('ES_XA')] noble de las propiedades curativas de la arena roja.\n\nObservo indiferente su discusión mientras pienso en cuál será mi próximo movimiento."
 
@@ -103,6 +124,8 @@
  depose_desc_general:0 "En una conjura de derrocamiento, conspiras para destronar al emperador y sustituirlo por un candidato más adecuado: #EMP tú.#!"
  subsume_province_recipient_scheming_against_you_tt:0 "[recipient.GetShortUIName] ya intenta subsumir tu [governorship|lE]"
  coronation_spouse_despised_modifier:0 "Promesa de coronación de [Select_CString( owner.IsLocalPlayer, 'tu persona', owner.GetShortUIName)] de librarse de [Select_CString(target.IsLocalPlayer,'ti', target.GetShortUIName)]: $VALUE|+=0$"
+ SCHEME_TARGET_LAZY:0 "[target.GetSheHe|U] es [GetTrait('lazy').GetName( target )|l]: $VALUE|+0=$"
+ SCHEME_TARGET_DILIGENT:0 "[target.GetSheHe|U] es [GetTrait('diligent').GetName( target )|l]: $VALUE|+0=$"
 
  # dlc/fp1/dlc_fp1_yearly_events_oltner_l_spanish.yml
  fp1_yearly.2400.desc:0 "La naturaleza me llama. Ha llovido mucho desde mi última cacería. Fuera, en [ROOT.Char.Custom('TerrainType')] de [hunting_province.GetName], hay [ROOT.Char.Custom('GetAnimalPlural')] de carácter [ROOT.Char.Custom('GetAnimalAdjective')]. ¡Un ejemplar quedaría de lujo en la cena de esta noche!\n\nPero me falta algo. ¿Mis lanzas de caza están viejas y romas? ¿O necesito un acompañante?\n\nDebo asegurarme de prepararme bien."
@@ -119,11 +142,18 @@
  fp3_sunder_the_caliphate_same_faith_vassal_hook_tt:0 "[sunderer.GetShortUIName|U] [Select_CString( sunderer.IsLocalPlayer, 'conseguirás', 'conseguirá' )] un [weak_hook|lE] #weak ($favor_hook$)#! sobre ellos"
  struggle_persia_ending_rekindle_iran_decision_region_control_tt:0 "Controlas al menos un #Z [SCOPE.ScriptValue('fp3_persia_owned_for_rekindle_persia_percent_value')|0] %#! del #L #high [GetTitleByKey('e_persia').GetNameNoTier]#!#! (ahora: #Z [SCOPE.ScriptValue('fp3_iranian_current_owned_persia_value')|0] %#!)"
 
+ # dlc/mpo/mpo_decisions_l_spanish.yml
+ custom_southern_russia_expand_steppe_tt:0 "Sin tierras del [realm|lE] en los [GetGeographicalRegion('ghw_region_southern_russia').GetName]"
+
  # dlc/mpo/mpo_interactions_l_spanish.yml
  DEMAND_OBEDIENCE_INTERACTION_HERD_ACCEPTANCE:0 "[recipient.GetSheHe|U] tiene una [herd|lE] mayor que la tuya: $VALUE|=+0$"
  DEMAND_OBEDIENCE_INTERACTION_MILITARY_MIGHT_ACCEPTANCE:0 "[recipient.GetSheHe|U] tiene un [army|lE] más fuerte que tú: $VALUE|=+0$"
 
+ # dlc/mpo/mpo_paiza_system_l_spanish.yml
+ mpo_decisions_events.0100.d.unlocked:0 "Podrás seleccionar las mercancías que solicites tras el trueque de [herd|lE].\n#weak Tienes disponible esta opción por poseer el [yurt_building|lE] de [GetDomicileBuilding('herd_trade_yurt_01').GetName|l].#!"
+
  # dlc/pam/pam_character_interactions_l_spanish.yml
+ pam_evangelize_tenet_carnal_exaltation:0 "[GetTenetType('tenet_carnal_exaltation').GetName( GetPlayer.GetRite )] [GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'second', GetTenetType('tenet_carnal_exaltation').MakeScope ).Custom( 'pam_tenet_popularity_status' )|l](#high [GetPlayer.GetFaith.GetTenetPopularityScore( GetTenetType('tenet_carnal_exaltation').Self )]#!)"
  pam_interactions_events.0097.a:0 "[target.GetNameNoTierNoTooltip] me pertenece y debo responder por ello."
  filial_piety_request_child_gold_notification:0 "[actor.GetShortUIName] te pide, como [ROOT.Char.Custom('GetDaughterSon')] suy[ROOT.Char.Custom('ES_OA')], apoyo financiero."
 
@@ -135,7 +165,28 @@
  pam_clergy_events.0060.desc.hof_outro:0 "Reyes y emperadores no son más que niños a la sombra de la voluntad de su sant[new_prelate.Custom('ES_OA')] [new_prelate.GetMotherFather]. Un ejército de [new_prelate.GetFaith.BishopMalePlural] ahora está a las órdenes de un[new_prelate.Custom('ES_XA')] [new_prelate.GetDynasty.GetNameNoTooltip]."
 
  # dlc/pam/pam_decisions_l_spanish.yml
+ pam_create_great_schism_effect_tt:0 "Con la destrucción del [old_rite.GetName|l], el [roman_rite.GetName|l] y el [byzantine_rite.GetName|l] se elevan como [faiths|El]"
  pam_mended_great_schism_military_dynasty_modifier_desc:0 "Esta dinastía ha reunido las antiguas sedes bajo un único estandarte y ha sanado la ruptura en el mundo cristiano por la fuerza de las armas."
+ pam_decision_events.0011.desc.permitted:0 "He dado mi visto bueno a este asunto. A partir de hoy, [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )] se considerará una de las enseñanzas aceptadas de nuestra fe.\n\nAquellos que lo practicaban en las sombras pueden dar un paso al frente."
+ pam_decision_events.0011.desc.prohibited:0 "He dado mi visto bueno a este asunto. A partir de hoy, [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )] se considerará un anatema. Aquellos que se aferran a él se apartan de los fieles."
+ pam_decision_events.0011.desc.fallback:0 "He hecho una proclamación que tiene que ver con [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )]."
+ fervor_gain_pam_tenet_prohibited:0 "[pam_tenet_stance_issuer.Custom('ES_ElLa')|U] [pam_tenet_stance_issuer.GetTitledFirstName|l] ha prohibido [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )|l]"
+ fervor_loss_pam_tenet_permitted:0 "[pam_tenet_stance_issuer.Custom('ES_ElLa')|U] [pam_tenet_stance_issuer.GetTitledFirstName|l] ha apoyado [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )]"
+
+ # dlc/pam/pam_ecclesiastical_domicile_l_spanish.yml
+ estate_cathedral_teach_kids_tt:0 "Los [children|El] del [GetPlayer.GetRite.GetName|l] en las [courts|El] de la [archdiocese|El] tienen probabilidad de que una de sus [skills|El] [diplomacy_i][stewardship_i][learning_i] aumente en #p +1#! según las habilidades de [GetPlayer.GetShortUIName]. Esto puede suceder con cada niño no más de una vez cada tres años"
+ domicile_building_parameter_domicile_building_is_university:0 "Activa la opción de [education|El] #V $EDUCATION_UNIVERSITY$#! y [GetActivityType('activity_adult_education').GetName|l] para [rulers|El] del [GetPlayer.GetRite.GetName|l] dentro de la misma [archdiocese|El]"
+
+ # dlc/pam/pam_effects_l_spanish.yml
+ add_known_tenet_third:0 "[CHARACTER.GetShortUIName] aprende sobre el [core_tenet|El] [TenetType.GetName( Character.GetRite )|V]"
+ pam_tenet_events.0004.desc.forward_tenet:0 "Os escribo para informaros de que el [diverged_rite.GetName|l] ha adoptado el dogma de [diverged_added_tenet.GetBaseName].\n\nUn rito que guía bien a su gente fortalece la fe [diverged_rite.GetFaith.GetAdjective] en su conjunto. Es algo que todos saben."
+ pam_tenet_events.0004.desc.forward_doctrine:0 "Os escribo para informaros de que el [diverged_rite.GetName|l] ahora sigue formalmente la doctrina de [diverged_added_doctrine.GetDescriptiveName( diverged_rite.GetFaith.Self )|l].\n\nUn rito que sabe guiar a su gente fortalece la fe [diverged_rite.GetFaith.GetAdjective] en su conjunto. Es algo que todos saben."
+ pam_tenet_events.0004.desc.backward_tenet:0 "Os escribo para informaros de que el [diverged_rite.GetName|l] ha abrazado el dogma de [diverged_added_tenet.GetBaseName].\n\nCon ello, nos acercamos más al [diverged_rite.GetFaith.GetMainRite.GetName|l]. Cuando sus ritos hablan con una sola voz, ¡florece la fe [diverged_rite.GetFaith.GetAdjective]!"
+ pam_tenet_events.0004.desc.backward_doctrine:0 "Os escribo para informaros de que el [diverged_rite.GetName|l] ahora observa la doctrina de [diverged_added_doctrine.GetDescriptiveName( diverged_rite.GetFaith.Self )|l].\n\nCon ello, nos acercamos más al [diverged_rite.GetFaith.GetMainRite.GetName|l]. Cuando sus ritos hablan con una sola voz, ¡florece la fe [diverged_rite.GetFaith.GetAdjective]!"
+ pam_tenet_events.0004.a.tt.diverged:0 "El [rite|El] del [diverged_rite.GetName|l] se ha desviado más del [mainline_rite|El] del [diverged_rite.GetFaith.GetMainRite.GetName|l], lo que provoca que el [fervor|El] [fervor_i] anual disminuya más rápido"
+ pam_tenet_events.0004.a.tt.consolidated:0 "El [rite|El] del [diverged_rite.GetName|l] se ha acercado más al [mainline_rite|El] del [diverged_rite.GetFaith.GetMainRite.GetName|l], lo que provoca que el [fervor|El] [fervor_i] anual disminuya más lento"
+ fervor_loss_pam_rite_diverged:0 "El [diverged_rite.GetName|l] se ha desviado"
+ fervor_gain_pam_rite_consolidated:0 "El [diverged_rite.GetName|l] se ha acercado más al [diverged_rite.GetFaith.GetMainRite.GetName|l] de la línea principal"
 
  # dlc/pam/pam_generic_events_l_spanish.yml
  pam_generic_events.0004.desc:0 "El recinto de [ROOT.Char.GetFaith.HouseOfWorship] está completamente vacío. Una neblina se alza en espiral entre las columnas y las velas parpadean en torno al recuerdo de mi [ROOT.Char.Custom2( 'RelationToMeShort', deceased )], [deceased.GetFirstName], que [deceased.GetDeathReasonHideKiller].\n\nMi [ROOT.Char.Custom2( 'RelationToMeShort', comforter )], [comforter.GetFirstName], se sienta tan cerca que su manga roza la mía. «El duelo es un camino», dice con dulzura. «Recorredlo y tal vez encontréis [ROOT.Char.GetFaith.PositiveAfterLife] al final»."
@@ -143,11 +194,19 @@
  # dlc/pam/pam_secular_faith_events_l_spanish.yml
  pam_secular_faith_events.0024.a:0 "¡Y es así como [ROOT.Char.GetFaith.HighGodName] recibe a [Select_CString(rival_character.IsFemale, 'otra servidora', 'otro servidor' )] «dispuest[rival_character.Custom('ES_OA')]»!"
 
+ # dlc/pam/pam_tenets_l_spanish.yml
+ religious_decision.0211_anachoresis_tt:0 "#EMP Por tu [personal_tenet|El] [GetTenetType('tenet_anachoresis').GetName( GetPlayer.GetRite )]:#!"
+ pam_anachoresis_meditation_toast:0 "Por tu [GetTenetType('tenet_anachoresis').GetName( GetPlayer.GetRite )|l]: bonificación por meditar en aislamiento"
+
  # dlc/pam/pam_theocratic_ruler_events_l_spanish.yml
  pam_theocratic_ruler_events.0002.desc:0 "Se me informa de que [foreign_ruler.Custom('ES_ElLa')] [foreign_ruler.GetTitledFirstName|l], vecin[foreign_ruler.Custom('ES_OA')] y seguidor[foreign_ruler.Custom('ES_XA')] de las antiguas tradiciones del [foreign_ruler.GetFaith.GetName|l], ha entrado en mis tierras.\n\nEl pequeño séquito tiene otro destino, pero su ruta [foreign_ruler.GetHerHim] trae tan cerca que se espera que [foreign_ruler.GetHerHim] reciba formalmente en mi corte. \n\n¿Cómo he de recibirle?"
  pam_theocratic_ruler_events.0002.b.success:0 "Mi cortesía se los gana"
 
  # dlc/pam/pam_triggers_l_spanish.yml
+ rite_has_tenet_first:0 "El [Rite.GetName|l] tiene [TenetType.GetName( Rite.Self )|V] como [core_tenet|El]"
+ rite_has_tenet_third:0 "El [Rite.GetName|l] tiene [TenetType.GetName( Rite.Self )|V] como [core_tenet|El]"
+ not_rite_has_tenet_first:0 "El [Rite.GetName|l] #bold no#! ha adoptado [TenetType.GetName( Rite.Self )|V] como [core_tenet|El]"
+ not_rite_has_tenet_third:0 "El [Rite.GetName|l] #bold no#! ha adoptado [TenetType.GetName( Rite.Self )|V] como [core_tenet|El]"
  uses_doctrine_first:0 "El [Faith.GetName|l] sigue la [doctrine|El] [DoctrineType.GetDescriptiveName( Faith.Self )|l]"
 
  # dlc/tgp/dlc_tgp_ceremonial_liege_events_l_spanish.yml
@@ -156,8 +215,19 @@
  # dlc/tgp/dlc_tgp_china_decisions_l_spanish.yml
  noble_family_domicile_buildings_converted:0 "Los [buildings|lE] del [domicile|lE] de [Select_CString( former_noble_family_head.IsLocalPlayer, 'tu personaje', former_noble_family_head.GetShortUIName )] se cambian por [gold|lE] [gold_i]"
 
+ # dlc/tgp/dlc_tgp_faction_l_spanish.yml
+ celestial_movement_demands_interaction.hold_examinations_cooldown:0 "No se puede solicitar otro #color_white [GetActivityType( 'activity_imperial_examination' ).GetName|l]#! hasta [GetCurrentDateWithDiff( GetVarTimeRemaining( recipient.MakeScope, 'movement_recently_requested_examinations') )|V]"
+
  # dlc/tgp/dlc_tgp_governance_l_spanish.yml
  tgp_governor_contract_event.0029.a:0 "Que se haga una proclamación publica que [seditious_storyteller.GetHerHim] condene por perturbar el orden público."
+
+ # dlc/tgp/dlc_tgp_schemes_l_spanish.yml
+ celestial_movement_power_promote_interaction.tt.agent_focus_balance:0 "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_proponent' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_sycophant' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_eunuch' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_gabbler' ).GetName] [scheme_speed_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_herald' ).GetName] [scheme_speed_i]"
+ celestial_movement_power_slander_interaction.tt.agent_focus_balance:0 "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_proponent' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_diplomat' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_eunuch' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_gabbler' ).GetName] [scheme_speed_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_herald' ).GetName] [scheme_speed_i]"
+
+ # dlc/tgp/dlc_tgp_silk_road_l_spanish.yml
+ c_jingzhao_tooltip:0 "Visita los mercados de [GetTitleByKey('c_jingzhao').GetNameNoTier] en [GetGeographicalRegion('tgp_silk_road_china_region').GetName] y descubre la existencia de la [silk_road_innovation|lE] [GetSituation('silk_road_situation').GetSubRegionByKey('region_silk_road_proper_china').MakeScope.Var('innovation').CultureInnovationType.GetName|V]"
+ c_khiva_tooltip:0 "Visita los bazares de [GetTitleByKey('c_khiva').GetNameNoTier] en [GetGeographicalRegion('tgp_silk_road_central_asia_region').GetName] y descubre la existencia de la [silk_road_innovation|lE] [GetSituation('silk_road_situation').GetSubRegionByKey('region_silk_road_proper_transcaspia').MakeScope.Var('innovation').CultureInnovationType.GetName|V]"
 
  # dlc/tgp/dlc_tgp_situation_decision_events_l_spanish.yml
  tgp_dynastic_cycle.0061.t:0 "[GetTitleByKey('h_china').GetHolder.Custom('ES_ElLa')|U] [GetTitleByKey('h_china').GetHolder.Custom('GetDaughterSon')] preferid[GetTitleByKey('h_china').GetHolder.Custom('ES_OA')] del Cielo"
@@ -190,9 +260,16 @@
  imperial_examination.4060.a.success:0 "Dejas en ridículo [promising_lowborn.Custom('ES_AlAla')] advenediz[promising_lowborn.Custom('ES_OA')]"
  imperial_examination.4070.a.failure:0 "Los planes de tu [parent.GetMotherFather] se han desvelado"
 
+ # dlc/tgp/tgp_mandala_modifiers_l_spanish.yml
+ devaraja_recipient_piety_level:0 "El [piety_level|lE] de [Select_CString(actor.IsLocalPlayer,'tu personaje', actor.GetShortUIName)] es [GetPietyLevelName(recipient.GetPietyLevel)|L]: $VALUE|0+=$"
+
  # dlc/tgp/tgp_mandala_scheme_events_l_spanish.yml
  scheme_critical_moments.1215.a_discovered:0 "¡Maldit[owner.Custom('ES_OA')] [owner.Custom2('InsultNoun', ROOT.Char)]!"
  scheme_potential_suzerain_might_join_war_tt:0 "\n@alert_icon! #alert_trial ¡[CHARACTER.GetShortUIName] [Select_CString( CHARACTER.IsLocalPlayer, 'puedes', 'puede' )] convertir[Select_CString( CHARACTER.IsLocalPlayer, 'te', 'se' )] en [Concept('suzerain',Select_CString(CHARACTER.IsFemale,'soberana', 'soberano'))|E] de [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'tu personaje', TARGET_CHARACTER.GetShortUIName)] y [Select_CString( CHARACTER.IsLocalPlayer, 'puedes', 'puede' )] unir[Select_CString( CHARACTER.IsLocalPlayer, 'te', 'se' )] a la guerra como defensor!#!"
+
+ # dlc/tgp/tgp_mandala_schemes_l_spanish.yml
+ start_coerce_contribution_interaction.tt.agent_focus_success:0 "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_thug' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_devotee' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_devotee' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_cleric' ).GetName] [scheme_speed_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_herald' ).GetName] [scheme_speed_i]"
+ start_leverage_contribution_interaction.tt.agent_focus_success:0 "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_thug' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_devotee' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_devotee' ).GetName] [success_chance_max_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_cleric' ).GetName] [scheme_speed_i]\n$EFFECT_LIST_BULLET$[GetAgentSlotType( 'agent_herald' ).GetName] [scheme_speed_i]"
 
  # dlc/tgp/tgp_mandala_task_contracts_l_spanish.yml
  mandala_realm_contract_0011_desc:0 "Un relámpago ha caído sobre un árbol sagrado y ha calcinado la arboleda que lo rodeaba en [TaskContract.GetLocation.GetNameNoTooltip]. Los campesinos están asustados y te piden que realices un rito de fertilidad bajo el árbol."
@@ -205,8 +282,20 @@
  tribute_mission.1002.personality.cynical:0 "\n\nUn temblor en el rabillo del ojo, al tiempo que sus brazos adoptan una postura defensiva, indica que est[human_tribute.Custom('ES_EA')] [human_tribute.GetWomanMan] tiene una opinión muy particular del mundo."
  tribute_mission.1005.t.bunga_mas:0 "$tribute_mission_header$ las flores de oro [tributary_scope.Custom('ES_DelDela')] [tributary_scope.GetTitledFirstNameNoTooltip|l]"
 
+ # effects/maa_effects_l_spanish.yml
+ change_maa_regiment_size_third:0 "El tamaño del [regiment|lE] de [REGIMENT.GetMAAType.GetName|l] aumenta en $VALUE|+0$"
+ change_maa_regiment_size_third_neg:0 "El tamaño del [regiment|lE] de [REGIMENT.GetMAAType.GetName|l] se reduce en $VALUE|-0$"
+ change_maa_regiment_size_third_past:0 "El tamaño del [regiment|lE] de [REGIMENT.GetMAAType.GetName|l] ha aumentado en $VALUE|+0$"
+ change_maa_regiment_size_third_past_neg:0 "El tamaño del [regiment|lE] de [REGIMENT.GetMAAType.GetName|l] se ha reducido en $VALUE|-0$"
+ change_maa_troops_count_third:0 "La fuerza del [regiment|lE] de [REGIMENT.GetMAAType.GetName|l] aumenta en $VALUE|+0$ #WEAK ([REGIMENT.BuildCurrentRegimentCountString])#!"
+ change_maa_troops_count_third_neg:0 "La fuerza del [regiment|lE] de [REGIMENT.GetMAAType.GetName|l] se reduce en $VALUE|-0$ #WEAK ([REGIMENT.BuildCurrentRegimentCountString])#!"
+
  # effects_l_spanish.yml
  THEY_GET_TITLE:0 "[CHARACTER.GetShortUIName|U] gana el [title|lE] de [TARGET_TITLE.GetDefinitiveName|V]"
+ THEY_GAINED_GLORY_EFFECT:0 "[Accolade.GetName] ha ganado $VALUE|+0$ de [glory|lE]"
+ THEY_LOST_GLORY_EFFECT:0 "[Accolade.GetName] pierde $VALUE|-0$ de [glory|lE]"
+ THEY_GAIN_GLORY_EFFECT:0 "[Accolade.GetName] gana $VALUE|+0$ de [glory|lE]"
+ THEY_LOSE_GLORY_EFFECT:0 "[Accolade.GetName] pierde $VALUE|-0$ de [glory|lE]"
  gracious_host_impeccable_guest_perk_3_effect:0 "[adventurer_i] [modifiers|E] extra por el [camp_temperament|lE] #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! que ahora también escala por el número de [languages|lE] conocidos"
 
  # event_localization/accolade_events_l_spanish.yml
@@ -252,6 +341,8 @@
  paraded_troops:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'organizaste', 'organizó' )] una demostración de fuerza."
  studied_martial_motions:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'obtuviste', 'obtuvo' )] conocimiento marcial."
  village_draft:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'reclutaste', 'reclutó' )] a los más fuertes para que le sirvieran."
+ all_members_of_root_confederation_in_attendance:0 "Todo miembro de [root_bloc.GetName|l] que asista"
+ all_members_of_second_confederation_in_attendance:0 "Todo miembro de [second_bloc.GetName|l] que asista"
 
  # event_localization/activities/hunt_events_l_spanish.yml
  hunt.1015.desc:0 "«¡¿[ROOT.Char.GetTitledFirstNameNoTooltip]?! ¡Argh! ¿Sois vos, [ROOT.Char.Custom('FormOfAddressForLiege')]?».\n\nLa mirada desencajada [murder_target.Custom('ES_DelDela')] [murder_target.GetTitledFirstName|l] va del arco en mi mano a la flecha alojada en su brazo.\n\n«¡¿En qué estabais pensando?!»."
@@ -347,6 +438,9 @@
  # event_localization/religion_events/religious_decision_events_l_spanish.yml
  religious_decision.0002.desc_alone:0 "\n\n«Espíritus, escuchadme. ¡Valorad mi ofrenda y ayudadme en mi súplica!», exclamo a la ahora penumbra de la hondonada.\n\nMientas sigo dando vueltas, me llega una repentina oleada de energía. El sudor me baña la frente y mis miembros se mueven frenéticamente, cada vez más deprisa. Me muevo, me muevo, me #EMP muevo#!, hasta que al final me desplomo sobre el suelo, jadeando."
 
+ # event_localization/religion_events/rite_growth_events_l_spanish.yml
+ rite_growth.0010.desc.differing.doctrine:0 "y la discrepancia más llamativa es [differing_doctrine.GetDescriptiveName( new_rite.GetFaith.Self )|l]."
+
  # event_localization/schemes/intrigue_scheme_ongoing_events_l_spanish.yml
  intrigue_scheme_ongoing.5006.a:0 "¡Qué inesperado! Y qué efecto más curioso."
 
@@ -379,6 +473,10 @@
  yearly.7052.desc_unconvinced:0 "Me despierto, empapad[ROOT.Char.Custom('ES_OA')] en sudor. Esta ha sido, si no la peor, una de las más horribles pesadillas que puedo recordar.\n\nLa manos aún me tiemblan del estrés que me ha causado el sueño, mientras recuerdo sus contenidos. «Seguro que las cosas ya no pueden ir a peor», mascullo, mientras me doy la vuelta, en un patético intento de volverme a dormir."
  yearly.7053.b_pouch.desc:0 "Sacas una bolsa de monedas de oro del agujero"
 
+ # factions_l_spanish.yml
+ FACTION_ESCALATED_PEASANT_DYNAMIC_NAME:0 "Rebelión de los [ROOT.Faction.GetSpecialCharacter.Custom('RegionalPeasantHeadgearPlural')|l] de [ROOT.Faction.GetSpecialCharacter.Custom('GetTurbanRebellionColor')|l]"
+ peasant_leader_title_name:0 "Rebelión de los [ROOT.Char.Custom('RegionalPeasantHeadgearPlural')|l] de [ROOT.Char.Custom('GetTurbanRebellionColor')|l]"
+
  # game_concepts_l_spanish.yml
  game_concept_extended_family_desc:0 "La familia extensa de un personaje incluye:\n$BULLET_WITH_TAB$Primos y primas\n$BULLET_WITH_TAB$Tíos\n$BULLET_WITH_TAB$Tías\n$BULLET_WITH_TAB$Sobrinos\n$BULLET_WITH_TAB$Sobrinas"
  game_concept_co_monarchy_desc:0 "$game_concept_co_monarchies$ son un tipo de [diarchy|lE] que proporciona a los gobernantes de tipo [feudal|lE] un modo de elegir un [designated_heir|lE] hasta en [eras|lE] anteriores.\n\nEl coste que tiene es que se entra en una $game_concept_diarchy$ con el heredero, lo que le proporciona un acceso más fácil a muchos de los mismos poderes que un [entrenched_regent|lE].\n\n#WEAK Los $game_concept_co_monarchs$ solo están disponibles para [kings|lE] y [emperors|lE].#!"
@@ -392,6 +490,7 @@
 
  # great_projects/pam_great_project_types_l_spanish.yml
  pam_great_projects_events.0003.desc:0 "«#EMP Brillante es aquello que se une brillantemente con lo brillante, y brillante será la noble obra que se impregne de la nueva luz»#!, expresa [religion_buddy.Custom('ES_ElLa')] [religion_buddy.GetTitledFirstName|l] al posar los ojos sobre el vidrio cortado que resplandece con el sol.\n\n[glazier.Custom('ES_ElLa')|U] vidrier[glazier.Custom('ES_OA')], [glazier.Custom('ES_ElLa')] [glazier.GetTitledFirstName|l], ha puesto fragmentos de [Glossary('vidrio de crisol','POT_METAL_GLOSS')] sobre mesas encaladas para que pudiéramos examinar mejor los posibles diseños.\n\nEntonces declaro: «Este ventanal se verá tanto desde la nave como desde la totalidad de [province.GetNameNoTooltip], debe representar…»."
+ landed_title_rite_not_equal:0 "Tiene un [rite|El] distinto al [RITE.GetName|l]"
 
  # guest_descriptions_l_spanish.yml
  guest_description.duchy_claim.desc:0 "unos [claims|lE] útiles sobre un [duchy|lE]"
@@ -402,8 +501,15 @@
  # gui/event_window_wigets_l_spanish.yml
  event_window_widget_harrying_tooltip_widget:0 "El Tormento del Norte [harrying_widget_i] mide los valores de [harrying_resistance|lE] y [harrying_pacification|lE]. Estos tienen efectos sobre los dos principales grupos involucrados en la región: el gobernante normando de Inglaterra y cualquier vasallo anglosajón de nivel [duke|lE] que pueda haber.\n\nUna [harrying_resistance|lE] mayor representa la resistencia anglosajona a la ocupación normanda, y niveles altos pueden suponer menos [cultural_acceptance|lE] anglosajona/normanda, menos [county_control|lE], una mayor probabilidad de [claimant_factions|lE] o incluso una [civil_war|lE].\n\nUna [harrying_pacification|lE] más alta suponer mayor [cultural_acceptance|lE] anglosajona/normanda, mayor [county_control|lE] y menor probabilidad de [claimant_factions|lE]."
 
+ # gui/faith_view_l_spanish.yml
+ ECUMENICAL_COUNCIL_PLANNER_TENET_SELECT_TOOLTIP:0 "#I Haz clic para discutir los cambios en [TenetType.GetNameNoTooltip( Rite.Self )]#!"
+ FAITH_VIEW_FOLLOWING:0 "Sigues el [Rite.GetName|l]"
+
  # gui/great_holy_war_view_l_spanish.yml
  pledge_defender:0 "Oponerse a la [great_holy_war.GetFaith.GHWName|l] por [great_holy_war.ghw_target_kingdom.GetName]"
+
+ # gui/personal_beliefs_window_l_spanish.yml
+ PERSONAL_BELIEFS_VIEW_FOLLOWING:0 "Sigues el [Rite.GetName|l]"
 
  # gui/specialinteractions_l_spanish.yml
  expected_to_pay_tribute:0 "Se espera que [SCOPE.sC('tributary_loc').GetShortUIName] [Concept('travel',Select_CString(SCOPE.sC('tributary_loc').IsLocalPlayer,'viajes', 'viaje'))|E] a [SCOPE.sC('suzerain_loc').GetCapitalLocation.GetName] en una $tribute_mission_decision_china$ de modo habitual"
@@ -421,10 +527,12 @@
  appoint_co_emperor_interaction.tt.enter_co_emperorship_with_secondary_recipient:0 "Formas un [duumvirate|lE] con [secondary_recipient.Custom('ES_ElLa')] [secondary_recipient.GetTitledFirstName|l] como tu [Concept('co_emperor',Select_CString(secondary_recipient.IsFemale,'coemperatriz','coemperador'))|E]"
 
  # interactions/puppet_actions_l_spanish.yml
+ puppet_action_description_puppet_action_demand_conversion_player_ruler:0 "Usa la [interaction|El] #V [GetPlayer.GetPlayerInteractionName('demand_conversion_player_ruler_interaction')]#! para forzar a un [vassal|El] a que adopte tu [faith|El]"
  IS_A_CHILD_REASON:0 "[recipient.GetShortUIName] es un[recipient.Custom('ES_XA')] niñ[recipient.Custom('ES_OA')]: $VALUE|=+0$"
 
  # interactions_l_spanish.yml
  TAKE_THE_VOWS_AMBITIOUS:0 "[GetTrait('ambitious').GetName( recipient.Self )]: $VALUE|=+0$"
+ ZEALOUS_PROSELYTIZER_REASON:0 "[perk|E] [GetPerk('zealous_proselytizer_perk').GetName( GetPlayer )] de [actor.GetShortUIName]: $VALUE|=+0$"
 
  # laamp_contract_schemes_l_spanish.yml
  laamp_base_contract_schemes.6002.desc:0 "Tres… cuatro… y ahí va el quinto ejemplar de [ROOT.Char.MakeScope.Var('animal_type').GetFlagName] de esta mañana. Echo el cuerpo al carro, justo a tiempo para que [employer.Custom('ES_ElLa')] [employer.GetTitledFirstName|l] llegue con algún sirviente.\n\n«¡Qué trabajo más magnífico!», aplaude [employer.GetSheHe]. «Basta de ganado muerto, de niños perdidos. Tened, vuestro pago; y si el pueblo llano vuelve a quejarse, ya sé a quién volver a llamar»."
@@ -446,6 +554,8 @@
  EXAMINATION_WOULD_TAKE:0 "\n\nEl [merit_level|El] máximo de [Select_CString( Character.IsLocalPlayer, 'tu personaje', Character.GetShortUIName )] está limitado al no haber aprobado este [examination|El]. [SelectLocalization(Character.IsLocalPlayer, 'EXAMINATION_WOULD_TAKE_ME', 'EXAMINATION_WOULD_TAKE_OTHER')]"
 
  # messages_l_spanish.yml
+ msg_holy_site_demoted_by_character_desc:0 "[holy_site_actor.GetShortUIName|U] [Select_CString( holy_site_actor.IsLocalPlayer, 'has', 'ha' )] degradado [changed_holy_site.GetName]; ya no es un [eminent_holy_site|El] del [notified_faith.GetName|l]"
+ msg_holy_site_abandoned_by_character_desc:0 "[holy_site_actor.GetShortUIName|U] [Select_CString( holy_site_actor.IsLocalPlayer, 'has', 'ha' )] abandonado [changed_holy_site.GetName]; ya no es un [holy_site|El] del [notified_faith.GetName|l]"
  msg_clerical_region_independence_title:0 "[LEFT_CHARACTER.Custom('ES_ElLa')|U] [LEFT_CHARACTER.GetTitleAsNameNoTooltip|l] se volvió independiente"
 
  # modifiers/modifiers_l_spanish.yml
@@ -455,12 +565,56 @@
  rf_eastern_opinion:0 "Opinión $rf_eastern_adherent$"
 
  # passive_rite_learning_l_spanish.yml
- msg_passive_learned_rite_desc:0 "Tras una larga observación de tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l], has obtenido [agnostic_knowledge|El] de los [core_tenets|El] y [doctrines|El] del [rite|lE] del [passive_learn_source.GetRite.GetName|El]."
- msg_hor_learned_tenet_cranial_trophies_desc:0 "Como cabeza del [rite|lE] del [passive_learn_hor.GetRite.GetName|El], has estudiado el [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective] y has registrado su oscuro propósito, obteniendo [agnostic_knowledge|El] de ello."
+ msg_passive_learned_rite_desc:0 "Tras una larga observación de tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l], has obtenido [agnostic_knowledge|El] de los [core_tenets|El] y [doctrines|El] del [rite|lE] del [passive_learn_source.GetRite.GetName|l]."
+ msg_passive_learned_tenet_desc:0 "Al observar a tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l], practicar el [core_tenet|El] de [passive_learn_tenet.GetBaseName] del [rite|El] del [passive_learn_source.GetRite.GetName|l], has obtenido [agnostic_knowledge|El]."
+ msg_passive_learned_tenet_cranial_trophies_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], mantiene el [core_tenet|El] de [passive_learn_tenet.GetBaseName], y a través de su persona has obtenido [agnostic_knowledge|El] de su sombrío propósito."
+ msg_passive_learned_tenet_ritual_cannibalism_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], honra el [core_tenet|El] de [passive_learn_tenet.GetBaseName], y has obtenido [agnostic_knowledge|El] de ello en sus propios términos."
+ msg_passive_learned_tenet_human_sacrifice_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], ha realizado el [core_tenet|El] de [passive_learn_tenet.GetBaseName] en tu presencia y has obtenido [agnostic_knowledge|El] de ello."
+ msg_passive_learned_tenet_warmonger_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], vive según el [core_tenet|El] de [passive_learn_tenet.GetBaseName], y has obtenido [agnostic_knowledge|El] de su lógica."
+ msg_passive_learned_tenet_takamin_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El]del [passive_learn_source.GetRite.GetName|l], practica el [core_tenet|El] de [passive_learn_tenet.GetBaseName] a diario y has obtenido [agnostic_knowledge|El] de sus ritmos."
+ msg_passive_learned_tenet_exaltation_of_pain_desc:0 "Al observar a tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], has obtenido [agnostic_knowledge|El] del [core_tenet|El] de [passive_learn_tenet.GetBaseName], algo inquietante."
+ msg_passive_learned_tenet_sacrificial_ceremonies_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], te ha guiado por el [core_tenet|El] de [passive_learn_tenet.GetBaseName] paso a paso y has obtenido [agnostic_knowledge|El] de ello."
+ msg_passive_learned_tenet_gruesome_festivals_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], te ha mostrado el [core_tenet|El] de [passive_learn_tenet.GetBaseName] en todo su esplendor y has obtenido [agnostic_knowledge|El] de ello."
+ msg_passive_learned_tenet_adorcism_desc:0 "Al observar a tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], has obtenido [agnostic_knowledge|El] del [core_tenet|El] de [passive_learn_tenet.GetBaseName] en sus propios términos."
+ msg_passive_learned_tenet_hedonistic_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], celebra el [core_tenet|El] de [passive_learn_tenet.GetBaseName] y has obtenido [agnostic_knowledge|El] de lo llamativo que resulta."
+ msg_passive_learned_doctrine_desc:0 "Al observar a tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l], vivir según la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] del [rite|El] del [passive_learn_source.GetRite.GetName|l], has obtenido [agnostic_knowledge|El] de ello por tus propios medios."
+ msg_passive_learned_doctrine_polygamy_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], vive según la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] y has obtenido [agnostic_knowledge|El] de su funcionamiento."
+ msg_passive_learned_doctrine_concubines_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], mantiene la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] y has obtenido [agnostic_knowledge|El] de su razonamiento."
+ msg_passive_learned_doctrine_consanguinity_unrestricted_desc:0 "Al observar a tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], has ganado [agnostic_knowledge|El] de la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] y ya no te parece tan extraña como antes."
+ msg_passive_learned_doctrine_kinslaying_accepted_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], te ha enseñado la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )], una lección escalofriante y has obtenido [agnostic_knowledge|El] de ello."
+ msg_passive_learned_doctrine_witchcraft_virtuous_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], sigue de cerca la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] y a través de [passive_learn_source.Custom('ES_ElElla')] has obtenido [agnostic_knowledge|El] de ello."
+ msg_passive_learned_doctrine_funeral_sky_burial_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], observa la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] y has obtenido [agnostic_knowledge|El] de su significado."
+ msg_passive_learned_doctrine_funeral_mummification_desc:0 "Tu [GetPlayer.Custom2('RelationToMeShort', passive_learn_source.Self)], [passive_learn_source.Custom('ES_ElLa')] [passive_learn_source.GetTitledFirstNameNoTooltip|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l], mantiene la [doctrine|El] de [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )] y has obtenido [agnostic_knowledge|El] de sus métodos."
+ apa_passive_religious_learning_host_tt:0 "Observas a [first.GetShortUIName] practicando el [rite|El] del [first.GetRite.GetName|l]"
+ apa_passive_religious_learning_guest_tt:0 "Observas a [first.GetShortUIName] practicando el [rite|El] del [first.GetRite.GetName|l]"
+ apa_passive_religious_learning_pilgrimage_pool_tt:0 "Observas a [first.GetShortUIName], un[first.Custom('ES_XA')] lugareñ[first.Custom('ES_OA')], practicando el [rite|El] del [first.GetRite.GetName|l]"
+ msg_hor_learned_tenet_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], tu estudio de la [faith|El] [passive_learn_source_faith.GetAdjective] vecina te ha otorgado [agnostic_knowledge|El] del [core_tenet|El] [passive_learn_tenet.GetBaseName]."
+ msg_hor_learned_doctrine_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], tu estudio de la [faith|El] [passive_learn_source_faith.GetAdjective] vecina te ha otorgado [agnostic_knowledge|El] de la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )]."
+ msg_hor_learned_tenet_cranial_trophies_desc:0 "Como cabeza del [rite|lE] del [passive_learn_hor.GetRite.GetName|l], has estudiado el [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective] y has registrado su oscuro propósito, obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_ritual_cannibalism_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has estudiado el [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective] en sus propios términos, obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_human_sacrifice_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has catalogado el [core_tenet|El] [passive_learn_tenet.GetBaseName] practicado por la [faith|El] [passive_learn_source_faith.GetAdjective], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_warmonger_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has estudiado cómo la [faith|El] [passive_learn_source_faith.GetAdjective] convertía el [core_tenet|El] [passive_learn_tenet.GetBaseName] en práctica, obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_takamin_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has aprendido los ritmos diarios del [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_exaltation_of_pain_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], tu estudio de la [faith|El] [passive_learn_source_faith.GetAdjective] te ha enseñado el [core_tenet|El] [passive_learn_tenet.GetBaseName], aunque ha resultado algo inquietante, y te ha otorgado [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_sacrificial_ceremonies_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has trazado el [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective] paso a paso, obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_gruesome_festivals_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has sido testigo del [core_tenet|El] [passive_learn_tenet.GetBaseName] de la [faith|El] [passive_learn_source_faith.GetAdjective] en todo su esplendor, obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_adorcism_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has observado cómo la [faith|El] [passive_learn_source_faith.GetAdjective] habita el [core_tenet|El] [passive_learn_tenet.GetBaseName], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_tenet_hedonistic_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], tu estudio de la [faith|El] [passive_learn_source_faith.GetAdjective] te ha revelado el atractivo del [core_tenet|El] [passive_learn_tenet.GetBaseName], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_doctrine_polygamy_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has estudiado cómo la [faith|El] [passive_learn_source_faith.GetAdjective] ordena sus casas bajo la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_doctrine_concubines_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has aprendido cómo la [faith|El] [passive_learn_source_faith.GetAdjective] razona sobre la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_doctrine_consanguinity_unrestricted_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], tu lectura de la [faith|El] [passive_learn_source_faith.GetAdjective] ha hecho que la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )] ya no sea algo foráneo para ti, lo que te ha otorgado [agnostic_knowledge|El] de ello."
+ msg_hor_learned_doctrine_deviancy_virtuous_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has observado cómo la [faith|El] [passive_learn_source_faith.GetAdjective] practica abiertamente la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )], obteniendo [agnostic_knowledge|El] de ello en sus propios términos."
+ msg_hor_learned_doctrine_kinslaying_accepted_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has analizado, no sin cierta inquietud, cómo la [faith|El] [passive_learn_source_faith.GetAdjective] justifica la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_doctrine_witchcraft_virtuous_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has estudiado cómo la [faith|El] [passive_learn_source_faith.GetAdjective] sigue de cerca la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )], obteniendo [agnostic_knowledge|El] de ello."
+ msg_hor_learned_doctrine_funeral_sky_burial_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has observado la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )] tal como la practica la [faith|El] [passive_learn_source_faith.GetAdjective], obteniendo [agnostic_knowledge|El] de su significado."
+ msg_hor_learned_doctrine_funeral_mummification_desc:0 "Como cabeza del [rite|El] del [passive_learn_hor.GetRite.GetName|l], has estudiado la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source_faith.Self )] tal como la practica la [faith|El] [passive_learn_source_faith.GetAdjective], obteniendo [agnostic_knowledge|El] de sus métodos."
 
  # passive_rite_learning_travel_l_spanish.yml
- msg_passive_learned_tenet_abroad_desc:0 "Al observar [passive_learn_source.Custom('ES_AlAla')] [passive_learn_source.GetTitledFirstName|l] del [rite|El] del [passive_learn_source.GetRite.GetName|El] en [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] del [core_tenet|El] [passive_learn_tenet.GetBaseName]."
- msg_passive_learned_doctrine_abroad_desc:0 "Al observar [passive_learn_source.Custom('ES_AlAla')] [passive_learn_source.GetTitledFirstName|l] del [rite|El] del [passive_learn_source.GetRite.GetName|El] en [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] de la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )]."
+ msg_passive_learned_tenet_abroad_desc:0 "Al observar [passive_learn_source.Custom('ES_AlAla')] [passive_learn_source.GetTitledFirstName|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l] en [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] del [core_tenet|El] [passive_learn_tenet.GetBaseName]."
+ msg_passive_learned_doctrine_abroad_desc:0 "Al observar [passive_learn_source.Custom('ES_AlAla')] [passive_learn_source.GetTitledFirstName|l] del [rite|El] del [passive_learn_source.GetRite.GetName|l] en [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] de la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_source.GetFaith.Self )]."
+ msg_passive_learned_rite_abroad_desc:0 "A través [passive_learn_source.Custom('ES_DelDela')] [passive_learn_source.GetTitledFirstNameNoTooltip|l], has obtenido [agnostic_knowledge|El] de los [core_tenets|El] y [doctrines|El] del [rite|El] del [passive_learn_source.GetRite.GetName|l]."
+ msg_passive_learned_tenet_pilgrimage_rite_desc:0 "En [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] del [core_tenet|El] [passive_learn_tenet.GetBaseName] del [rite|El] del [passive_learn_rite.GetName|l]."
+ msg_passive_learned_doctrine_pilgrimage_rite_desc:0 "En [passive_learn_learner.GetCurrentLocation.GetTitle.GetNameNoTier], has obtenido [agnostic_knowledge|El] de la [doctrine|El] [passive_learn_doctrine.GetDescriptiveName( passive_learn_rite.GetFaith.Self )] del [rite|El] del [passive_learn_rite.GetName|l]."
 
  # relationship_reasons_l_spanish.yml
  best_friend_helped_pen_memory:0 "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsLocalPlayer, 'encontrasteis', 'encontraron' )] una confianza mutua infinita cuando [TARGET_CHARACTER.GetShortUINameNoTooltip] [Select_CString(CHARACTER.IsLocalPlayer, 'te', '' )] ayudó a [Select_CString( CHARACTER.IsLocalPlayer, 'tu personaje', CHARACTER.GetShortUINameNoTooltip )] a escribir un volumen de recuerdos."
@@ -474,6 +628,10 @@
  rival_foreign_threat_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'soltaste', 'soltó' )] insultos groseros y [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'vilipendiaste', 'vilipendió' )] a los dignatarios al tiempo que [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'agitabas', 'agitaba' )] a las masas contra las amenazas extranjeras."
  rival_despised_mutual_coronation:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'despreciaste', 'despreció' )] [Select_CString( CHARACTER.IsLocalPlayer, 'tu', 'su' )] coronación mutua como gobernante y cónyuge."
  rival_despised_mutual_coronation_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'despreciaste', 'despreció' )] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'tu', 'su' )] coronación mutua como gobernante y cónyuge."
+
+ # religion/religion_doctrine_triggers_l_spanish.yml
+ THEY_RITE_HAS_DOCTRINE:0 "El [RITE.GetName|l] tiene la [doctrine|El] [DOCTRINE_TYPE.GetName(RITE.GetFaith.Self)|l]"
+ NOT_RITE_THEY_HAS_DOCTRINE:0 "El [RITE.GetName|l] #bold no#! tiene la [doctrine|El] [DOCTRINE_TYPE.GetName(RITE.GetFaith.Self)|l]"
 
  # religion/rites_l_spanish.yml
  d_wargodname_rite_adj:0 "[Faith.WarGodName|:english_rite_i_suffix]ita"
@@ -505,11 +663,26 @@
  d_fertilitygodname_rite_adherent_plural:0 "[Faith.FertilityGodName|:english_rite_i_suffix]itas"
 
  # schemes_l_spanish.yml
+ study_faith_nothing_left_to_learn_tt:0 "Ya has aprendido todos los [Concept('core_tenet', 'dogmas principales')|E] y las [Concept('doctrine', 'doctrinas')|E] que se pueden aprender del [rite|El] del [recipient.GetRite.GetName|l] de [recipient.GetShortUINameNoTooltip]"
  scheme_apa_positive_0181_modifier_desc:0 "Hay que encontrar puntos en común y apoderarse de ellos."
  scheme_odds.realm_size:0 "[realm_size|E] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)]"
  scheme_odds.target_suzerain_has_greater_radiance:0 "[radiance|E] del [suzerain|lE] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)]"
  SCHEME_TARGET_REALM_SIZE:0 "[realm_size|E] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)]: $VALUE|+=0$"
  SUZERAIN_HAS_GREATER_RADIANCE:0 "El [suzerain|lE] de [Select_CString( target.IsLocalPlayer, 'tu personaje', target.GetShortUIName)] tiene un [radiance|lE] mayor: $VALUE|+=0$"
+
+ # scope_comparison_triggers_l_spanish.yml
+ CHARACTER_RITE_EQUAL_FIRST:0 "Practicas el [RITE.GetName|l]"
+ NOT_CHARACTER_RITE_EQUAL_FIRST:0 "#bold No#! practicas el [RITE.GetName|l]"
+ CHARACTER_RITE_EQUAL_THIRD:0 "[CHARACTER.GetShortUIName|U] practica el [RITE.GetName|l]"
+ NOT_CHARACTER_RITE_EQUAL_THIRD:0 "[CHARACTER.GetShortUIName|U] #bold no#! practica el [RITE.GetName|l]"
+ LANDED_TITLE_RITE_EQUAL_THIRD:0 "[TITLE.GetName] practica el [RITE.GetName|l]"
+ NOT_LANDED_TITLE_RITE_EQUAL_THIRD:0 "[TITLE.GetName] #bold no#! practica el [RITE.GetName|l]"
+ LANDED_TITLE_RITE_EQUAL_GLOBAL:0 "Practica el [RITE.GetName|l]"
+ NOT_LANDED_TITLE_RITE_EQUAL_GLOBAL:0 "#bold No#! practica el [RITE.GetName|l]"
+ PROVINCE_RITE_EQUAL_THIRD:0 "[PROVINCE.GetName] practica el [RITE.GetName|l]"
+ NOT_PROVINCE_RITE_EQUAL_THIRD:0 "[PROVINCE.GetName] #bold no#! practica el [RITE.GetName|l]"
+ PROVINCE_RITE_EQUAL_GLOBAL:0 "Practica el [RITE.GetName|l]"
+ NOT_PROVINCE_RITE_EQUAL_GLOBAL:0 "#bold No#! practica el [RITE.GetName|l]"
 
  # single_combat_events_l_spanish.yml
  single_combat.0031.desc.sc_attacker.feint_and_stab.fatality:0 "lo que me distrae lo suficiente como para que no note [sc_victor.Custom('SignatureWeaponAttemptedLight')] posterior, [sc_victor.Custom('SignatureWeaponKillTypeTorso2PresentParticiple')].\n\nMe tambaleo y luego caigo contra el/la [sc_defender.Custom('GroundType')], convulsionando, intentando gritar pero incapaz de emitir más de un susurro ronco. ¿Cómo se puede sobrevivir a tanto #EMP dolor#!?\n\nNo se puede."

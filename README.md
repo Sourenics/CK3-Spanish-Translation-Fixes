@@ -11,9 +11,9 @@ A Crusader Kings III mod that fixes broken and mistranslated texts in the offici
 
 ## What it fixes
 
-Version 1.0.0 replaces **268 strings**. Every one of them is listed, with the part that changed, in [FIXED_STRINGS.md](FIXED_STRINGS.md).
+Version 1.0.0 replaces **399 strings**. Every one of them is listed, with the part that changed, in [FIXED_STRINGS.md](FIXED_STRINGS.md).
 
-### Broken strings (202)
+### Broken strings (331)
 
 Texts where the game shows raw code, an empty space or the wrong character, because the Spanish file contains a technical mistake:
 
@@ -23,8 +23,10 @@ Texts where the game shows raw code, an empty space or the wrong character, beca
 - **A formatter translated by mistake**: `english_rita_i_suffix` instead of `english_rite_i_suffix`, which broke 27 war-god rite names.
 - **Format codes and line breaks**, such as `#EMPyour guerra` or texts glued to the previous paragraph.
 - **Leftover English** inside Spanish sentences ("fundó el the Pandidakterion").
+- **Wrong keys and arguments** passed to functions: an item slot translated as `'casco'` instead of `'helmet'`, cooldowns read from another decision's timer, the wrong tenet in the evangelize tooltip, faith instead of rite for tenet names, the piety level of the wrong character, misspelled region and agent keys…
+- **Names shown as broken links.** In 94 strings, plain names (mostly rites, but also weapons, accolades and blocs) were formatted as links to game concepts, which they are not, so they appeared as a faded, broken link.
 
-### Spelling and grammar (66)
+### Spelling and grammar (68)
 
 Typos and missing accents found in the text: "haciaa", "basatnte", "probabildad", "Sin embaro", "acutal", "es mas probable", "el publico ruge"…
 
@@ -36,7 +38,8 @@ The Spanish file was compared, string by string, with the English one and with t
 2. Every character referenced by a Spanish string was checked against the English string with the same key and the event it belongs to.
 3. Every gender agreement code (`Custom('ES_…')`) was checked against the definitions in the game files.
 4. Format codes, variables, icons and line breaks were compared with the English text.
-5. A spell check of the whole Spanish text, with every candidate reviewed by hand.
+5. The arguments passed to every function (item slots, timers, regions, tenets…) were compared with the English text.
+6. A spell check of the whole Spanish text, with every candidate reviewed by hand.
 
 Every corrected string only uses functions and characters that the official translations of that same string also use.
 
@@ -67,7 +70,7 @@ Subscribe on the Steam Workshop page and enable the mod in the Paradox launcher.
 - Only affects players with the game in Spanish.
 - No DLC required. Strings from DLCs you do not own are simply never shown.
 - Can be added to or removed from an existing save.
-- Each string is replaced individually (`localization/replace/spanish/`), so it works alongside other mods. If another mod also replaces one of these 268 strings, the one loaded first wins.
+- Each string is replaced individually (`localization/replace/spanish/`), so it works alongside other mods. If another mod also replaces one of these 399 strings, the one loaded first wins.
 - When a game update changes one of these strings, this mod keeps showing its own version until it is updated. If you notice an outdated text after a patch, please report it.
 
 ## Reporting a wrong text

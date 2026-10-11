@@ -1,10 +1,10 @@
 # Fixed strings (1.0.0)
 
-Every Spanish string this mod replaces, with the part that changed. 268 strings in total.
+Every Spanish string this mod replaces, with the part that changed. 399 strings in total.
 
 Keys are the vanilla localization keys. "Before" is the text shipped with the game; "After" is the text in this mod.
 
-## Broken strings (202)
+## Broken strings (331)
 
 ### Misspelled data functions
 
@@ -64,8 +64,8 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 
 | Key | Before | After |
 |---|---|---|
-| `msg_passive_learned_tenet_abroad_desc` | passive_learn_hor.GetRite | passive_learn_source.GetRite |
-| `msg_passive_learned_doctrine_abroad_desc` | passive_learn_hor.GetRite | passive_learn_source.GetRite |
+| `msg_passive_learned_tenet_abroad_desc` | `passive_learn_hor.GetRite.GetName\|El]` | `passive_learn_source.GetRite.GetName\|l]` |
+| `msg_passive_learned_doctrine_abroad_desc` | `passive_learn_hor.GetRite.GetName\|El]` | `passive_learn_source.GetRite.GetName\|l]` |
 | `IS_A_CHILD_REASON` | secondary_recipient | recipient |
 | `TAKE_THE_VOWS_AMBITIOUS` | owner.Self | recipient.Self |
 | `COUNCILLOR_IS_YOUR_FRIEND` | `es amig[recipient.Custom('ES_OA')] tuy[recipient.Custom('ES_OA')]:` | `es amig[councillor.Custom('ES_OA')] tuy[councillor.Custom('ES_OA')]` |
@@ -178,7 +178,57 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `guest_description.duchy_claim.desc` | `sobre un un [duchy` | `sobre un [duchy` |
 | `ep3_camp_party.2000.compassionate` | `#EMP es#! es la recompensa` | `#EMP es#! la recompensa` |
 
-## Spelling and grammar (66)
+### Wrong keys and arguments
+
+| Key | Before | After |
+|---|---|---|
+| `commission_artifact_decision_option_crown` | GetNumberOfArtifactsForSlotTypeString( 'casco' ) | GetNumberOfArtifactsForSlotTypeString( 'helmet' ) |
+| `recruit_bookmaker_cooldown_tt` | 'recruit_bookmaker_liege_cooldown' | 'recruit_bookmaker_cooldown' |
+| `recruit_court_gardener_cooldown_tt` | 'recruit_gardener_cooldown' | 'recruit_court_gardener_cooldown' |
+| `recruit_foreign_emissary_cooldown_tt` | VarRemaining( 'recruit_foreign_emissary_cooldown' ) | VarRemaining( 'foreign_emissary_engineer_cooldown' ) |
+| `culture_parameter_block_printing_university_bonuses` | HasDlcFeature( 'legends' ) | HasDlcFeature( 'wards_and_wardens' ) |
+| `ECUMENICAL_COUNCIL_PLANNER_TENET_SELECT_TOOLTIP` | GetNameNoTooltip( Faith.Self ) | GetNameNoTooltip( Rite.Self ) |
+| `learning_oath_1_decision_desc_extra` | 'stewardship_oath_1_timer' | 'learning_oath_1_timer' |
+| `purge_pretenders_oath_decision_desc_extra` | IsOngoingCoronationOath('purge_pretenders') | IsOngoingCoronationOath('purge_pretenders_oath') |
+| `devaraja_recipient_piety_level` | actor.GetPietyLevel | recipient.GetPietyLevel |
+| `celestial_movement_power_promote_interaction.tt.agent_focus_balance` | 'agent_political_gabbler' | 'agent_gabbler' |
+| `celestial_movement_power_slander_interaction.tt.agent_focus_balance` | 'agent_political_gabbler' | 'agent_gabbler' |
+| `start_coerce_contribution_interaction.tt.agent_focus_success` | 'agent_cleiric' | 'agent_cleric' |
+| `start_leverage_contribution_interaction.tt.agent_focus_success` | 'agent_cleiric' | 'agent_cleric' |
+| `c_jingzhao_tooltip` | 'tgp_silk_road_occident_region' | 'tgp_silk_road_china_region' |
+| `c_khiva_tooltip` | 'region_silk_road_proper_central_transcaspia' | 'region_silk_road_proper_transcaspia' |
+| `celestial_movement_demands_interaction.hold_examinations_cooldown` | 'movement_recently_requested_examination' | 'movement_recently_requested_examinations' |
+| `SCHEME_TARGET_LAZY` | GetName( owner ) | GetName( target ) |
+| `SCHEME_TARGET_DILIGENT` | GetName( owner ) | GetName( target ) |
+| `mpo_decisions_events.0100.d.unlocked` | 'trade_yurt_01' | 'herd_trade_yurt_01' |
+| `custom_southern_russia_expand_steppe_tt` | 'ghw_region_southern_russsia' | 'ghw_region_southern_russia' |
+| `fund_inspiration.1051.desc.hide` | 'animal_skull_type' | 'animal_hide_type' |
+| `add_known_tenet_third` | GetPlayer.GetFaith | Character.GetRite |
+| `religious_decision.0211_anachoresis_tt` | GetPlayer.GetFaith | GetPlayer.GetRite |
+| `pam_anachoresis_meditation_toast` | GetPlayer.GetFaith | GetPlayer.GetRite |
+| `pam_evangelize_tenet_carnal_exaltation` | 'tenet_khachkar' | 'tenet_carnal_exaltation' |
+| `pam_decision_events.0011.desc.permitted` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
+| `pam_decision_events.0011.desc.prohibited` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
+| `pam_decision_events.0011.desc.fallback` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
+| `fervor_gain_pam_tenet_prohibited` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
+| `fervor_loss_pam_tenet_permitted` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
+| `puppet_action_description_puppet_action_demand_conversion_player_ruler` | 'demand_conversion_vassal_ruler_interaction' | 'demand_conversion_player_ruler_interaction' |
+| `feature_brooch_adornment_runes` | 'decoration_material_gem' | 'decoration_material_wire' |
+| `brooch_adornment_gems` | GetFlagName('crown_gem') | GetFlagName('adornment_gem') |
+| `artifact_necklace_description` | GetFeatureText( 'crown_decoration' ) | GetFeatureText( 'decoration_material_gem' ) |
+| `rite_growth.0010.desc.differing.doctrine` | `[differing_doctrine.GetDescriptiveName\|l]` | `[differing_doctrine.GetDescriptiveName( new_rite.GetFaith.Self )\|l]` |
+
+### Concept links on plain names
+
+The `E` format flag turns a word into a link to a game concept (the underlined terms with a tooltip). In 96 Spanish strings it was applied to plain names (rites, weapons, accolades, blocs…), which are not concepts, so the name was shown as a broken, faded link. No official translation does this. The `E` was removed and the rest of the formatting kept (for example `[diverged_rite.GetName|El]` → `[diverged_rite.GetName|l]`). Strings that also needed other fixes are listed in their own sections too.
+
+<details><summary>Affected keys</summary>
+
+`CHARACTER_RITE_EQUAL_FIRST`, `CHARACTER_RITE_EQUAL_THIRD`, `FAITH_VIEW_FOLLOWING`, `LANDED_TITLE_RITE_EQUAL_GLOBAL`, `LANDED_TITLE_RITE_EQUAL_THIRD`, `NOT_CHARACTER_RITE_EQUAL_FIRST`, `NOT_CHARACTER_RITE_EQUAL_THIRD`, `NOT_LANDED_TITLE_RITE_EQUAL_GLOBAL`, `NOT_LANDED_TITLE_RITE_EQUAL_THIRD`, `NOT_PROVINCE_RITE_EQUAL_GLOBAL`, `NOT_PROVINCE_RITE_EQUAL_THIRD`, `NOT_RITE_THEY_HAS_DOCTRINE`, `PERSONAL_BELIEFS_VIEW_FOLLOWING`, `PROVINCE_RITE_EQUAL_GLOBAL`, `PROVINCE_RITE_EQUAL_THIRD`, `THEY_GAINED_GLORY_EFFECT`, `THEY_GAIN_GLORY_EFFECT`, `THEY_LOSE_GLORY_EFFECT`, `THEY_LOST_GLORY_EFFECT`, `THEY_RITE_HAS_DOCTRINE`, `ZEALOUS_PROSELYTIZER_REASON`, `activity_tour_host_desc`, `all_members_of_root_confederation_in_attendance`, `all_members_of_second_confederation_in_attendance`, `apa_passive_religious_learning_guest_tt`, `apa_passive_religious_learning_host_tt`, `apa_passive_religious_learning_pilgrimage_pool_tt`, `change_maa_regiment_size_third`, `change_maa_regiment_size_third_neg`, `change_maa_regiment_size_third_past`, `change_maa_regiment_size_third_past_neg`, `change_maa_troops_count_third`, `change_maa_troops_count_third_neg`, `domicile_building_parameter_domicile_building_is_university`, `estate_cathedral_teach_kids_tt`, `eunuch_will_be_given_a_position_tt`, `fervor_gain_pam_rite_consolidated`, `fervor_loss_pam_rite_diverged`, `landed_title_rite_not_equal`, `msg_holy_site_abandoned_by_character_desc`, `msg_holy_site_demoted_by_character_desc`, `msg_hor_learned_doctrine_concubines_desc`, `msg_hor_learned_doctrine_consanguinity_unrestricted_desc`, `msg_hor_learned_doctrine_desc`, `msg_hor_learned_doctrine_deviancy_virtuous_desc`, `msg_hor_learned_doctrine_funeral_mummification_desc`, `msg_hor_learned_doctrine_funeral_sky_burial_desc`, `msg_hor_learned_doctrine_kinslaying_accepted_desc`, `msg_hor_learned_doctrine_polygamy_desc`, `msg_hor_learned_doctrine_witchcraft_virtuous_desc`, `msg_hor_learned_tenet_adorcism_desc`, `msg_hor_learned_tenet_cranial_trophies_desc`, `msg_hor_learned_tenet_desc`, `msg_hor_learned_tenet_exaltation_of_pain_desc`, `msg_hor_learned_tenet_gruesome_festivals_desc`, `msg_hor_learned_tenet_hedonistic_desc`, `msg_hor_learned_tenet_human_sacrifice_desc`, `msg_hor_learned_tenet_ritual_cannibalism_desc`, `msg_hor_learned_tenet_sacrificial_ceremonies_desc`, `msg_hor_learned_tenet_takamin_desc`, `msg_hor_learned_tenet_warmonger_desc`, `msg_passive_learned_doctrine_concubines_desc`, `msg_passive_learned_doctrine_consanguinity_unrestricted_desc`, `msg_passive_learned_doctrine_desc`, `msg_passive_learned_doctrine_funeral_mummification_desc`, `msg_passive_learned_doctrine_funeral_sky_burial_desc`, `msg_passive_learned_doctrine_kinslaying_accepted_desc`, `msg_passive_learned_doctrine_pilgrimage_rite_desc`, `msg_passive_learned_doctrine_polygamy_desc`, `msg_passive_learned_doctrine_witchcraft_virtuous_desc`, `msg_passive_learned_rite_abroad_desc`, `msg_passive_learned_rite_desc`, `msg_passive_learned_tenet_adorcism_desc`, `msg_passive_learned_tenet_cranial_trophies_desc`, `msg_passive_learned_tenet_desc`, `msg_passive_learned_tenet_exaltation_of_pain_desc`, `msg_passive_learned_tenet_gruesome_festivals_desc`, `msg_passive_learned_tenet_hedonistic_desc`, `msg_passive_learned_tenet_human_sacrifice_desc`, `msg_passive_learned_tenet_pilgrimage_rite_desc`, `msg_passive_learned_tenet_ritual_cannibalism_desc`, `msg_passive_learned_tenet_sacrificial_ceremonies_desc`, `msg_passive_learned_tenet_takamin_desc`, `msg_passive_learned_tenet_warmonger_desc`, `not_rite_has_tenet_first`, `not_rite_has_tenet_third`, `pam_create_great_schism_effect_tt`, `pam_tenet_events.0004.a.tt.consolidated`, `pam_tenet_events.0004.a.tt.diverged`, `pam_tenet_events.0004.desc.backward_doctrine`, `pam_tenet_events.0004.desc.backward_tenet`, `pam_tenet_events.0004.desc.forward_doctrine`, `pam_tenet_events.0004.desc.forward_tenet`, `rite_has_tenet_first`, `rite_has_tenet_third`, `study_faith_nothing_left_to_learn_tt`
+
+</details>
+
+## Spelling and grammar (68)
 
 ### Typos
 
@@ -263,4 +313,6 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `game_concept_aptitude_desc` | lo eficiente que es distintos papeles | lo eficiente que es en distintos papeles |
 | `hunt.4900.befriend` | `El [activity.Custom('GetAnimalChargeParticipleKill')] del animal se relaja` | `El animal se relaja` |
 | `ep1_flavor.2040.desc.gold` | `«Este/a [exotic_blade.Custom('ArtifactBaseWeaponType')\|l] sin par` | `«Esta pieza sin par` |
+| `FACTION_ESCALATED_PEASANT_DYNAMIC_NAME` | `de color [ROOT.Faction.GetSpecialCharacter.Custom('GetTurbanRebellionColor')]` | `de [ROOT.Faction.GetSpecialCharacter.Custom('GetTurbanRebellionColor')\|l]` |
+| `peasant_leader_title_name` | `de color [ROOT.Char.Custom('GetTurbanRebellionColor')]` | `de [ROOT.Char.Custom('GetTurbanRebellionColor')\|l]` |
 
