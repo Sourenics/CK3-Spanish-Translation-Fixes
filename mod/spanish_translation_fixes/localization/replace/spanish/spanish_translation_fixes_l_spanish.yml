@@ -1,5 +1,5 @@
 ﻿l_spanish:
- # Spanish Translation Fixes 0.9.1 - corrected copies of vanilla keys. Grouped by the vanilla file they come from.
+ # Spanish Translation Fixes 0.9.2 - corrected copies of vanilla keys. Grouped by the vanilla file they come from.
 
  # accolades/accolades_l_spanish.yml
  accolade_mercenary_kings_men_name:0 "Hombres [accolade_owner.Custom('STF_del_GetTitledFirstNameNoTooltip')]"

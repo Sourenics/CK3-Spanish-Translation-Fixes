@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.2 (beta)
+
+- New thumbnail, matching the style of the author's other mods.
+
 ## 0.9.1 (beta)
 
 - **Names of untitled characters are no longer lowercase.** The Spanish text lowercased "title + name" so that titles read naturally ("la condesa Bertha"), which also lowercased the names of characters without a title and kept the article ("la bertha"). New custom localization entries lowercase the title only when there is one and drop the article otherwise ("Bertha", "de Bertha"). This affects 7,948 strings.
