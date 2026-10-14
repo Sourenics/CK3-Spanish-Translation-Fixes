@@ -1,10 +1,10 @@
-# Fixed strings (0.9.2)
+# Fixed strings (0.9.3)
 
-Every Spanish string this mod replaces, with the part that changed. 8282 strings in total.
+Every Spanish string this mod replaces, with the part that changed. 8273 strings in total.
 
 Keys are the vanilla localization keys. "Before" is the text shipped with the game; "After" is the text in this mod.
 
-## Broken strings (8214)
+## Broken strings (8205)
 
 ### Misspelled data functions
 
@@ -74,7 +74,6 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `pam_secular_faith_events.0024.a` | rival.IsFemale | rival_character.IsFemale |
 | `pam_secular_faith_events.0024.a` | `[rival.Custom('ES_OA')]!` | `[rival_character.Custom('ES_OA')]»!` |
 | `journey_events.30.desc` | And(character.IsFemale | And(character_1.IsFemale |
-| `greeting_foreign_ruler_negative` | `[target.Custom('ES_AlAla')\|U]` | `[second.Custom('ES_AlAla')\|U]` |
 | `feast.7110.desc.entourage` | dummy_gender.IsFemale | my_knight.IsFemale |
 | `action_hegemonic_tributary_has_low_subject_standing_suzerain_desc` | `[house_relation.GetName] [recipient.GetPrimaryTitle.Custom('GetTierIcon')]` | `[recipient.GetPrimaryTitle.Custom('GetTierIcon')][recipient.GetUIName]` |
 | `scheme_odds.realm_size` | target_character. | target. |
@@ -84,7 +83,6 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `best_friend_died_desc` | deceased_pal. | dead_relation. |
 | `best_friend_died_desc_second_perspective` | deceased_pal. | dead_relation. |
 | `best_friend_died_desc_third_perspective` | deceased_pal. | dead_relation. |
-| `greeting_family_liked_plain` | `[crush.Custom('ES_OA')]` | `[second.Custom('ES_OA')]` |
 | `expected_to_pay_tribute` | Select_CString(tributary_loc.IsLocalPlayer | Select_CString(SCOPE.sC('tributary_loc').IsLocalPlayer |
 | `SUCCESSION_ELECTION_WINDOW_NOMINATE` | `[nominate]` | `Nominar` |
 | `marriage_effect.1001.a` | `mí[secondary_actor.Custom('ES_OA')]` | `mí[SCOPE.sC('spouse').Custom('ES_OA')]` |
@@ -119,7 +117,6 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `hold_court.3010.b` | excellent_skill_option.IsFemale | unconventional_preacher.IsFemale |
 | `ep3_contract_event.0095.a_2` | `[Select_CString(And(supporter.IsFemale, supporter_2.IsFemale), 'las', 'los')]` | `los` |
 | `tournament_events.9004.desc` | `un[falconer.Custom('ES_XA')]` | `un[falconer_1.Custom('ES_XA')]` |
-| `bp2_yearly.2015.desc` | `[Select_CString( hostage.IsFemale, 'la abusona', 'el abusón' )] de [bully.GetFirstName]` | `[Select_CString( bully.IsFemale, 'la abusona', 'el abusón' )] de [bully.GetFirstName]` |
 | `bp2_yearly.2022.desc.next_target` | `list[new_target.Custom('ES_OA')]` | `list[new_murder_target.Custom('ES_OA')]` |
 | `imperial_examination.4060.desc_learning` | potential_rival. | promising_lowborn. |
 | `imperial_examination.4060.a.success` | potential_rival. | promising_lowborn. |
@@ -188,7 +185,6 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `recruit_court_gardener_cooldown_tt` | 'recruit_gardener_cooldown' | 'recruit_court_gardener_cooldown' |
 | `recruit_foreign_emissary_cooldown_tt` | VarRemaining( 'recruit_foreign_emissary_cooldown' ) | VarRemaining( 'foreign_emissary_engineer_cooldown' ) |
 | `culture_parameter_block_printing_university_bonuses` | HasDlcFeature( 'legends' ) | HasDlcFeature( 'wards_and_wardens' ) |
-| `ECUMENICAL_COUNCIL_PLANNER_TENET_SELECT_TOOLTIP` | GetNameNoTooltip( Faith.Self ) | GetNameNoTooltip( Rite.Self ) |
 | `learning_oath_1_decision_desc_extra` | 'stewardship_oath_1_timer' | 'learning_oath_1_timer' |
 | `purge_pretenders_oath_decision_desc_extra` | IsOngoingCoronationOath('purge_pretenders') | IsOngoingCoronationOath('purge_pretenders_oath') |
 | `devaraja_recipient_piety_level` | actor.GetPietyLevel | recipient.GetPietyLevel |
@@ -204,13 +200,7 @@ Also, in 43 relationship descriptions `GetShortUINameU` was changed to `GetShort
 | `mpo_decisions_events.0100.d.unlocked` | 'trade_yurt_01' | 'herd_trade_yurt_01' |
 | `custom_southern_russia_expand_steppe_tt` | 'ghw_region_southern_russsia' | 'ghw_region_southern_russia' |
 | `fund_inspiration.1051.desc.hide` | 'animal_skull_type' | 'animal_hide_type' |
-| `add_known_tenet_third` | GetPlayer.GetFaith | Character.GetRite |
-| `religious_decision.0211_anachoresis_tt` | GetPlayer.GetFaith | GetPlayer.GetRite |
-| `pam_anachoresis_meditation_toast` | GetPlayer.GetFaith | GetPlayer.GetRite |
 | `pam_evangelize_tenet_carnal_exaltation` | 'tenet_khachkar' | 'tenet_carnal_exaltation' |
-| `pam_decision_events.0011.desc.permitted` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
-| `pam_decision_events.0011.desc.prohibited` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
-| `pam_decision_events.0011.desc.fallback` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
 | `fervor_gain_pam_tenet_prohibited` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
 | `fervor_loss_pam_tenet_permitted` | pam_tenet_stance_issuer.GetFaith | pam_tenet_stance_issuer.GetRite |
 | `puppet_action_description_puppet_action_demand_conversion_player_ruler` | 'demand_conversion_vassal_ruler_interaction' | 'demand_conversion_player_ruler_interaction' |

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.3 (beta)
+
+- Checked against CK3 1.20.1.
+- Paradox fixed 9 of the strings this mod corrected, in the same way; the mod no longer replaces them: `add_known_tenet_third`, `bp2_yearly.2015.desc`, `ECUMENICAL_COUNCIL_PLANNER_TENET_SELECT_TOOLTIP`, `greeting_family_liked_plain`, `pam_anachoresis_meditation_toast`, the three `pam_decision_events.0011.desc` texts and `religious_decision.0211_anachoresis_tt`. Paradox also fixed the wrong character in `greeting_foreign_ruler_negative`.
+- 5 strings rewritten by Paradox in 1.20.1 are now based on the new text, so the mod no longer brings back the old version: the two populist faction demands (now name the rite's adherents), the excommunication petition tooltip (now also works when someone else travels), the antipope event and the first-stone event for great projects. The fix for untitled characters' names is kept in all of them.
+- The mod now replaces 8,273 strings in total.
+
 ## 0.9.2 (beta)
 
 - New thumbnail, matching the style of the author's other mods.

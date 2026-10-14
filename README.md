@@ -5,7 +5,7 @@
 A Crusader Kings III mod that fixes broken and mistranslated texts in the official Spanish localization, so you can play in Spanish without code, brackets or nonsense showing up in events and tooltips.
 
 - **Game version:** 1.20.x
-- **Mod version:** 0.9.2 (beta)
+- **Mod version:** 0.9.3 (beta)
 - **Author:** [Sourenics](https://github.com/Sourenics)
 - **Steam Workshop:** [Spanish Translation Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3817707585)
 
@@ -15,7 +15,7 @@ This is a **public beta**. Every fix has been checked against the game files and
 
 ## What it fixes
 
-Version 0.9.2 replaces **8,282 strings**. Every change is explained in [FIXED_STRINGS.md](FIXED_STRINGS.md).
+Version 0.9.3 replaces **8,273 strings**. Every change is explained in [FIXED_STRINGS.md](FIXED_STRINGS.md).
 
 ### Names of untitled characters (7,948)
 
@@ -90,7 +90,7 @@ Please open an [issue](../../issues/new/choose) using the **Translation error** 
 2. **Where it appears**: event title, decision, tooltip, window…
 3. **A screenshot.**
 4. Optionally, **how it should read**.
-5. **The game version** (shown in the main menu, for example 1.20.0.4) and **the mod version**.
+5. **The game version** (shown in the main menu, for example 1.20.1) and **the mod version**.
 
 Suggestions of mistranslations are especially welcome: they are hard to find automatically.
 
