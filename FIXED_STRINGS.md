@@ -1,4 +1,4 @@
-# Fixed strings (0.9.3)
+# Fixed strings (0.9.4)
 
 Every Spanish string this mod replaces, with the part that changed. 8273 strings in total.
 
@@ -46,7 +46,6 @@ These made the game print the raw code, or nothing, instead of a name or a word.
 | `struggle_persia_ending_rekindle_iran_decision_region_control_tt` | `_percent_value')\|l0]` | `_percent_value')\|0]` |
 | `subsume_province_recipient_scheming_against_you_tt` | `[recipiente.` | `[recipient.` |
 | `uses_doctrine_first` | `[Faith_DOCTRINE.GetName(Faith.Self)\|l]` | `[DoctrineType.GetDescriptiveName( Faith.Self )\|l]` |
-| `pam_theocratic_ruler_events.0002.desc` | `GerHerHim` | `GetHerHim` |
 | `flawless_mandala_trials_memory` | `una sucesión divina digna para [previous_mandala.Char.Custom('ES_ElLa')] [previous_mandala_ruler.GetTitledFirstName]` | `de forma impecable una sucesión divina digna [previous_mandala_ruler.Custom('ES_DelDela')] [previous_mandala_ruler.GetTitledFirstName\|l]` |
 | `DEMAND_OBEDIENCE_INTERACTION_HERD_ACCEPTANCE` | `$VALUE=+0$` | `$VALUE\|=+0$` |
 | `DEMAND_OBEDIENCE_INTERACTION_MILITARY_MIGHT_ACCEPTANCE` | `$VALUE=+0$` | `$VALUE\|=+0$` |
@@ -258,7 +257,8 @@ A character counts as titled when they hold a primary title or are married to so
 | `contest_events.1540.desc` | mi postura y encoque | mi postura y enfoque |
 | `contest_events.1541.desc` | su postura y encoque | su postura y enfoque |
 | `yearly.3001.b` | acusaré publicamente | acusaré públicamente |
-| `pam_generic_events.0004.desc` | El reciento de | El recinto de |
+| `petition_head_of_faith.2000.desc.atmosphere_khachkar` | «Y así acusáis | «¿Y así acusáis |
+| `ecumenical_council_events.0104.desc` | no debe verse divida | no debe verse dividida |
 | `ep3_laamps.6021.desc` | Sin embaro, | Sin embargo, |
 | `laamp_base_contract_schemes.0661.desc` | en su diputa sobre | en su disputa sobre |
 | `travel_events.4023.desc.intro` | las armas contras los | las armas contra los |
@@ -321,4 +321,8 @@ A character counts as titled when they hold a primary title or are married to so
 | `ep1_flavor.2040.desc.gold` | `«Este/a [exotic_blade.Custom('ArtifactBaseWeaponType')\|l] sin par` | `«Esta pieza sin par` |
 | `FACTION_ESCALATED_PEASANT_DYNAMIC_NAME` | `de color [ROOT.Faction.GetSpecialCharacter.Custom('GetTurbanRebellionColor')]` | `de [ROOT.Faction.GetSpecialCharacter.Custom('GetTurbanRebellionColor')\|l]` |
 | `peasant_leader_title_name` | `de color [ROOT.Char.Custom('GetTurbanRebellionColor')]` | `de [ROOT.Char.Custom('GetTurbanRebellionColor')\|l]` |
+| `pam_generic_events.0004.desc` | `parpadean en el/la [ROOT.Char.GetFaith.HouseOfWorship] vacío/a` | `, parpadean en el recinto vacío de [ROOT.Char.GetFaith.HouseOfWorship]` |
+| `pam_theocratic_ruler_events.0002.desc` | ¿Cómo he de recibirles? | ¿Cómo he de recibirle? |
+| `declare_yourself_antipope_decision_desc` | `razonamiento [ROOT.Char.GetFaith.GetAdherentName]` | `razonamiento [ROOT.Char.GetFaith.GetAdjective]` |
+| `vizierate.1001.d.tt.filtered_out` | `[diarchy\|lE] alguno` | `[diarchy\|lE] alguna` |
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.9.4 (beta)
+
+- Checked against CK3 1.20.1.1. This hotfix rewrote much of the Spanish translation of By God Alone.
+- 33 strings that Paradox rewrote in 1.20.1.1 are now based on the new text, so the mod no longer brings back the old translation: the heresy news events, ecumenical council and investiture council events, holy myron, the naturism decision, scripture study outcomes, petitions to the head of faith, a feast event and the antipope decision, among others. The fix for untitled characters' names is kept in all of them.
+- Removed the three `heresy_light.notification.*.tt` strings, which no longer exist in the game.
+- 3 new strings with the untitled-names bug are now fixed: `character_will_leave_court_holy_order`, `pam_theocratic_ruler_events.0006.desc` and `pam_schism_seat_head_of_faith_tt`.
+- Fixed new mistakes in the rewritten texts: a missing opening question mark, "divida" instead of "dividida", "recibirles" for a single visitor, and "el/la … vacío/a" in a mourning event.
+- The mod still replaces 8,273 strings in total.
+
 ## 0.9.3 (beta)
 
 - Checked against CK3 1.20.1.
